@@ -23,7 +23,9 @@ module.exports = {
       'gray-middle':'#828282',
       'light-gray':'#F5F5F5',
       'dark-gray':'#171717',
-      'dark3':'#636466'
+      'dark3':'#636466',
+      'dark2':'#111111',
+      'gray2':'#A9A9A9'
         
     },
     fontFamily: {
