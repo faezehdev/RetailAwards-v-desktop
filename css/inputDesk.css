@@ -1,8 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @font-face {
+    font-family: "IRANSansWeb500";
+    src: url("../../_fonts/IRANSansWeb_Medium.eot");
+    src: url("../../_fonts/IRANSansWeb_Medium.eot?#iefix")
+        format("embedded-opentype"),
+      url("../../_fonts/IRANSansWeb_Medium.woff") format("woff"),
+      url("../../_fonts/IRANSansWeb_Medium.woff2") format("woff2"),
+      url("../../_fonts/IRANSansWeb_Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "IRANSansWeb400";
+    src: url("../../_fonts/IRANSansWebRegular.eot");
+    src: url("../../_fonts/IRANSansWebRegular.eot?#iefix")
+        format("embedded-opentype"),
+      url("../../_fonts/IRANSansWebRegular.woff") format("woff"),
+      url("../../_fonts/IRANSansWebRegular.woff2") format("woff2"),
+      url("../../_fonts/IRANSansWebRegular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
     font-family: "IRANSansWeb300";
     src: url("../../_fonts/IRANSansWeb(FaNum)_Light.eot");
     src: url("../../_fonts/IRANSansWeb(FaNum)_Light.eot?#iefix")
@@ -14,6 +37,19 @@
     font-style: normal;
     font-display: swap;
   }
+  @font-face {
+    font-family: "IRANSansWeb700";
+    src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot");
+    src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
+        format("embedded-opentype"),
+      url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
+      url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+      url("../../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
   @font-face {
     font-family: "IRANSansWeb400";
     src: url("../../_fonts/IRANSansWeb(FaNum)_Medium.eot");

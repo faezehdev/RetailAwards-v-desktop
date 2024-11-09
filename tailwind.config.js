@@ -37,10 +37,11 @@ module.exports = {
     },
     fontFamily: {
       'IRANSansWeb(FaNum)700': ['IRANSansWeb(FaNum)700', 'IRANSansWeb(FaNum)700'],
-      'IranYekan300': ['IranYekan300', 'IranYekan300'],
-      'IranYekan400': ['IranYekan400', 'IranYekan400'],
-      'IranYekan500': ['IranYekan500', 'IranYekan500'],
-      'IranYekan700': ['IranYekan700', 'IranYekan700'],
+      'IRANSansWeb300': ['IRANSansWeb300', 'IRANSansWeb300'],
+      'IRANSansWeb400': ['IRANSansWeb400', 'IRANSansWeb400'],
+      'IRANSansWeb500': ['IRANSansWeb500', 'IRANSansWeb500'],
+      'IRANSansWeb700': ['IRANSansWeb700', 'IRANSansWeb700'],
+      'IRANSansWeb900': ['IRANSansWeb900', 'IRANSansWeb900'],
       'IRANSansWeb(FaNum)700': ['"IRANSansWeb(FaNum)700"'],
       'IRANSansWeb(FaNum)400': ['"IRANSansWeb(FaNum)400"'],
 
