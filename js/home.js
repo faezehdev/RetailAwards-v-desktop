@@ -84,3 +84,70 @@ const swiper = new Swiper(slider, {
     }
   }
 });
+
+
+
+
+let titleMain = document.querySelectorAll(".Title-main")
+titleMain.forEach(element => {
+ gsap.to(element.querySelector("h1,h2"),{
+     scrollTrigger:{
+         trigger:element.querySelector("h1,h2"),
+         start:"top 90%",
+         end:"bottom bottom",
+     },
+     y:"0",
+ })
+ gsap.to(element.querySelector(".line"),{
+     scrollTrigger:{
+         trigger:element.querySelector(".line"),
+         start:"top 90%",
+         end:"bottom bottom",
+     },
+     width:'60px',
+ })
+});
+
+let scrollTop = document.querySelectorAll(".scrollTop")
+scrollTop.forEach(element => {
+ gsap.from(element,{
+     scrollTrigger:{
+         trigger:element,
+         start:"top 90%",
+         end:"bottom bottom",
+         // markers:true
+     },
+     y:"20vh",
+     opacity:0,
+ })
+});
+
+
+
+
+
+const videoSlider = new Swiper('.videoSlider', {
+    // Optional parameters
+    speed:1000,
+    loop: true,
+    centeredSlides:true,
+    // spaceBetween: 60,
+    slidesPerView:1.2,
+
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });

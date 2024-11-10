@@ -334,3 +334,19 @@ color: white;
 .homePage .section1 .swiper-button-disabled{
   opacity: 0.5;
 }
+
+.play-popup-container:hover .play-popup-btn svg path{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 1.5s ease-in-out forwards;
+
+}
+
+@keyframes dash {
+  0%{
+    stroke-dashoffset: 1000;
+  }
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
