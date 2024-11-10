@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root{
+  --plyr-color-main:#FEBE1B
+}
 @font-face {
   font-family: "IRANSansWeb500";
   src: url("../../_fonts/IRANSansWeb_Medium.eot");
@@ -145,7 +148,8 @@ background: linear-gradient(90deg, #FEBE1B 51%, #000000 100%);
   background: linear-gradient(90deg, #000000 0%, #FEBE1B 100%);
   }
 main.Etelaei-C .section p,main.Etelaei-C .section h1,
-main.Etelaei-C .section h2{
+main.Etelaei-C .section h2,
+.aboutUs-C .Text p{
   transform: translateY(100%);
   -webkit-transform: translateY(100%);
   -moz-transform: translateY(100%);
