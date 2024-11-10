@@ -2,7 +2,7 @@ let titleMain = document.querySelectorAll('.Title-main')
 titleMain.forEach(t=>{
     gsap.to(t.querySelector('h1'),{
         y:0,
-        scrollTriggers:{
+        scrollTrigger:{
           trigger:t,
           start:'top 60%',
           end:'bottom bottom'
@@ -10,7 +10,7 @@ titleMain.forEach(t=>{
       })
     gsap.to(t.querySelector('.line'),{
       width:'60px',
-      scrollTriggers:{
+      scrollTrigger:{
         trigger:t,
         start:'top 60%',
         end:'bottom bottom'
@@ -23,7 +23,7 @@ taghdirs.forEach(taghdir=>{
       opacity:1,
       y:0,
       stagger: 0.5,
-        scrollTriggers:{
+        scrollTrigger:{
           trigger:taghdir,
           start:'top 80%',
           end:'bottom bottom',

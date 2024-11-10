@@ -137,3 +137,36 @@
   .ShowMore:hover .circle{
     animation: rotateAndFade 1s forwards;
   }
+.About-container .line.line-1 {
+background: linear-gradient(90deg, #FEBE1B 51%, #000000 100%);
+
+}
+.About-container .line.line-2 {
+  background: linear-gradient(90deg, #000000 0%, #FEBE1B 100%);
+  }
+main.Etelaei-C .section p,main.Etelaei-C .section h1,
+main.Etelaei-C .section h2{
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transition: all 700ms;
+  -webkit-transition: all 700ms;
+  -moz-transition: all 700ms;
+  -ms-transition: all 700ms;
+  -o-transition: all 700ms;
+}
+.EtalaeiItem img{
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+.EtalaeiItem:hover img{
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}

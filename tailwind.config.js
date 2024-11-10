@@ -16,6 +16,10 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
+    transitionTimingFunction: {
+      'in-expo': 'cubic-bezier(0.25, 0.1, 0.25, 1)',
+     
+    },
     colors: {
       'mainYellow':'#FEBE1B',
       'white':'#FFFFFF',
