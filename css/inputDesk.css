@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
+  font-family: "Anton400";
+  src: url("../../_fonts/AntonSC-Regular.eot");
+  src: url("../../_fonts/AntonSC-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../_fonts/AntonSC-Regular.woff") format("woff"),
+    url("../../_fonts/AntonSC-Regular.woff2") format("woff2"),
+    url("../../_fonts/AntonSC-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "IRANSansWeb500";
   src: url("../../_fonts/IRANSansWeb_Medium.eot");
   src: url("../../_fonts/IRANSansWeb_Medium.eot?#iefix")
@@ -50,93 +62,93 @@
   font-display: swap;
 }
 
-  @font-face {
-    font-family: "IRANSansWeb400";
-    src: url("../../_fonts/IRANSansWeb(FaNum)_Medium.eot");
-    src: url("../../_fonts/IRANSansWeb(FaNum)_Medium.eot?#iefix")
-        format("embedded-opentype"),
-      url("../../_fonts/IRANSansWeb(FaNum)_Medium.woff") format("woff"),
-      url("../../_fonts/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
-      url("../../_fonts/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+@font-face {
+  font-family: "IRANSansWeb400";
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Medium.eot");
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Medium.woff") format("woff"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IRANSansWeb500";
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Medium.eot");
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Medium.woff") format("woff"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IRANSansWeb700";
+  font-family: "IRANSansWeb(FaNum)700";
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot");
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IRANSansWeb(FaNum)700";
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot");
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.faNum {
+  font-family: "IRANSansWeb300";
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+.SearchBox-popup input {
+  box-shadow: 0px 4px 4px 0px #c2c2c240;
+}
+.SearchBox-popup {
+  background-color: rgba(169, 169, 169, 0.14);
+}
+@keyframes rotateAndFade {
+  0% {
+    transform: rotate(360deg);
+    border-color: rgb(0, 0, 0); /* Final border color */
   }
-  @font-face {
-    font-family: "IRANSansWeb500";
-    src: url("../../_fonts/IRANSansWeb(FaNum)_Medium.eot");
-    src: url("../../_fonts/IRANSansWeb(FaNum)_Medium.eot?#iefix")
-        format("embedded-opentype"),
-      url("../../_fonts/IRANSansWeb(FaNum)_Medium.woff") format("woff"),
-      url("../../_fonts/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
-      url("../../_fonts/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  100% {
+    transform: rotate(0deg);
+    border-color: white; /* Final border color */
   }
-  @font-face{
-    font-family: "IRANSansWeb700";
-    font-family: "IRANSansWeb(FaNum)700";
-    src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot");
-    src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
-        format("embedded-opentype"),
-      url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
-      url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
-      url("../../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-      font-family: "IRANSansWeb(FaNum)700";
-      src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot");
-      src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
-          format("embedded-opentype"),
-        url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
-        url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
-        url("../../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
-      font-weight: 700;
-      font-style: normal;
-      font-display: swap;
-    }
-    .faNum{
-      font-family: "IRANSansWeb300";
-  }
-  ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    background-color: #F5F5F5;
-  }
-  
-  ::-webkit-scrollbar {
-    width: 2px;
-    background-color: #F5F5F5;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #555;
-  }
-  .SearchBox-popup  input{
-    box-shadow: 0px 4px 4px 0px #C2C2C240;
-  }
-  .SearchBox-popup{
-    background-color:    rgba(169, 169, 169, 0.14) ;
-  }
-  @keyframes rotateAndFade {
-    0% {
-      transform: rotate(360deg);
-      border-color: rgb(0, 0, 0); /* Final border color */
-    }
-    100% {
-      transform: rotate(0deg);
-      border-color: white; /* Final border color */
-    }
-  }
-  .ShowMore:hover .circle{
-    animation: rotateAndFade 1s forwards;
-  }
+}
+.ShowMore:hover .circle {
+  animation: rotateAndFade 1s forwards;
+}
 
 @font-face {
   font-family: "IRANSansWeb400";
@@ -214,7 +226,7 @@
   transform: scaleX(1);
 }
 
-.brandBox{
+.brandBox {
   opacity: 0;
   transform: translateY(20vh);
 }
@@ -296,57 +308,85 @@
   max-width: 480px;
 }
 
-.homePage .section1 .progressCat .swiper-scrollbar-drag{
-  background-color: #FEBE1B;
+.homePage .section1 .progressCat .swiper-scrollbar-drag {
+  background-color: #febe1b;
 }
-.homePage .section1 .progressCat{
+.homePage .section1 .progressCat {
   width: 108px;
   height: 2px;
-  background-color: #FFFFFF80;
+  background-color: #ffffff80;
 }
-.homePage .section1 .pagination1 .current{
+.homePage .section1 .pagination1 .current {
   font-family: "IRANSansWeb400";
   font-size: 25px;
   line-height: 39.13px;
   text-align: left;
-color: white;
-  
-  
+  color: white;
 }
-.homePage .section1 .pagination1 .total{
+.homePage .section1 .pagination1 .total {
   font-family: "IRANSansWeb300";
   font-size: 14px;
   line-height: 21.13px;
   text-align: left;
-color: white;
-  
-  
+  color: white;
 }
-.homePage .section1 .pagination1 i{
+.homePage .section1 .pagination1 i {
   font-family: "IRANSansWeb500";
   font-size: 16px;
   margin: 0 5px;
   line-height: 21.91px;
   display: inline-block;
   text-align: left;
-  color: #FEBE1B;
+  color: #febe1b;
 }
-.homePage .section1 .swiper-button-disabled{
+.homePage .section1 .swiper-button-disabled {
   opacity: 0.5;
 }
 
-.play-popup-container:hover .play-popup-btn svg path{
+.play-popup-container:hover .play-popup-btn svg path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 1.5s ease-in-out forwards;
-
 }
 
 @keyframes dash {
-  0%{
+  0% {
     stroke-dashoffset: 1000;
   }
-  100%{
+  100% {
     stroke-dashoffset: 0;
   }
+}
+
+.popOpen {
+  transform: translateY(0) !important;
+}
+
+.popSliderFraction .current,
+.popSliderFraction i {
+  font-family: "IRANSansWeb400";
+  font-size: 20px;
+  line-height: 31.3px;
+  color: #febe1b;
+}
+.popSliderFraction i {
+  margin: 0 5px;
+}
+.popSliderFraction span {
+  font-family: "IRANSansWeb400";
+  font-size: 15px;
+  color: #febe1b;
+}
+
+.awardsSliderpagination .swiper-pagination-bullet {
+  width: 9px;
+  height: 9px;
+  opacity: 1;
+  background-color: #828282;
+  transition: 0.3s ease;
+}
+.awardsSliderpagination .swiper-pagination-bullet-active {
+  width: 13px;
+  height: 13px;
+  background-color: black;
 }

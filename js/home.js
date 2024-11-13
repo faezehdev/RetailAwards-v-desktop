@@ -90,9 +90,9 @@ const swiper = new Swiper(slider, {
 
 let titleMain = document.querySelectorAll(".Title-main")
 titleMain.forEach(element => {
- gsap.to(element.querySelector("h1,h2"),{
+ gsap.to(element.querySelector("h1,h2,h4"),{
      scrollTrigger:{
-         trigger:element.querySelector("h1,h2"),
+         trigger:element.querySelector("h1,h2,h4"),
          start:"top 90%",
          end:"bottom bottom",
      },
@@ -131,7 +131,7 @@ const videoSlider = new Swiper('.videoSlider', {
     speed:1000,
     loop: true,
     centeredSlides:true,
-    // spaceBetween: 60,
+    spaceBetween: 20,
     slidesPerView:1.2,
 
 
@@ -150,4 +150,36 @@ const videoSlider = new Swiper('.videoSlider', {
     scrollbar: {
       el: '.swiper-scrollbar',
     },
+  });
+
+
+
+  const paraSlider = new Swiper('.paraSlider', {
+    speed:1000,
+    loop: true,
+  
+  
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.nextPara',
+      prevEl: '.prevPara',
+    },
+  
+
+  });
+
+  const imgSlider = new Swiper('.imgSlider', {
+    speed:1000,
+    loop: true,
+  
+  
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.nextPara',
+      prevEl: '.prevPara',
+    },
+  
+
   });

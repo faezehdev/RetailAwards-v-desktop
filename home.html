@@ -5,8 +5,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
     <link rel="stylesheet" href="css/outputDesk.css" />
+    <style>
+        html{
+            font-size: unset;
+        }
+    </style>
 </head>
 
 <body>
@@ -104,80 +111,931 @@
                 </div>
             </div>
         </section>
-        <section class="section3" dir="rtl">
+        <section class="section3 mb-60" dir="rtl">
 
-            <div class="flex justify-between items-center w-90p mx-auto">
-                <div class="Title-main relative overflow-hidden mb-11 flex justify-start gap-4 items-center">
+            <div class="flex justify-between items-center w-90p mx-auto mb-11">
+                <div class="Title-main relative overflow-hidden flex justify-start gap-4 items-center">
                     <span class="line-content relative w-[60px]">
                         <span
                             class="line duration-700 absolute flex left-0 mx-auto justify-center right-0 delay-100 w-0 h-[2px] bg-black my-auto"></span>
                     </span>
-    
+
                     <h2
                         class="font-IRANSansWeb500 relative duration-700 translate-y-[100%] font-medium text-2xl leading-37.57 text-blabg-black">
                         مراسم های تقدیر
                     </h2>
                 </div>
-                <a href="" class="w-[228px] h-[50px] flex items-center justify-center bg-light-gray rounded-md">
+                <button
+                    class="openGallery hover:bg-mainYellow duration-500 w-[228px] h-[50px] flex items-center justify-center bg-light-gray rounded-md">
                     <span class="font-IRANSansWeb(FaNum)400 text-sm text-black">
 
                         مشاهده لیست
                     </span>
-                </a>
+                </button>
             </div>
 
 
             <div class="swiper videoSlider">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div class="inVideo relative flex items-center justify-center">
-                        <video src="" poster="images/Screenshot 2024-04-22 145538 1.png">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="inVideo relative flex items-center justify-center">
+                            <video src="" poster="images/Screenshot 2024-04-22 145538 1.png">
 
-                        </video>
-                        <div class="play-popup-container w-[126px] h-[126px] absolute cursor-pointer">
-                            <div class="play-popup-btn relative flex items-center justify-center" data-video="https://player.vimeo.com/video/619757568?dnt=1&amp;amp;app_id=122963">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="153.417" height="153.417" viewBox="0 0 153.417 153.417">
-<g id="Group_457" data-name="Group 457" transform="translate(-1061.792 -431.792)">
-<g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1063 433)" fill="none" stroke="#fff" stroke-width="1" opacity="0.3">
-<circle cx="75.5" cy="75.5" r="75.5" stroke="none"/>
-<circle cx="75.5" cy="75.5" r="75" fill="none"/>
-</g>
-<path id="Path_1" data-name="Path 1" d="M75.708,0A75.708,75.708,0,1,1,0,75.708" transform="translate(1062.792 432.792)" fill="none" stroke="#fff" stroke-width="2"/>
-</g>
-</svg>
-                                <div class="play-popup-btn__circle absolute">
-                                    <div class="play-popup-btn__circle__bullet"></div>
-                                    <span class="play-popup-btn__circle__text text-left">
-                                       <p class="font-IRANSansWeb300  text-lg text-white relative  after:w-[5px] after:h-[5px] after:absolute after:-left-3 after:top-[40%] after:bg-white after:rounded-full">
-                                           Play 
+                            </video>
+                            <div
+                                class="play-popup-container openVideoGallery w-[126px] h-[126px] absolute cursor-pointer">
+                                <div class="play-popup-btn relative flex items-center justify-center"
+                                    data-video="https://player.vimeo.com/video/619757568?dnt=1&amp;amp;app_id=122963">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="153.417" height="153.417"
+                                        viewBox="0 0 153.417 153.417">
+                                        <g id="Group_457" data-name="Group 457"
+                                            transform="translate(-1061.792 -431.792)">
+                                            <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1063 433)"
+                                                fill="none" stroke="#fff" stroke-width="1" opacity="0.3">
+                                                <circle cx="75.5" cy="75.5" r="75.5" stroke="none" />
+                                                <circle cx="75.5" cy="75.5" r="75" fill="none" />
+                                            </g>
+                                            <path id="Path_1" data-name="Path 1"
+                                                d="M75.708,0A75.708,75.708,0,1,1,0,75.708"
+                                                transform="translate(1062.792 432.792)" fill="none" stroke="#fff"
+                                                stroke-width="2" />
+                                        </g>
+                                    </svg>
+                                    <div class="play-popup-btn__circle absolute">
+                                        <div class="play-popup-btn__circle__bullet"></div>
+                                        <span class="play-popup-btn__circle__text text-left">
+                                            <p
+                                                class="font-IRANSansWeb300  text-lg text-white relative  after:w-[5px] after:h-[5px] after:absolute after:-left-3 after:top-[40%] after:bg-white after:rounded-full">
+                                                Play
 
-                                       </p>
-                                    <p class="font-IRANSansWeb500 text-lg text-white">
+                                            </p>
+                                            <p class="font-IRANSansWeb500 text-lg text-white">
 
-                                        video
-                                    </p>
-                                </span>
+                                                video
+                                            </p>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                  </div>
-               
+                    <div class="swiper-slide">
+                        <div class="inVideo relative flex items-center justify-center">
+                            <video src="" poster="images/Screenshot 2024-04-22 145538 4.png">
+
+                            </video>
+                            <div
+                                class="play-popup-container openVideoGallery w-[126px] h-[126px] absolute cursor-pointer">
+                                <div class="play-popup-btn relative flex items-center justify-center"
+                                    data-video="https://player.vimeo.com/video/619757568?dnt=1&amp;amp;app_id=122963">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="153.417" height="153.417"
+                                        viewBox="0 0 153.417 153.417">
+                                        <g id="Group_457" data-name="Group 457"
+                                            transform="translate(-1061.792 -431.792)">
+                                            <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1063 433)"
+                                                fill="none" stroke="#fff" stroke-width="1" opacity="0.3">
+                                                <circle cx="75.5" cy="75.5" r="75.5" stroke="none" />
+                                                <circle cx="75.5" cy="75.5" r="75" fill="none" />
+                                            </g>
+                                            <path id="Path_1" data-name="Path 1"
+                                                d="M75.708,0A75.708,75.708,0,1,1,0,75.708"
+                                                transform="translate(1062.792 432.792)" fill="none" stroke="#fff"
+                                                stroke-width="2" />
+                                        </g>
+                                    </svg>
+                                    <div class="play-popup-btn__circle absolute">
+                                        <div class="play-popup-btn__circle__bullet"></div>
+                                        <span class="play-popup-btn__circle__text text-left">
+                                            <p
+                                                class="font-IRANSansWeb300  text-lg text-white relative  after:w-[5px] after:h-[5px] after:absolute after:-left-3 after:top-[40%] after:bg-white after:rounded-full">
+                                                Play
+
+                                            </p>
+                                            <p class="font-IRANSansWeb500 text-lg text-white">
+
+                                                video
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-            
+
+            </div>
+        </section>
+        <section class="section4 w-90p mx-auto" dir="rtl">
+            <div class="Title-main relative overflow-hidden flex justify-start gap-4 items-center">
+                <span class="line-content relative w-[60px]">
+                    <span
+                        class="line duration-700 absolute flex left-0 mx-auto justify-center right-0 delay-100 w-0 h-[2px] bg-black my-auto"></span>
+                </span>
+
+                <h4
+                    class="font-IRANSansWeb500 relative duration-700 translate-y-[100%] font-medium text-2xl leading-37.57 text-blabg-black">
+                    حامیان ما در دوره های گذشته مراسم Iran Retail Awards
+                </h4>
+            </div>
+
+            <div class="sliderSection mt-10">
+                <div class="swiper awardsSlider max-w-[1017px]">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide mb-[35px]">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="brandBox1 p-5 bg-light-gray aspect-square group hover:shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.3)] rounded-md w-fit overflow-hidden duration-500">
+                                <a href="" class="w-full h-full flex items-center justify-center">
+                                    <div class="imgS">
+                                        <img class="w-full object-cover h-full grayscale group-hover:grayscale-0 duration-500 "
+                                            src="images/logo 1 1.png" alt="@name">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="awardsSliderpagination flex items-center justify-center mt-8 gap-x-7"></div>
+
+                </div>
+            </div>
+
+            <a href=""
+                class="flex hover:bg-mainYellow duration-500 items-center justify-center mt-10 mx-auto w-[233px] h-[50px] bg-light-gray rounded-md">
+                <span class="font-IRANSansWeb400 text-sm text-black">
+                    مشاهده حامیان
+                </span>
+            </a>
+        </section>
+        <section class="section5 mt-20 justify-between w-90p gap-x-5 mx-auto flex" dir="rtl">
+            <div class="sliderSide w-[65%] justify-between flex gap-x-5">
+                <div class="rSide w-[55%] flex flex-col justify-between">
+                    <div class="Title-main relative overflow-hidden flex justify-start gap-4 items-center">
+                        <span class="line-content relative w-[60px]">
+                            <span
+                                class="line duration-700 absolute flex left-0 mx-auto justify-center right-0 delay-100 w-0 h-[2px] bg-black my-auto"></span>
+                        </span>
+
+                        <h4
+                            class="font-IRANSansWeb500 relative duration-700 translate-y-[100%] font-medium text-2xl leading-37.57 text-blabg-black">
+                            دوره های Iran Retail Awards
+                        </h4>
+                    </div>
+
+
+                    <div class="paraSliderSection overflow-hidden">
+                        <div class="swiper overflow-hidden paraSlider">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <h5 class="font-IRANSansWeb500 text-2xl text-mainYellow mb-4">
+                                        ایران ریتیل اواردز دوره ی هشتم
+                                    </h5>
+                                    <div class="para font-IRANSansWeb400 text-sm text-justify text-dark-gray">
+                                        <p>
+                                            هشتمین مراسم سالانه اهدای جوایز برترین‌های صنعت مراکز خرید، فروشگاه های
+                                            زنجیره ای و برندهای برتر کشور ایران IranRetailAwards2022 در تاریخ ۳۰
+                                            اردیبهشت برگزار خواهد شد.
+                                            در این رویداد همچون سال‌های گذشته برترین مراکز خرید، هایپرمارکت‌ها و برندها
+                                            بر اساس معیارهایی که برای این گزینش مدنظر قرار می گیرد و همچنین غرفه های
+                                            برتر نمایشگاه ایران ریتیل شو سال گذشته و بانوان ارزش آفرین صنعت خرده فروشی
+                                            در سال ۱۴۰۰ مورد تقدیر قرار خواهند گرفت.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="btns mt-10 flex justify-between gap-x-3">
+                            <a class="py-3 hover:bg-mainYellow duration-300 px-16 bg-light-gray rounded-md block font-IRANSansWeb400 text-sm text-black" href="">
+                                مشاهده لیست دوره های گذشته
+                            </a>
+
+                            <div class="elemSlider flex items-center gap-x-1.5">
+                                <div class="nextPara w-[42px] h-[42px] rounded-md duration-300 hover:bg-mainYellow bg-light-gray cursor-pointer flex items-center justify-center">
+                                    <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.04 8.57998L3.47955 0.599975L0.959992 3.26123L6.00088 8.57998L0.959992 13.8987L3.47955 16.56L11.04 8.57998Z" fill="black"/>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="prevPara w-[42px] h-[42px] rounded-md duration-300 hover:bg-mainYellow bg-light-gray cursor-pointer flex items-center justify-center">
+                                    <svg class="rotate-180" width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.04 8.57998L3.47955 0.599975L0.959992 3.26123L6.00088 8.57998L0.959992 13.8987L3.47955 16.56L11.04 8.57998Z" fill="black"/>
+                                        </svg>
+                                        
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lSide h-full w-[40%]">
+                    <div class="swiper imgSlider h-full">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide">
+                            <div class="imgS h-full w-full">
+                                <img class="w-full h-full object-cover" src="images/2022 2.png" alt="@name">
+                            </div>
+                          </div>
+                         
+                        </div>
+                      
+                      </div>
+                </div>
+            </div>
+
+            <div class="texSe w-[32%] flex flex-col justify-between">
+                <div class="logo">
+                    <img src="images/Rectangle 19.png" alt="@name">
+                </div>
+                <div class="txt">
+                    <h2 class="font-Anton400 text-[140px] text-mainYellow/[0.25]">
+                        IRAN
+                        <br>
+RETAIL
+<br>
+AWARDS
+
+                    </h2>
+                </div>
+            </div>  
+        </section>
+        <section class="section6 mt-28 flex items-center justify-center">
+            <div class="imgS relative after:w-full after:h-full after:absolute after:bg-black/[0.4]">
+                <img class="w-full" src="images/Rectangle 22124.png" alt="@name">
+            </div>
+            <button type="button" class="btn absolute bg-light-gray py-5 px-6 rounded-md font-IRANSansWeb400 text-lg outline-none" style="border: none;" data-toggle="modal" data-target=".bs-example-modal-new">
+                جهت ثبت نام دوره ی جدید کلیک نمایید
+              </button>
+
+
+              <div class="modal fade bs-example-modal-new bg-white/[0.3]" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  
+                <div class="modal-dialog">
+                  
+                  <!-- Modal Content: begins -->
+                  <div class="modal-content">
+                    
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="gridSystemModalLabel">Your Headings</h4>
+                    </div>
+                  
+                    <!-- Modal Body -->  
+                    <div class="modal-body">
+                      <div class="body-message">
+                        <h4>Any Heading</h4>
+                        <p>And a paragraph with a full sentence or something else...</p>
+                      </div>
+                    </div>
+                  
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  
+                  </div>
+                  <!-- Modal Content: ends -->
+                  
+                </div>
+                
               </div>
         </section>
-        <section class="section"></section>
-        <section class="section"></section>
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js"></script>
+
+
+    <div class="popUpGalleryContainer h-svh inset-0 z-1 w-svw bg-black -translate-y-[100%] duration-1000 fixed"
+        data-lenis-prevent="true">
+        <div class="fThumb bg-black -translate-y-[100%] min-h-svh overflow-y-auto">
+
+            <div class="closePop cursor-pointer absolute top-14 right-[5%]">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+            <div class="thumbContainer mt-44 grid grid-cols-3 gap-x-10 gap-y-12 w-90p mx-auto" dir="rtl">
+
+
+                <div class="thumbBox flex items-center relative justify-center">
+                    <div class="imgS">
+                        <video class="w-full object-cover" src=""
+                            poster="images/Screenshot 2024-04-22 145538 1.png"></video>
+                    </div>
+                    <div class="play-popup-container thumbBtn w-[64px] h-[64px] absolute cursor-pointer">
+                        <div class="play-popup-btn relative flex items-center justify-center"
+                            data-video="https://player.vimeo.com/video/619757568?dnt=1&amp;amp;app_id=122963">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63"
+                                viewBox="0 0 153.417 153.417">
+                                <g id="Group_457" data-name="Group 457" transform="translate(-1061.792 -431.792)">
+
+                                    <path id="Path_1" data-name="Path 1" d="M75.708,0A75.708,75.708,0,1,1,0,75.708"
+                                        transform="translate(1062.792 432.792)" fill="none" stroke="#fff"
+                                        stroke-width="2" />
+                                </g>
+                            </svg>
+                            <div class="play-popup-btn__circle absolute">
+                                <div class="play-popup-btn__circle__bullet"></div>
+                                <span class="play-popup-btn__circle__text text-left">
+                                    <p
+                                        class="font-IRANSansWeb300  text-[10px] text-white relative  after:w-[5px] after:h-[5px] after:absolute after:-left-3 after:top-[40%] after:bg-white after:rounded-full">
+                                        Play
+
+                                    </p>
+                                    <p class="font-IRANSansWeb500 text-[10px] text-white">
+
+                                        video
+                                    </p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbBox flex items-center relative justify-center">
+                    <div class="imgS">
+                        <video class="w-full object-cover" src=""
+                            poster="images/Screenshot 2024-04-22 145538 4.png"></video>
+                    </div>
+                    <div class="play-popup-container thumbBtn w-[64px] h-[64px] absolute cursor-pointer">
+                        <div class="play-popup-btn relative flex items-center justify-center"
+                            data-video="https://player.vimeo.com/video/619757568?dnt=1&amp;amp;app_id=122963">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63"
+                                viewBox="0 0 153.417 153.417">
+                                <g id="Group_457" data-name="Group 457" transform="translate(-1061.792 -431.792)">
+
+                                    <path id="Path_1" data-name="Path 1" d="M75.708,0A75.708,75.708,0,1,1,0,75.708"
+                                        transform="translate(1062.792 432.792)" fill="none" stroke="#fff"
+                                        stroke-width="2" />
+                                </g>
+                            </svg>
+                            <div class="play-popup-btn__circle absolute">
+                                <div class="play-popup-btn__circle__bullet"></div>
+                                <span class="play-popup-btn__circle__text text-left">
+                                    <p
+                                        class="font-IRANSansWeb300  text-[10px] text-white relative  after:w-[5px] after:h-[5px] after:absolute after:-left-3 after:top-[40%] after:bg-white after:rounded-full">
+                                        Play
+
+                                    </p>
+                                    <p class="font-IRANSansWeb500 text-[10px] text-white">
+
+                                        video
+                                    </p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div
+            class="sGallery flex flex-col items-center justify-center fixed duration-1000 inset-0 -translate-y-[100%] h-svh w-svw overflow-hidden bg-black z-2">
+            <div class="closeSlider absolute top-16 right-[5%] cursor-pointer z-3">
+                <span class="font-IRANSansWeb400 text-sm text-mainYellow ">
+                    بازگشت به لیست
+                </span>
+
+            </div>
+            <div class="swiper popSlider w-svw mt-24 pb-20 h-[60vh]">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+
+                    <div class="swiper-slide flex items-center justify-center">
+                        <div class="imgS h-full">
+                            <video class="h-full object-cover" src=""
+                                poster="images/Screenshot 2024-04-22 145538 1.png"></video>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex items-center justify-center">
+                        <div class="imgS h-full">
+                            <video class="h-full object-cover" src=""
+                                poster="images/Screenshot 2024-04-22 145538 4.png"></video>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="popSliderFraction text-center mt-14 relative z-2"></div>
+            </div>
+            <div class="nextPop absolute top-[50%] right-0 cursor-pointer z-2">
+                <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="58" height="58" fill="white" />
+                    <path d="M34.08 28.98L26.5196 21L24 23.6613L29.0409 28.98L24 34.2987L26.5196 36.96L34.08 28.98Z"
+                        fill="black" />
+                </svg>
+
+
+            </div>
+            <div class="prevPop rotate-180 absolute top-[50%] left-0 cursor-pointer z-2">
+                <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="58" height="58" fill="white" />
+                    <path d="M34.08 28.98L26.5196 21L24 23.6613L29.0409 28.98L24 34.2987L26.5196 36.96L34.08 28.98Z"
+                        fill="black" />
+                </svg>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jQuery.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="js/gsap.js"></script>
+    <script src="js/popUpgallery.js"></script>
     <script src="js/scrollTrigger.js"></script>
     <script src="js/home.js"></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
+    <script src="js/swiper-bundle11.0.5.min.js"></script>
+    <script src="js/awardsSlider.js"></script>
 </body>
 
 </html>
