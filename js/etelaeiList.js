@@ -2,7 +2,7 @@
     trigger: '.pinSec',
     start: 'top top',
     endTrigger: ".listcontents",
-    end: "bottom top",
+    end: "bottom bottom",
     pin: true,
     pinSpacing:false,
   })

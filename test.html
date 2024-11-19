@@ -1,0 +1,771 @@
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="20">
+    <member request="cat" type="tree" name="cat"></member>
+</basis>
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="5" usedforid="9498">
+    <member type="view" name="contact"></member>
+    <member name="data1" type="view" request="rdfa"></member>
+</basis>
+ <link rel="stylesheet" href="[##cms.cms.cdn##]/css/app.css"> 
+<style>
+  header .topHeader   .col-left .disnone1{
+        display: none;
+    }
+    @media only screen and (max-width:576px){
+        header .topHeader    .col-left .disnone1{
+        display: block;
+    } 
+    header .topHeader  .col-left {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  padding: 15px;
+  }
+  header .topHeader  .col-left >div {
+    display: block;
+    text-align: center;
+    color: #000;
+    transition: all 600ms;
+  }
+  header .topHeader .col-left >div  a {
+    display: block;
+    text-align: center;
+    color: #000;
+    transition: all 600ms;
+  }
+  header .topHeader .col-left >div a{
+    flex-direction: column;
+  }
+  header .topHeader .col-left> div a i {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2px;
+    font-size: 25px;
+  }
+  header .topHeader .col-left >div>a span {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  #login-btn::before{
+    display: none !important;
+  }
+  .login-text {
+  display: block !important;
+  font-size: 13px;
+  font-weight: 300;
+}
+#basket-btn::after{
+    content: "سبد خرید";
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+}
+header .topHeader .col-left >div.active a {
+    color: #22B14C;
+  }
+  #cart-dropdown-content{
+    left: 0 !important;
+    top: unset !important;
+    bottom: 60px;
+    }
+    #profile_box{
+    left: 0 !important;
+    top: unset !important;
+    bottom: 60px;
+    width: auto !important;
+  }}
+    .login-text {
+  display: none;
+}
+#login-btn {
+  float: left;
+  display: flex;
+}
+#basket-btn >.maincount {
+  padding-left: 0.2em;
+  padding-left: 0.2em;
+display: inline-block;
+position: absolute;
+text-align: center;
+color: #fff;
+font-size: 8.4px;
+line-height: 14px;
+width: 14px;
+height: 14px;
+background-color: #22b04b;
+border-radius: 50%;
+right: -5px;
+z-index: 99;
+}
+#login-btn::before{
+    content:"";
+    display: inline-block;
+vertical-align: middle;
+margin-right: 24px;
+margin-left: 24px;
+background-color: rgba(0, 0, 0, 0.2);
+height: 32px;
+width: 1px;
+}
+.user_name {
+  background: #22b14c;
+  color: #fff;
+  display: flex;
+  padding: 8px 8px;
+  border-radius: 50%;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  margin: 0;
+}
+</style>
+
+<header>
+    <section class="topHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-right">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="[##cms.cms.cdn##]/images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="search">
+                        <form action="search.bc">
+                            <input type="text" name="q" placeholder="جستجو" class="live-search-box">
+                            <button type="submit">
+                                <i></i>
+                            </button>
+                        </form>
+                        <div class="box">
+                            <div class="suggest">
+                                <h5>پیشنهادی</h5>
+                                <ul class="">
+                                    <basis core="print" datamembername="db.cat">
+                                        <face filter="catid in (69368,69383,69384,69385,69387)">
+                                            <li>
+                                                <a href="/@link">@title</a>
+                                            </li>
+
+                                        </face>
+                                    </basis>
+
+
+                                </ul>
+                            </div>
+                            <hr>
+                            <ul class="links live-search-list">
+                                <basis core="print" datamembername="db.cat">
+                                    <face>
+                                        <li>
+                                            <a href="/@link">
+                                                <div class="icon"></div>
+                                                <div class="text">
+                                                    <h4>@title</h4>
+                                                    <div class="cat">
+                                                        در دسته <span>@title</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                    </face>
+                                </basis>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-left">
+                    <div class="active disnone1">
+                        <a href="/">
+                            <i class="fal fa-home-alt"></i>
+                            <span>خانه</span>
+                        </a>
+                    </div>
+                    <div class="disnone1">
+                        <a href="/محصولات">
+                            <i class="fal fa-desktop"></i>
+                            <span>محصولات</span>
+                        </a>
+                    </div>
+                    <basis core="call" file="shoppingFly/cart-user-info.inc"></basis>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mainHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-menu">
+                    <button class="catBtn">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="spann">
+                            محصولات
+                        </span>
+
+                    </button>
+                    <ul>
+                        <li>
+                            <a href="/بلاگ">بلاگ</a>
+                        </li>
+  <li>
+                            <a href="/ویدیو">ویدیوها</a>
+                        </li>
+                        <li>
+                            <a href="/درباره-ما">درباره ما</a>
+                        </li>
+                        <li>
+                            <a href="/سایت-گردی">سایت گردی</a>
+                        </li>
+                        <!-- <li>
+                                <a href="#">ایزی پیسی</a>
+                            </li> -->
+                        <li>
+                            <a href="/تماس-با-ما">تماس با ما</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-info">
+                    <a href="tel:02166966583">
+                        <span>021-66966583</span>
+                        <i class="phone"></i>
+                    </a>
+                    <a href="tel:09125628758">
+                        <span>09125628758</span>
+                        <i class="mobile"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mainMenu">
+        <div class="first">
+            <button class="close">
+                <i class="fal fa-times"></i>
+            </button>
+
+            <div class="search">
+                <form action="search.bc">
+                    <input type="text" name="q" placeholder="جستجو">
+                    <button type="submit">
+                        <i></i>
+                    </button>
+                </form>
+
+            </div>
+            <ul class="cat-desc">
+
+                <!-- <li>
+                    <button data-id="1">کامپیوتر</button>
+                </li>
+                <li>
+                    <button data-id="2">لپ تاپ</button>
+                </li> -->
+                <basis core="print" datamembername="db.cat">
+                    <face  filter="parentid in (69367) and catid <> 201979">
+                        <li>
+                            <button data-id="@catid"> @title</button>
+                        </li>
+                    </face>
+                </basis>
+                <basis core="print" datamembername="db.cat">
+                    <face  filter=" catid = 201979">
+                        <li>
+                            <a style="font-size: 20px;" href="/@link"> @title</button>
+                        </li>
+                    </face>
+                </basis>
+              
+                <!-- <li>
+                        <a href="/فاکتور-سازمانی"> فاکتور سازمانی</a>
+                    </li> -->
+
+            </ul>
+
+            <ul class="cat-mob">
+                <li>
+                    <a href="/محصولات"> محصولات</a>
+                </li>
+                <li>
+                    <a href="/بلاگ">بلاگ</a>
+                </li>
+                <li>
+                    <a href="/درباره-ما">درباره ما</a>
+                </li>
+                <li>
+                    <a href="/سایت-گردی">سایت گردی</a>
+                </li>
+                <!-- <li>
+                        <a href="#">ایزی پیسی</a>
+                    </li> -->
+                <li>
+                    <a href="/تماس-با-ما">تماس با ما</a>
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="second" data-id="69368">
+            <basis core="print" datamembername="db.cat">
+                <face filter="catid=69368">
+                    <img src="[##cms.cms.cdn##]/@image" alt="@title">
+                    <h4>@title</h4>
+                    <p>
+                        @URLdescription
+                    </p>
+                </face>
+            </basis>
+
+
+            <ul>
+                <basis core="tree" datamembername="db.cat" idcol="catid" parentidcol="parentID" nullvalue="69368">
+                    <layout>
+                        @child
+                    </layout>
+                    <face level="end">
+                        <li>
+                            <a href="/@link">@title</a>
+                        </li>
+                    </face>
+                    <face level="1">
+                        <li>
+                            <button data-num="@catid">@title</button>
+                        </li>
+
+                    </face>
+
+                </basis>
+
+
+            </ul>
+        </div>
+        <basis core="tree" datamembername="db.cat" idcol="catid" parentidcol="parentID" nullvalue="69368">
+            <layout>
+                @child
+            </layout>
+
+            <face level="end">
+                <li>
+                    <a href="/@link">@title</a>
+                </li>
+
+
+            </face>
+
+            <face level="2">
+                <li>
+                    <a href="/@link">@title</a>
+                </li>
+
+                @child
+            </face>
+
+            <face level="1">
+                <div class="third" data-num="@catid">
+                    <img src="[##cms.cms.cdn##]/@image" alt="@title">
+                    <h4>@title</h4>
+                    <p>
+                        @URLdescription
+                    </p>
+                    <ul>
+                        @child
+
+                    </ul>
+                </div>
+            </face>
+
+
+        </basis>
+
+
+        <div class="second" data-id="69383">
+            <basis core="print" datamembername="db.cat">
+                <face filter="catid=69383">
+                    <img src="[##cms.cms.cdn##]/@image" alt="@title">
+                    <h4>@title</h4>
+                    <p>
+                        @URLdescription
+                    </p>
+                </face>
+            </basis>
+
+
+            <ul>
+                <basis core="tree" datamembername="db.cat" idcol="catid" parentidcol="parentID" nullvalue="69383">
+                    <layout>
+                        @child
+                    </layout>
+                    <face level="end">
+                        <li>
+                            <a href="/@link">@title</a>
+                        </li>
+                    </face>
+                    <face level="1">
+                        <li>
+                            <button data-num="@catid">@title</button>
+                        </li>
+                    </face>
+
+                </basis>
+
+
+            </ul>
+        </div>
+        <basis core="tree" datamembername="db.cat" idcol="catid" parentidcol="parentID" nullvalue="69383">
+            <layout>
+                @child
+            </layout>
+            <face level="2">
+                <li>
+                    <a href="/@link">@title</a>
+                </li>
+            </face>
+            <face level="1">
+                <div class="third" data-num="@catid">
+                    <img src="[##cms.cms.cdn##]/@image" alt="@title">
+                    <h4>@title</h4>
+                    <p>
+                        @URLdescription
+                    </p>
+                    <ul>
+                        @child
+
+                    </ul>
+                </div>
+            </face>
+
+
+        </basis>
+
+        <div class="second" data-id="202108">
+            <basis core="print" datamembername="db.cat">
+                <face filter="catid=202108">
+                    <img src="[##cms.cms.cdn##]/@image" alt="@title">
+                    <h4>@title</h4>
+                    <p>
+                        @URLdescription
+                    </p>
+                </face>
+            </basis>
+
+
+            <ul>
+                <basis core="tree" datamembername="db.cat" idcol="catid" parentidcol="parentID" nullvalue="202108">
+                    <layout>
+                        @child
+                    </layout>
+                    <face level="end">
+                        <li>
+                            <a href="/@link">@title</a>
+                        </li>
+                    </face>
+                    <face level="1">
+                        <li>
+                            <button data-num="@catid">@title</button>
+                        </li>
+                    </face>
+
+                </basis>
+
+
+            </ul>
+        </div>
+        <basis core="tree" datamembername="db.cat" idcol="catid" parentidcol="parentID" nullvalue="202108">
+            <layout>
+                @child
+            </layout>
+            <face level="2">
+                <li>
+                    <a href="/@link">@title</a>
+                </li>
+            </face>
+            <face level="1">
+                <div class="third" data-num="@catid">
+                    <img src="[##cms.cms.cdn##]/@image" alt="@title">
+                    <h4>@title</h4>
+                    <p>
+                        @URLdescription
+                    </p>
+                    <ul>
+                        @child
+
+                    </ul>
+                </div>
+            </face>
+
+
+        </basis>
+
+    
+
+
+  
+      
+        <div class="second" data-id="209320">
+            <basis core="print" datamembername="db.cat">
+                <face filter="catid=209320">
+                    <img src="[##cms.cms.cdn##]/@image" alt="@title">
+                    <h4>@title</h4>
+                    <p>
+                        @URLdescription
+                    </p>
+                </face>
+            </basis>
+
+
+            <ul>
+                <basis core="tree" datamembername="db.cat" idcol="catid" parentidcol="parentID" nullvalue="209320">
+                    <layout>
+                        @child
+                    </layout>
+                    <face level="end">
+                        <li>
+                            <a href="/@link">@title</a>
+                        </li>
+                    </face>
+                    <face level="1">
+                        <li>
+                            <button data-num="@catid">@title</button>
+                        </li>
+                    </face>
+
+                </basis>
+
+
+            </ul>
+        </div>
+        <basis core="tree" datamembername="db.cat" idcol="catid" parentidcol="parentID" nullvalue="209320">
+            <layout>
+                @child
+            </layout>
+            <face level="2">
+                <li>
+                    <a href="/@link">@title</a>
+                </li>
+            </face>
+            <face level="1">
+                <div class="third" data-num="@catid">
+                    <img src="[##cms.cms.cdn##]/@image" alt="@title">
+                    <h4>@title</h4>
+                    <p>
+                        @URLdescription
+                    </p>
+                    <ul>
+                        @child
+
+                    </ul>
+                </div>
+            </face>
+
+
+        </basis>
+
+    
+
+
+
+
+
+
+        <div class="second" data-id="69386">
+            <basis core="print" datamembername="db.cat">
+                <face filter="catid=69386">
+                    <img src="[##cms.cms.cdn##]/@image" alt="@title">
+                    <h4>@title</h4>
+                    <p>
+                        @URLdescription
+                    </p>
+                </face>
+            </basis>
+
+
+            <ul>
+                <basis core="tree" datamembername="db.cat" idcol="catid" parentidcol="parentID" nullvalue="69386">
+                    <layout>
+                        @child
+                    </layout>
+                    <face level="end">
+                        <li>
+                            <a href="/@link">@title</a>
+                        </li>
+                    </face>
+                    <face level="1">
+                        <li>
+                            <button data-num="@catid">@title</button>
+                        </li>
+                    </face>
+
+                </basis>
+
+
+            </ul>
+        </div>
+        <basis core="tree" datamembername="db.cat" idcol="catid" parentidcol="parentID" nullvalue="69386">
+            <layout>
+                @child
+            </layout>
+            <face level="2">
+                <li>
+                    <a href="/@link">@title</a>
+                </li>
+            </face>
+            <face level="1">
+                <div class="third" data-num="@catid">
+                    <img src="[##cms.cms.cdn##]/@image" alt="@title">
+                    <h4>@title</h4>
+                    <p>
+                        @URLdescription
+                    </p>
+                    <ul>
+                        @child
+
+                    </ul>
+                </div>
+            </face>
+
+
+        </basis>
+
+    
+
+        
+
+        <div class="second" data-id="200246">
+            <basis core="print" datamembername="db.cat">
+                <face filter="catid=200246">
+                    <img src="[##cms.cms.cdn##]/@image" alt="@title">
+                    <h4>@title</h4>
+                    <p>
+                        @URLdescription
+                    </p>
+                </face>
+            </basis>
+
+
+            <ul>
+                <basis core="tree" datamembername="db.cat" idcol="catid" parentidcol="parentID" nullvalue="200246">
+                    <layout>
+                        @child
+                    </layout>
+                    <face level="end">
+                        <li>
+                            <a href="/@link">@title</a>
+                        </li>
+                    </face>
+                    <face level="1">
+                        <li>
+                            <button data-num="@catid">@title</button>
+                        </li>
+                    </face>
+
+                </basis>
+
+
+            </ul>
+        </div>
+        <basis core="tree" datamembername="db.cat" idcol="catid" parentidcol="parentID" nullvalue="200246">
+            <layout>
+                @child
+            </layout>
+            <face level="2">
+                <li>
+                    <a href="/@link">@title</a>
+                </li>
+            </face>
+            <face level="1">
+                <div class="third" data-num="@catid">
+                    <img src="[##cms.cms.cdn##]/@image" alt="@title">
+                    <h4>@title</h4>
+                    <p>
+                        @URLdescription
+                    </p>
+                    <ul>
+                        @child
+
+                    </ul>
+                </div>
+            </face>
+
+
+        </basis>
+
+        <div class="second" data-id="209493">
+            <basis core="print" datamembername="db.cat">
+                <face filter="catid=209493">
+                    <img src="[##cms.cms.cdn##]/@image" alt="@title">
+                    <h4>@title</h4>
+                    <p>
+                        @URLdescription
+                    </p>
+                </face>
+            </basis>
+
+
+            <ul>
+                <basis core="tree" datamembername="db.cat" idcol="catid" parentidcol="parentID" nullvalue="209493">
+                    <layout>
+                        @child
+                    </layout>
+                    <face level="end">
+                        <li>
+                            <a href="/@link">@title</a>
+                        </li>
+                    </face>
+                    <face level="1">
+                        <li>
+                            <button data-num="@catid">@title</button>
+                        </li>
+                    </face>
+
+                </basis>
+
+
+            </ul>
+        </div>
+        <basis core="tree" datamembername="db.cat" idcol="catid" parentidcol="parentID" nullvalue="209493">
+            <layout>
+                @child
+            </layout>
+            <face level="2">
+                <li>
+                    <a href="/@link">@title</a>
+                </li>
+            </face>
+            <face level="1">
+                <div class="third" data-num="@catid">
+                    <img src="[##cms.cms.cdn##]/@image" alt="@title">
+                    <h4>@title</h4>
+                    <p>
+                        @URLdescription
+                    </p>
+                    <ul>
+                        @child
+
+                    </ul>
+                </div>
+            </face>
+
+
+        </basis>
+
+    </section>
+    
+</header>

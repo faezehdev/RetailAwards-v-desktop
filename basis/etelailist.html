@@ -1,0 +1,105 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" catid="211184"> 
+    <member name="list-blogg" size="268x268" propertyid="7249" type="list"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" catid="211184"> 
+    <member name="cat-blog"  propertyid="7249" request="cat" type="tree"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" catid="211184" >
+     <member name="listEtelaei" size="365x521" propertyid="7249" type="list" order="id desc"/>
+     </basis>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اطلاعیه</title>
+    <meta name="description" content="اطلاعیه">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/outputDesk.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/plyr.css" />
+</head>
+<body>
+    <main class="EtelaeiList-C w-full overflow-hidden" dir="rtl">
+  <basis core="call" file="header1.inc" pageindex="[##cms.cms.pageindex##]" />
+        <div class="EtelaeiListContents w-90p mx-auto mt-[2em] flex flex-col">
+            <div class="Title-main  relative overflow-hidden w-max
+              flex justify-start gap-4 items-center my-[4em]">
+              <span class="line-content relative w-[60px]">
+                <span class="line duration-700 absolute flex left-0 mx-auto
+                justify-center  right-0  delay-100  w-0 h-[2px]  bg-black my-auto"></span>
+              </span>
+              <basis core="print" datamembername="db.cat-blog">
+                  <layout>
+                      @child
+                  </layout>
+                  <face filter="catid=211184">
+                    <h1 class="font-IRANSansWeb500 relative duration-700 translate-y-[100%]
+                    font-medium text-2xl leading-37.57 text-black">
+                 @title
+                    </h1>
+                  </face>
+              </basis>
+            
+            </div>
+            <div class="listcontents gap-[3em] w-full grid grid-cols-[3fr,1fr]">
+                <div class="EtelaeiLists w-full grid grid-cols-[1fr,1fr,1fr] gap-[3em] mb-[5em]">
+                    <basis core="print" datamembername="db.list-blogg">
+                        <layout>
+                            @child
+                        </layout>
+                        <face>
+                            <a href="@link" alt="@title" title="@title" class="EtalaeiItem group/EtalaeiItem w-full flex relative justify-center opacity-0 translate-y-[100%] duration-1000 flex-col gap-3 border-b border-[#febe1bbe] pb-[.5em]
+                            items-center overflow-hidden">
+                            <div class="IMG w-full flex justify-center">
+                               <img src="@00268X00268prp" alt="@title" title="@title" class="w-full object-cover">
+                            </div>
+                             <div class="Date w-full flex justify-start">
+                               <span class="font-IRANSansWeb400 font-normal text-xs leading-18.78 text-gray-middle">
+                                  @prp_7249
+                               </span>
+                             </div>
+                             <div class="title w-full flex justify-start">
+                               <h2 class="font-IRANSansWeb500 font-medium text-sm leading-21.91 text-black">
+                                @title
+                               </h2>
+                             </div>
+                             <span class="ShowMore ml-auto w-max flex gap-[10px] overflow-hidden justify-center">
+                               <p class="font-IRANSansWeb400 font-normal text-sm leading-21.91 text-black">مشاهده </p>
+                               <div class="circle w-[20px] h-[20px] rounded-full border-[1px] border-black relative 
+                               ">
+                               <div class="dot w-[5px] h-[5px]  translate-y-[-50%]
+                                bg-black absolute top-[70%] translate-x-[-50%]"></div>
+                               </div>
+                           </span>
+                           </a>
+                        </face>
+                    </basis>
+                   
+        
+                </div>
+                <div class="pinSec w-full flex justify-center">
+                    <basis core="print" datamembername="db.list">
+                        <layout>
+                            @child
+                        </layout>
+                        <face>
+                            <div class="IMG w-full">
+                                <a href="@link" alt="@title" title="@title"  class="w-full">
+                                <img src="@00365X00521prp" alt="@title" title="@title"  class="w-full object-cover">
+                            </a>
+                             </div> 
+                        </face>
+                    </basis>
+               
+                </div>
+         
+            </div>
+          
+        </div>
+   <basis core="call" file="footer.inc" pageindex="[##cms.cms.pageindex##]" />
+    </main>
+<basis core="call" file="script.inc" />
+    <script src="[##cms.cms.cdn##]/js/etelaeiList.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2363919">
+     <member name="blogshow" type="view"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2363919">
+    <member name="text" type="view" postsql="select * from [db.text] where TypeID=250 "/> 
+</basis>
+<basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="2363919"> 
+    <member name="image-blog" type="list" format="4"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2363919"> 
+    <member name="blog" size="268x268" propertyid="7249" type="list"/> 
+</basis>
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="1" usedforid="2363919"> 
+    <member type="list" name="relatedBlog" size="268x268" blgid="222"  propertyid="7249" />
+ </basis>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[##cms.seo.title##]</title>
+    <meta name="description" content="[##cms.seo.description##]">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/outputDesk.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/plyr.css" />
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/swiper-bundle.min.css" />
+</head>
+<body>
+    <main class="Etelaei-C w-full overflow-hidden" dir="rtl">
+        <basis core="call" file="header1.inc" pageindex="[##cms.cms.pageindex##]" />
+        <div class="EtelaeiShow w-full mt-[2em] flex flex-col">
+         <section class="Section-1 section w-90p mx-auto flex flex-col mt-[1.5em]">
+            <div class="etelaeiContainer w-full gap-[5em] flex ">
+              <div class="DetailSec w-full flex flex-col pt-[5em]">
+                <div class="Boxes mb-[2em] gap-4 w-full flex flex-col pt-[3em] pb-[.8em] border-b border-[#0000005c]">
+                    <div class="Socials w-full flex justify-start items-start gap-3">
+                        <span class="Social-item telegram">
+                            <a href="https://t.me/share/url?url=http://zpps.undertest.ir/[##db.blog.link##]"
+                            alt="[##db.blog.link##]" title="[##db.blog.link##]">
+                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5238 0C5.18962 0 0.0488281 5.14079 0.0488281 11.475C0.0488281 17.8092 5.18962 22.95 11.5238 22.95C17.858 22.95 22.9988 17.8092 22.9988 11.475C22.9988 5.14079 17.858 0 11.5238 0ZM16.8482 7.80298C16.6761 9.61603 15.9302 14.0224 15.5515 16.0535C15.3909 16.9141 15.0696 17.201 14.7712 17.2354C14.1057 17.2928 13.6008 16.7994 12.9582 16.3748C11.9484 15.7092 11.3746 15.2961 10.3993 14.6535C9.26323 13.9077 9.99763 13.4946 10.6517 12.829C10.8238 12.6569 13.7614 9.98323 13.8188 9.74225C13.8268 9.70576 13.8257 9.66786 13.8157 9.63187C13.8057 9.59587 13.7871 9.56286 13.7614 9.5357C13.6926 9.47833 13.6008 9.50128 13.5204 9.51275C13.4172 9.5357 11.8107 10.6029 8.67801 12.7143C8.21901 13.0241 7.80591 13.1847 7.43871 13.1733C7.02561 13.1618 6.24531 12.9438 5.66009 12.7487C4.93717 12.5192 4.37489 12.393 4.42079 11.9913C4.44374 11.7848 4.73062 11.5782 5.26994 11.3602C8.62064 9.9029 10.8468 8.93901 11.9599 8.48001C15.1499 7.14891 15.804 6.91941 16.24 6.91941C16.3318 6.91941 16.5498 6.94236 16.6875 7.05711C16.8023 7.14891 16.8367 7.27513 16.8482 7.36693C16.8367 7.43578 16.8597 7.64233 16.8482 7.80298Z" fill="black"/>
+                                    </svg>
+                                    
+                            </a>
+                        </span>
+                        <span class="Social-item whatsapp">
+                            <a href="https://api.whatsapp.com/send?text=http://zpps.undertest.ir/[##db.blog.link##]"
+                            alt="[##db.blog.link##]" title="[##db.blog.link##]">
+                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5746 0C17.9122 0 23.0496 5.13734 23.0496 11.475C23.0496 17.8126 17.9122 22.9499 11.5746 22.9499C9.54671 22.9532 7.55452 22.4165 5.80268 21.3951L0.104216 22.9499L1.65563 17.2492C0.633318 15.4968 0.0962376 13.5037 0.0996253 11.475C0.0996253 5.13734 5.23697 0 11.5746 0ZM7.66392 6.08173L7.43442 6.09091C7.28585 6.09996 7.14064 6.139 7.00756 6.20566C6.88308 6.27615 6.76945 6.36427 6.67019 6.46729C6.53249 6.59696 6.45446 6.70941 6.3707 6.81843C5.94626 7.37026 5.71774 8.04776 5.72121 8.74393C5.72351 9.3062 5.87039 9.85356 6.09989 10.3653C6.56921 11.4004 7.34148 12.4962 8.36045 13.5118C8.60602 13.7562 8.84699 14.0018 9.10633 14.2301C10.3725 15.3449 11.8813 16.1488 13.5127 16.5779L14.1645 16.6777C14.3768 16.6892 14.5891 16.6731 14.8025 16.6628C15.1367 16.6455 15.463 16.5551 15.7584 16.3977C15.9086 16.3203 16.0553 16.2361 16.1979 16.1453C16.1979 16.1453 16.2472 16.1131 16.3413 16.042C16.4962 15.9273 16.5914 15.8458 16.72 15.7115C16.8152 15.6128 16.8978 15.4969 16.9609 15.365C17.0504 15.1779 17.14 14.8211 17.1767 14.5239C17.2042 14.2967 17.1962 14.1727 17.1927 14.0959C17.1881 13.9731 17.086 13.8457 16.9747 13.7918L16.3069 13.4923C16.3069 13.4923 15.3085 13.0574 14.6981 12.7797C14.6342 12.7518 14.5657 12.7358 14.4961 12.7326C14.4176 12.7246 14.3383 12.7334 14.2635 12.7585C14.1887 12.7837 14.1201 12.8245 14.0624 12.8784C14.0566 12.8761 13.9797 12.9415 13.1501 13.9467C13.1025 14.0107 13.0369 14.059 12.9617 14.0856C12.8865 14.1122 12.8051 14.1157 12.7278 14.0959C12.6531 14.0758 12.5798 14.0505 12.5087 14.0201C12.3664 13.9604 12.317 13.9375 12.2195 13.8962C11.5609 13.6088 10.9511 13.2205 10.4122 12.7452C10.2676 12.619 10.1333 12.4813 9.99564 12.3482C9.5442 11.9159 9.15076 11.4268 8.82519 10.8932L8.75749 10.7842C8.70886 10.7109 8.66954 10.6319 8.64044 10.5489C8.59684 10.3803 8.71044 10.2449 8.71044 10.2449C8.71044 10.2449 8.98928 9.93962 9.11895 9.77438C9.24517 9.61373 9.35189 9.45767 9.42074 9.34636C9.55615 9.12834 9.5986 8.90458 9.52746 8.7313C9.20616 7.94642 8.87339 7.16497 8.53143 6.38926C8.46373 6.2355 8.26292 6.12534 8.08047 6.10354C8.0185 6.09665 7.95653 6.08977 7.89457 6.08518C7.74047 6.07752 7.58605 6.07905 7.43213 6.08977L7.66392 6.08173Z" fill="black"/>
+                                    </svg>
+                                    
+                                    
+                            </a>
+                        </span>
+                        <span class="Social-item instagram">
+                            <a href="https://www.instagram.com/?url=http://zpps.undertest.ir/[##db.blog.link##]" 
+                            alt="[##db.blog.link##]" title="[##db.blog.link##]">
+                                <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.4534 0C16.7443 0.00344241 17.3995 0.0103272 17.9652 0.0263918L18.1878 0.0344241C18.4448 0.0436039 18.6984 0.0550785 19.0048 0.0688482C20.2256 0.126222 21.0587 0.318997 21.7896 0.602422C22.5469 0.89388 23.1849 1.28861 23.8229 1.92546C24.4063 2.49907 24.8578 3.19294 25.1459 3.95877C25.4293 4.68971 25.622 5.52278 25.6794 6.74483C25.6932 7.05006 25.7047 7.30365 25.7138 7.56183L25.7207 7.78444C25.7379 8.349 25.7448 9.0042 25.7471 10.2951L25.7483 11.1511V12.6543C25.7511 13.4913 25.7423 14.3282 25.7219 15.165L25.715 15.3876C25.7058 15.6458 25.6943 15.8994 25.6806 16.2046C25.6232 17.4266 25.4281 18.2586 25.1459 18.9906C24.8586 19.7569 24.407 20.4509 23.8229 21.024C23.2491 21.6072 22.5553 22.0587 21.7896 22.347C21.0587 22.6304 20.2256 22.8232 19.0048 22.8806C18.7325 22.8934 18.4602 22.9049 18.1878 22.915L17.9652 22.9219C17.3995 22.9379 16.7443 22.946 15.4534 22.9483L14.5975 22.9494H13.0955C12.2581 22.9523 11.4208 22.9435 10.5837 22.923L10.3611 22.9161C10.0887 22.9058 9.81639 22.894 9.54414 22.8806C8.32326 22.8232 7.49022 22.6304 6.75815 22.347C5.99243 22.0594 5.29886 21.6078 4.72604 21.024C4.14205 20.4506 3.69016 19.7566 3.4019 18.9906C3.11848 18.2597 2.92571 17.4266 2.86834 16.2046C2.85555 15.9323 2.84408 15.66 2.83391 15.3876L2.82818 15.165C2.80703 14.3283 2.79747 13.4913 2.79949 12.6543V10.2951C2.79629 9.45814 2.8047 8.62117 2.82473 7.78444L2.83277 7.56183C2.84195 7.30365 2.85342 7.05006 2.86719 6.74483C2.92456 5.52278 3.11733 4.69086 3.40075 3.95877C3.68889 3.19215 4.14167 2.49807 4.72719 1.92546C5.29986 1.34194 5.99298 0.890422 6.75815 0.602422C7.49022 0.318997 8.32211 0.126222 9.54414 0.0688482C9.84935 0.0550785 10.1041 0.0436039 10.3611 0.0344241L10.5837 0.0275392C11.4204 0.00715185 12.2574 -0.00164627 13.0943 0.00114739L15.4534 0ZM14.2739 5.73735C12.7523 5.73735 11.293 6.34182 10.2171 7.41779C9.14114 8.49375 8.53668 9.95307 8.53668 11.4747C8.53668 12.9963 9.14114 14.4557 10.2171 15.5316C11.293 16.6076 12.7523 17.2121 14.2739 17.2121C15.7955 17.2121 17.2548 16.6076 18.3307 15.5316C19.4066 14.4557 20.0111 12.9963 20.0111 11.4747C20.0111 9.95307 19.4066 8.49375 18.3307 7.41779C17.2548 6.34182 15.7955 5.73735 14.2739 5.73735ZM14.2739 8.0323C14.7259 8.03222 15.1736 8.12119 15.5912 8.29411C16.0089 8.46704 16.3884 8.72054 16.7081 9.04015C17.0278 9.35975 17.2815 9.7392 17.4545 10.1568C17.6276 10.5744 17.7167 11.0221 17.7168 11.4741C17.7168 11.9262 17.6279 12.3738 17.455 12.7915C17.282 13.2092 17.0285 13.5887 16.7089 13.9085C16.3893 14.2282 16.0099 14.4818 15.5923 14.6549C15.1747 14.8279 14.7271 14.917 14.275 14.9171C13.3621 14.9171 12.4865 14.5544 11.8409 13.9089C11.1954 13.2633 10.8327 12.3877 10.8327 11.4747C10.8327 10.5617 11.1954 9.68613 11.8409 9.04055C12.4865 8.39498 13.3621 8.0323 14.275 8.0323M20.2991 4.01615C19.9187 4.01615 19.5539 4.16726 19.2849 4.43626C19.0159 4.70525 18.8648 5.07008 18.8648 5.45049C18.8648 5.8309 19.0159 6.19573 19.2849 6.46472C19.5539 6.73371 19.9187 6.88482 20.2991 6.88482C20.6795 6.88482 21.0443 6.73371 21.3133 6.46472C21.5823 6.19573 21.7334 5.8309 21.7334 5.45049C21.7334 5.07008 21.5823 4.70525 21.3133 4.43626C21.0443 4.16726 20.6795 4.01615 20.2991 4.01615Z" fill="black"/>
+                                    </svg>
+                                    
+                                    
+                            </a>
+                        </span>
+                        <span class="Social-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12C9 11.76 8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5C21 3.34 19.66 2 18 2C16.34 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12C3 13.66 4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.35C15.11 18.56 15.08 18.78 15.08 19C15.08 20.61 16.39 21.92 18 21.92C19.61 21.92 20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08Z" fill="black"/>
+                                </svg>
+                                
+                        </span>
+                    </div>
+                    <div class="Title w-full flex justify-start items-start">
+                        <basis core="print" datamembername="db.blogshow">
+                            <layout>
+                                @child
+                            </layout>
+              
+                            <face filter="TypeID=150">
+                                <h1 class=" font-IRANSansWeb500 font-medium text-2xl leading-37.57 text-black text-justify">
+                             @Answer
+                                </h1>
+                            </face>
+                        </basis>
+                      
+                    </div>
+                    <basis core="print" datamembername="db.blogshow">
+                        <layout>
+                            @child
+                        </layout>
+          
+                        <face filter="TypeID=128">
+                    <span class="Date w-full flex justify-start font-IRANSansWeb400 font-normal text-sm leading-21.91 text-gray-middle">
+                        @Answer
+                    </span>
+                        </face>
+                    </basis>
+                </div>
+                <div class="title w-full my-[.5em] flex justify-start overflow-hidden">
+                    <basis core="print" datamembername="db.text">
+                        <layout>
+                            @child
+                        </layout>
+                        <face filter="RowNumber=1">
+                            <h2 class="font-IRANSansWeb400 font-normal text-lg leading-28.17 text-black">
+                              @text
+                            </h2>
+                        </face>
+                    </basis>
+                  
+                </div>
+                <div class="Text w-full flex flex-col overflow-hidden">
+                    <basis core="print" datamembername="db.text">
+                        <layout>
+                            @child
+                        </layout>
+                        <face filter="RowNumber=1">
+                    <p class="font-IRANSansWeb300 font-light text-sm leading-25.04 text-black">
+                     @largetext
+                    </p>
+                        </face>
+                    </basis>
+                </div>
+              </div>
+              <basis core="print" datamembername="db.image-blog">
+                  <layout>
+                      @child
+                  </layout>
+                  <face filter="ord=1">
+                    <div class="ImgSec w-auto flex items-start justify-end">
+                        <img src="@largeIMG" alt="[##db.blog.title##]" title="[##db.blog.title##]" class="w-auto max-w-max object-contain min-w-[545px]">
+                      </div>
+                  </face>
+              </basis>
+           
+            </div>
+         </section>
+         <section class="Section-2 section w-90p mx-auto flex flex-col mt-[.5em]">
+            <basis core="print" datamembername="db.text">
+                <layout>
+                    @child
+                </layout>
+                <face filter="RowNumber=2">
+            <div class="title overflow-hidden w-full my-[.5em] flex justify-start">
+
+                <h2 class="font-IRANSansWeb400 font-normal text-lg leading-28.17 text-black">
+                    @text
+                </h2>
+            </div>
+                </face>
+            </basis>
+            <basis core="print" datamembername="db.text">
+                <layout>
+                    @child
+                </layout>
+                <face filter="RowNumber not in (1,2)">
+            <div class="Text overflow-hidden w-full flex flex-col">
+
+                <p class="font-IRANSansWeb300 font-light text-sm leading-25.04 text-black">
+                    @largetext  
+                 </p>
+            </div>
+                </face>
+            </basis>
+          
+         </section>
+         <basis core="print" datamembername="db.relatedBlog">
+             <layout>
+                <section class="Section-3 mb-[3.5em] w-full mx-auto flex flex-col mt-[.5em]">
+                    <div class="Top w-90p mx-auto flex justify-between items-center" >
+                        <div class="Title-main w-auto relative overflow-hidden 
+                        flex justify-start gap-4 items-center my-[4em]">
+                        <span class="line-content relative w-[60px]">
+                          <span class="line duration-700 absolute flex left-0 mx-auto
+                          justify-center  right-0  delay-100  w-0 h-[2px]  bg-black my-auto"></span>
+                        </span>
+                        
+                          <h3 class="font-IRANSansWeb500 relative duration-700 translate-y-[100%]
+                          font-medium text-2xl leading-37.57 text-black">
+                          اطلاعیه های مرتبط
+                          </h3>
+                      </div>
+                        <a href="اطلاعیه" title="اطلاعیه" alt="اطلاعیه" class="Show w-max bg-light-gray px-[4.5em] text-black rounded-[5px]
+                         py-[.8em] font-IRANSansWeb400 font-normal text-sm leading-21.91">
+                            مشاهده لیست
+                        </a>
+                    </div>
+                    <div class="Related-Etelaei mr-auto w-[95%] flex justify-start">
+                        <div class="swiper-Etelaei w-full flex">
+                         <div class="swiper-wrapper w-full">
+                 @child
+                         </div>
+                        </div>
+                    </div>
+                </section>
+
+             </layout>
+             <face>
+                <div class="swiper-slide w-full">
+                    <a href="@link" alt="@title" title="@title" class="EtalaeiItem group/EtalaeiItem w-full flex relative justify-center duration-1000 flex-col gap-3 border-b border-[#febe1bbe] pb-[.5em]
+                    items-center overflow-hidden">
+                    <div class="IMG w-full flex justify-center">
+                       <img src="@00268X00268prp" alt="@title" title="@title" class="w-full object-cover">
+                    </div>
+                     <div class="Date w-full flex justify-start">
+                       <span class="font-IRANSansWeb400 font-normal text-xs leading-18.78 text-gray-middle">
+                        @prp_7249
+                       </span>
+                     </div>
+                     <div class="title w-full flex justify-start">
+                       <h2 class="font-IRANSansWeb500 font-medium text-sm leading-21.91 text-black">
+                        @title
+                       </h2>
+                     </div>
+                     <span class="ShowMore ml-auto w-max flex gap-[10px] overflow-hidden justify-center">
+                       <p class="font-IRANSansWeb400 font-normal text-sm leading-21.91 text-black">مشاهده </p>
+                       <div class="circle w-[20px] h-[20px] rounded-full border-[1px] border-black relative 
+                       ">
+                       <div class="dot w-[5px] h-[5px]  translate-y-[-50%]
+                        bg-black absolute top-[70%] translate-x-[-50%]"></div>
+                       </div>
+                   </span>
+                   </a>
+                </div>
+             </face>
+         </basis>
+    
+
+        </div>
+        <basis core="call" file="footer.inc" pageindex="[##cms.cms.pageindex##]" />
+    </main>
+    <basis core="call" file="script.inc" />
+    <script src="[##cms.cms.cdn##]/js/etelaei.js"></script>
+
+
+</body>
+
+</html>
