@@ -514,3 +514,26 @@ main.Etelaei-C .section h2,
   height: 13px;
   background-color: black;
 }
+
+
+.posterShow .pagination1 i {
+  font-family: "IRANSansWeb700";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25.04px;
+  color: #FEBE1B;
+  margin: 0 5px;
+}
+
+.posterShow .pagination1 .current {
+  font-family: "IRANSansWeb400";
+  font-size: 25px;
+  line-height: 39.13px;
+}
+
+.posterShow .pagination1 .total {
+  font-family: "IRANSansWeb300";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21.91px;
+}

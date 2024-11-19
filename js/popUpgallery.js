@@ -74,6 +74,8 @@ closePop.addEventListener("click",function (params) {
     if (!galleryFlag) {
                     popUpGalleryContainer.classList.remove("popOpen")
                     galleryFlag=!galleryFlag
+                    body.style.overflow="auto"
+
     }
 })
 
