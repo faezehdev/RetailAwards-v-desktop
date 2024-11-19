@@ -1,0 +1,124 @@
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="1" > 
+    <member request="cat" type="tree" name="poster" parentid="211050" /> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" catid="211050">
+    <member name="posterList" type="list" size="131x170"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" catid="211050">
+   <member name="posterHover" type="list" size="280x400"/> 
+</basis>
+<basis core="inlinesource" name="listP"  >
+    <member name="list" lefttblcol="db.posterList.id" righttblcol="db.posterHover.id" jointype="leftjoin" 
+    format="join" type="list" ></member>
+</basis>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دوره های برگزار شده</title>
+    <meta name="description" content="دوره های برگزار شده">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/outputDesk.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/plyr.css" />
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/swiper-bundle.min.css" />
+</head>
+<body>
+    <main class="posterList-C w-full overflow-hidden" dir="rtl">
+        <basis core="call" file="header1.inc" pageindex="[##cms.cms.pageindex##]" />
+        <div class="posterListContents w-90p mx-auto mt-[2em] flex flex-col">
+            <div class="top w-full flex justify-between">
+                <div class="Title-main  relative overflow-hidden w-max
+                flex justify-start gap-4 items-center my-[4em]">
+                <span class="line-content relative w-[60px]">
+                  <span class="line duration-700 absolute flex left-0 mx-auto
+                  justify-center  right-0  delay-100  w-0 h-[2px]  bg-black my-auto"></span>
+                </span>
+                <basis core="print" datamembername="db.poster">
+                    <layout>
+                        @child
+                    </layout>
+                    <face filter="catid=211050">
+                        <h1 class="font-IRANSansWeb500 relative duration-700 translate-y-[100%]
+                        font-medium text-2xl leading-37.57 text-black">
+                       @urltitle
+                        </h1>
+                    </face>
+                </basis>   
+              </div>
+              <div class="SelectBoxes my-[4em] w-[279px] flex flex-col">
+                <div class="select_wrap w-full group/select_wrap my-[15px] mx-auto relative select-none">
+                    <ul class="default_option before:content-[''] before:absolute before:top-[18px] before:left-[14px]
+                    before:w-[15px] before:h-[15px]
+                     bg-white relative hover:cursor-pointer border-b-[1px] border-black
+                     w-full mx-auto">
+                        <li class="w-[95%] py-[15px] mx-auto flex justify-start my-auto">
+                            <div class="option flex justify-center">
+                              <p class="font-IRANSansWeb400 font-normal text-sm leading-21.91 text-black"> مرتب سازی بر اساس اولین پوستر  </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="select_ul group-[&.active]/select_wrap:block absolute top-[100%] left-0 rounded-[5px] hidden z-2
+                     right-0 w-full mx-auto mt-[.5em] bg-light-gray">
+                        <li id="sortASC" class="group [&.active]:bg-white hover:bg-white
+                         duration-100 py-[10px] px-[1em] cursor-pointer">
+                            <div class="option">
+                              <p class="font-IRANSansWeb400 group-[&.active]:text-gray-middle  duration-100
+                               font-normal text-sm leading-21.91 text-black"> 
+                               مرتب سازی بر اساس اولین پوستر
+                            </p>
+                            </div>
+                        </li>
+                        <li id="sortDESC" class="group [&.active]:bg-white hover:bg-white
+                         duration-100 py-[10px] px-[1em] cursor-pointer">
+                            <div class="option">
+                              <p class="font-IRANSansWeb400 font-normal group-[&.active]:text-gray-middle
+                                duration-100 text-sm leading-21.91 text-black"> 
+                                مرتب سازی بر اساس آخرین پوستر
+                            </p>
+                            </div>
+                        </li>
+                 
+                    </ul>
+                </div>
+         
+            </div>
+            </div>
+
+            <div class="posterLists w-full grid grid-cols-[1fr,1fr,1fr,1fr] gap-[3em] mb-[5em]">
+                <basis core="print" datamembername="listP.list">
+                    <layout>
+                        @child
+                    </layout>
+                    <face>
+                        <a href="@db.posterHover.link" alt="@db.posterList.title" title="@db.posterList.title	" 
+                        class="Poster group/poster w-full flex min-h-[400px] overflow-hidden">
+                            <div class="BGsec relative flex-col w-full bg-black flex justify-center items-center">
+                                <div class="IMG absolute z-[3]">
+                                    <img src="@db.posterList.00131X00170prp" alt="@db.posterList.title	" title="@db.posterList.title">
+                                </div>
+                                <div class="Img-Overlay group-hover/poster:translate-x-[0] ease-in-expo group-hover/poster:opacity-[1] absolute left-0 top-0 z-[2] w-full h-full translate-x-[-30%] opacity-0 duration-300">
+                                    <img src="@db.posterHover.00280X00400prp" alt="@db.posterList.title	" title="@db.posterList.title" class="w-full h-full">
+                                </div>
+                                <span class="ShowMore z-[3] absolute left-[1em] bottom-[1em] mr-auto w-auto flex gap-[10px] overflow-hidden justify-center">
+                                    <p class="font-IRANSansWeb400 font-normal text-xs leading-18.78 text-mainYellow">مشاهده </p>
+                                    <div class="circle w-[20px] h-[20px] rounded-full border-[1px] border-mainYellow relative 
+                                    ">
+                                    <div class="dot w-[5px] h-[5px] rounded-full translate-y-[-50%]
+                                     bg-mainYellow absolute top-[70%] translate-x-[-50%]"></div>
+                                    </div>
+                                </span>
+                            </div>
+                        </a>
+                    </face>
+                </basis>
+       
+    
+            </div>
+        </div>
+        <basis core="call" file="footer.inc" pageindex="[##cms.cms.pageindex##]" />
+    </main>
+    <basis core="call" file="script.inc" />
+    <script src="[##cms.cms.cdn##]/js/posterList.js"></script>
+</body>
+
+</html>
