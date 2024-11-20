@@ -142,8 +142,8 @@ const conferSlider = new Swiper(".conferSlider", {
   spaceBetween: 48,
   // Navigation arrows
   navigation: {
-    nextEl: ".nextconfer",
-    prevEl: ".prevconfer",
+    nextEl: ".prevconfer",
+    prevEl: ".nextconfer",
   },
   pagination: {
     el: ".conferSliderPagination",
@@ -173,15 +173,18 @@ conferSlider.controller.control = txtSlider;
 txtSlider.controller.control = conferSlider;
 
 function countLines() {
-  var el = document.querySelector(".openParaSlide p");
-  let btnOpenParaSlide = document.querySelector(".btnOpenParaSlide");
-  var divHeight = el.offsetHeight;
-  var lineHeight = 22;
-  var lines = divHeight / lineHeight;
-  console.log(lines);
-  if (lines < 4) {
-    btnOpenParaSlide.style.display = "none";
-  }
+  var el = document.querySelectorAll(".openParaSlide p");
+  let btnOpenParaSlide = document.querySelectorAll(".btnOpenParaSlide");
+  el.forEach((element,i) => {
+    var divHeight = element.offsetHeight;
+    var lineHeight = 22;
+    var lines = divHeight / lineHeight;
+    console.log(lines);
+    if (lines < 4) {
+      btnOpenParaSlide[i].style.display = "none";
+    }
+    
+  });
 }
 
 countLines();
@@ -232,6 +235,26 @@ const videoGallery = new Swiper(".videoGallery", {
   },
 });
 
+
+
+
+
+function countLines6() {
+  var el = document.querySelectorAll(".ShowMorePara6 p");
+  let para6Btn = document.querySelectorAll(".para6Btn");
+  el.forEach((element,i) => {
+    var divHeight = element.offsetHeight;
+    var lineHeight = 22;
+    var lines = divHeight / lineHeight;
+    console.log(lines);
+    if (lines < 2) {
+      para6Btn[i].style.display = "none";
+    }
+    
+  });
+}
+
+countLines6();
 // POP UP
 let popUpVideo = document.querySelector(".popUpVideo");
 let closepopUpVideo = document.querySelector(".closepopUpVideo");
@@ -543,19 +566,19 @@ let sGallery6 = document.querySelector(".sGallery6");
 let closeSlider6 = document.querySelector(".closeSlider6");
 let closePop6 = document.querySelector(".closePop6");
 
-openVideoGallery6.forEach((element) => {
-  element.addEventListener("click", function (params) {
-    if (galleryFlag) {
-      fThumb6.classList.add("popOpen");
-      popUpVideoGalleryContainer6.classList.add("popOpen");
-      galleryFlag = !galleryFlag;
-      body.style.overflow = "hidden";
-      // lenis.stop()
-    }
-  });
-});
+// openVideoGallery6.forEach((element) => {
+//   element.addEventListener("click", function (params) {
+//     if (galleryFlag) {
+//       fThumb6.classList.add("popOpen");
+//       popUpVideoGalleryContainer6.classList.add("popOpen");
+//       galleryFlag = !galleryFlag;
+//       body.style.overflow = "hidden";
+//       // lenis.stop()
+//     }
+//   });
+// });
 
-const popSlider6 = new Swiper(".popSlider", {
+const popSlider6 = new Swiper(".popSlider6", {
   // Optional parameters
 
   loop: true,
