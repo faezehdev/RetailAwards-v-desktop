@@ -1,0 +1,80 @@
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="1" >
+     <member request="cat" type="tree" name="TghdirCat" parentid="211052"  />
+ </basis>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقدیر</title>
+    <meta name="description" content="تقدیر">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/outputDesk.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/plyr.css" />
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/swiper-bundle.min.css" />
+</head>
+<body>
+    <main class="taghdirCat-C w-full overflow-hidden" dir="rtl">
+        <basis core="call" file="header1.inc" pageindex="[##cms.cms.pageindex##]" />
+        <div class="TaghdirContents w-90p mx-auto mt-[2em] flex flex-col">
+            <div class="Title-main  relative overflow-hidden w-max
+              flex justify-start gap-4 items-center my-[4em]">
+              <span class="line-content relative w-[60px]">
+                <span class="line duration-700 absolute flex left-0 mx-auto
+                justify-center  right-0  delay-100  w-0 h-[2px]  bg-black my-auto"></span>
+              </span>
+              <basis core="print" datamembername="db.TghdirCat">
+                  <layout>
+                      @child
+                  </layout>
+                  <face filter="catid=211052">
+                    <h1 class="font-IRANSansWeb500 relative duration-700 translate-y-[100%]
+                    font-medium text-2xl leading-37.57 text-black">
+                       @urltitle
+                    </h1>
+                  </face>
+              </basis>
+          
+            </div>
+            <div class="Taghdirs w-full grid grid-cols-[1fr,1fr,1fr] gap-[5em] mb-[5em]">
+                <basis core="print" datamembername="db.TghdirCat">
+                    <layout>
+                        @child
+                    </layout>
+                    <face filter="parentid=211052">
+                        <a href="@link" title="@title" alt="@title" class="Taghdir w-full flex relative justify-center opacity-0 translate-y-[100%] duration-1000
+                        items-center">
+                        <div class="IMG w-full flex justify-center">
+                           <img src="@image" title="@title" alt="@title" class="w-full object-cover">
+                        </div>
+                        <div class="OV absolute flex flex-col w-90p rounded-tl-[43px] gap-3
+                         left-0 right-0 mx-auto bottom-0 h-max py-[1em] bg-[#00000080] z-1">
+                           <div class="title w-max max-w-max flex justify-start">
+                               <h2 class="font-IRANSansWeb500 font-medium text-sm leading-21.91 text-white">
+                                @title
+                               </h2>
+                           </div>
+                           <span class="ShowMore ml-auto w-max flex gap-[10px] overflow-hidden justify-center">
+                               <p class="font-IRANSansWeb400 font-normal text-sm leading-21.91 text-white">مشاهده </p>
+                               <div class="circle w-[20px] h-[20px] rounded-full border-[1px] border-white relative 
+                               ">
+                               <div class="dot w-[5px] h-[5px]  translate-y-[-50%]
+                                bg-white absolute top-[70%] translate-x-[-50%]"></div>
+                               </div>
+                           </span>
+                        </div>
+                       </a>
+                    </face>
+                </basis>
+            
+     
+            </div>
+        </div>
+        <basis core="call" file="footer.inc" pageindex="[##cms.cms.pageindex##]" />
+    </main>
+    <basis core="call" file="script.inc" />
+    <script src="[##cms.cms.cdn##]/_js/swiper.js"></script>
+    <script src="[##cms.cms.cdn##]/js/taghdirCat.js"></script>
+
+</body>
+
+</html>

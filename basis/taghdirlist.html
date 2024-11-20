@@ -1,0 +1,73 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" catid="[##cms.query.catid##]"> 
+    <member name="list" size="291x347" type="list"/> 
+</basis>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[##cms.seo.title##]</title>
+    <meta name="description" content="[##cms.seo.description##]">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/outputDesk.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/plyr.css" />
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/swiper-bundle.min.css" />
+</head>
+<body>
+    <main class="taghdirList-C w-full overflow-hidden" dir="rtl">
+        <basis core="call" file="header1.inc" pageindex="[##cms.cms.pageindex##]" />
+        <div class="TaghdirListContents w-90p mx-auto mt-[2em] flex flex-col">
+            <div class="Title-main  relative overflow-hidden w-max
+              flex justify-start gap-4 items-center my-[4em]">
+              <span class="line-content relative w-[60px]">
+                <span class="line duration-700 absolute flex left-0 mx-auto
+                justify-center  right-0  delay-100  w-0 h-[2px]  bg-black my-auto"></span>
+              </span>
+              
+                <h1 class="font-IRANSansWeb500 relative duration-700 translate-y-[100%]
+                font-medium text-2xl leading-37.57 text-black">
+                [##cms.seo.title##]
+                </h1>
+            </div>
+            <div class="TaghdirLists w-full grid grid-cols-[1fr,1fr,1fr,1fr] gap-[3em] mb-[5em]">
+                <basis core="print" datamembername="db.list">
+                    <layout>
+                        @child
+                    </layout>
+                    <face>
+                        <a href="@link" alt="@title" title="@title" class="TaghdirItem group/taghdir w-full flex relative justify-center opacity-0 translate-y-[100%] duration-1000
+                        items-center overflow-hidden">
+                        <div class="IMG w-full flex justify-center">
+                           <img src="@00291X00347prp" alt="@title" title="@title" class="w-full object-cover">
+                        </div>
+                        <div class="OV absolute group-hover/taghdir:opacity-[1] ease-in-expo
+                        group-hover/taghdir:translate-y-[0] duration-[.7s] z-0
+                        flex flex-col w-full translate-y-[5rem]  opacity-0 gap-3
+                         left-0 right-0 mx-auto bottom-0 h-full py-[1em] ">
+                         <div class="IMG-2 w-full flex justify-center h-full">
+                           <img src="@00291X00347prp" alt="@title" title="@title" class="w-full h-full object-cover">
+                         </div>
+                        </div>
+       
+                        <div class="Detail translate-y-[100%] ease-in-expo duration-[.7s] overflow-hidden   group-hover/taghdir:translate-y-[0]
+                         absolute bottom-0 left-0 w-full h-auto flex justify-center items-center bg-white z-2">
+                           <div class="text w-90p mx-auto flex flex-col py-[1em]">
+                               <p class="font-IRANSansWeb400 font-normal text-xs leading-18.78 text-black text-justify">
+                                @title
+                            </p>
+                           </div>
+                         
+                        </div>
+                       </a>
+                    </face>
+                </basis>
+            
+       
+            </div>
+        </div>
+        <basis core="call" file="footer.inc" pageindex="[##cms.cms.pageindex##]" />
+    </main>
+    <basis core="call" file="script.inc" />
+    <script src="[##cms.cms.cdn##]/js/taghdirList.js"></script>
+</body>
+
+</html>

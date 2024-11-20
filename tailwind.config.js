@@ -41,6 +41,7 @@ module.exports = {
       'IRANSansWeb900': ['IRANSansWeb900', 'IRANSansWeb900'],
       'IRANSansWeb(FaNum)700': ['"IRANSansWeb(FaNum)700"'],
       'IRANSansWeb(FaNum)400': ['"IRANSansWeb(FaNum)400"'],
+'Estedad400':['Estedad400']
       'Anton400': ['"Anton400"'],
 
     },

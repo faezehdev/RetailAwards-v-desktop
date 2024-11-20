@@ -1,0 +1,628 @@
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="20" catid="69401"  >
+    <member type="list" name="list"  size="300x500" typeid="163,144" propertyid="15737,15738"  />
+</basis>
+<basis core="dbsource" source="accounting" name="db" collection="[##db.list.id##]">
+    <member request="listminmaxprice" type="list" name="maxmin"></member> 
+</basis>
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="20" catid="69404"  >
+    <member type="list" name="list1"  size="300x500" typeid="163,144" propertyid="15737,15738"  />
+</basis>
+<basis core="dbsource" source="accounting" name="db" collection="[##db.list1.id##]">
+    <member request="listminmaxprice" type="list" name="maxmin1"></member> 
+</basis>
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="20" catid="69405"  >
+    <member type="list" name="list2"  size="300x500" typeid="163,144" propertyid="15737,15738"  />
+</basis>
+<basis core="dbsource" source="accounting" name="db" collection="[##db.list2.id##]">
+    <member request="listminmaxprice" type="list" name="maxmin2"></member> 
+</basis>
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="1" usedforid="1441539" >
+    <member type="view" name="garanty"  />
+</basis>
+<basis core="dbsource" source="media" name="db" lid="1" sourcemid="article" usedforid="1441546" >
+    <member type="list" name="gallery"/>
+</basis>
+<basis core="dbsource" source="media" name="cat" lid="1" sourcemid="1" usedforid="1445292" >
+    <member type="list" name="gallery"/>
+</basis>
+
+<basis core="dbsource" source="media" name="slider" lid="1" sourcemid="1" usedforid="2320340" >
+    <member type="list" name="gallery"/>
+</basis>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <meta name="enamad" content="301307"/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> ادیب شاپ | تراشه سبز ادیب
+        </title>
+        <meta name="description" content="ادیب شاپ | تراشه سبز ادیب">
+        <link rel="stylesheet" href="[##cms.cms.cdn##]/css/app.css"> 
+    </head>
+    <body>
+       <basis core="call" file="header.inc"/>
+        <main class="home">
+            <section class="container container-res"> 
+                <div class="all-slider">
+            <div class="right-slider">
+                <div class="hero swiper">
+                <div class="swiper-wrapper">
+
+
+                    <basis core="print" datamembername="slider.gallery">
+                        <face>
+                            <div class="swiper-slide">
+                                <a href="@name">
+                                <img src="/@largeimg" alt="">
+                            </a>
+                                <!-- <div class="text">
+                                    <h4>
+                                        قطعات جانبی <br>
+                                        کامپیوتر
+                                    </h4>
+                                    <a href="#" class="link">
+                                        <span>نمایش بیشتر</span>
+                                    </a>
+                                </div> -->
+                            </div>
+                        </face>
+                    </basis>
+               
+                  
+                    
+                   
+                </div>
+                <div class="pagination"></div>
+            </div>
+            </div>
+            <div class="left-slider">
+<div class="img-1">
+    <a href="#">
+    <img src="/images/banner-up-1.png" alt="banner2">
+    </a>
+</div>
+<div class="img-2">
+    <a href="#">
+    <img src="/images/banner-up-2.png" alt="banner1" loading="lazy">
+    </a>
+</div>
+            </div>
+            <div class="clr"></div>
+        </div>
+        <div class="clr"></div>
+            </section>
+            <section class="categories">
+                <div class="container">
+                    <h2>دسته بندی ها</h2>
+                    <div class="row">
+                        <basis core="print" datamembername="cat.gallery">
+                            <face filter="rownumber in (2,3,4,5,7,8)">
+                                <div class="col-2h">
+                                    <a href="@name" class="single" >
+                                        <img src="/@largeIMG" alt="@description" style="width:400px;">
+                                        <h3>  @description</h3>
+                                    </a>
+                                </div>
+                            </face>
+                        </basis>
+                      
+                         
+                    </div>
+               
+                </div>
+            </section>
+            <section class="offers">
+                <div class="container">
+                    <div class="box">
+                        <div class="title">
+                            <h3>پیشنهاد ویژه</h3>
+                            <basis core="print" datamembername="db.cat">
+                                
+                                <face filter="catid=69401">
+                            <a href="/@link">
+                                مشاهده بیشتر
+                            </a>
+                            </face></basis>
+                        </div>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <basis core="group" name="d">
+
+                                    <basis core="inlinesource" name="pro2">
+                                        <member name="list" lefttblcol="db.list.id" righttblcol="db.maxmin.usedforid" jointype="rightjoin"
+                                            format="join" type="list"></member>
+                                    </basis>
+                                    <basis core="print" datamembername="pro2.list">
+                                
+                                <face filter="db.maxmin.maxcount <>0">
+                                    <div class="swiper-slide">
+                                        <a href="@db.list.link" class="single">
+                                            <img src="[##cms.cms.cdn##]/@db.list.image" alt="@db.list.title">
+                                            <div class="info">
+                                                <!-- <span class="fake">غیراصل</span> -->
+                                                <!-- <span class="off">11% تخفیف</span> -->
+                                            </div>
+                                            <h4> @db.list.title</h4>
+                                            <div class="price">
+                                                <div class="old"><img src="/images/cart-icon.svg"/></div>
+                                                <div class="new priceee">
+                                                    @db.maxmin.min
+                                                    <span>تومان</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </face>
+                                <face filter="db.maxmin.maxcount = 0">
+                                    <div class="swiper-slide">
+                                        <a href="@db.list.link" class="single">
+                                            <img src="[##cms.cms.cdn##]/@db.list.image" alt="@db.list.title">
+                                            <div class="info">
+                                                <!-- <span class="fake">غیراصل</span> -->
+                                                <!-- <span class="off">11% تخفیف</span> -->
+                                            </div>
+                                            <h4>@db.list.title</h4>
+                                            <div class="price">
+                                                <div class="old">ناموجود</div>
+                                                <div class="new priceee">
+                                                    @db.maxmin.min
+                                                    <span>تومان</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </face>
+                               </basis>
+                                </basis>
+                            </div>
+                        </div>
+                        <div class="next-btn"></div>
+                        <div class="prev-btn"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="features swiper">
+                <div class="swiper-wrapper">
+                    <basis core="print" datamembername="db.garanty">
+                        <face filter="rownumber in (3,4,5)">
+                            <div class="swiper-slide">
+                                <img src="/images/gl-@UsedForID-@rownumber.jpg"/>
+                                <div class="container style-future">
+                                    <h4>@text</h4>
+                                    @largetext                                  
+                                </div>
+                            </div>
+                        </face>
+                    </basis>                    
+                </div>
+                <div class="navigations"></div>
+            </section> -->
+            <section class="off-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <!-- <img src="/images/default-1.jpg" alt="" class="bg"> -->
+                        <picture class="bg">
+                            <source 
+                               media="(min-width: 500px)"
+                               srcset="/images/default-1.jpg">
+                            <source 
+                               media="(min-width: 200px)"
+                               srcset="/images/mob-default-1.jpg">
+                            <img src="/images/default-1.jpg" class="bg"/>
+                         </picture>
+                        <div class="text"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture class="bg">
+                            <source 
+                               media="(min-width: 500px)"
+                               srcset="/images/default-2.jpg">
+                            <source 
+                               media="(min-width: 200px)"
+                               srcset="/images/mob-default-2.jpg">
+                            <img src="/images/default-2.jpg" class="bg"/>
+                         </picture>
+                        <div class="text"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture class="bg">
+                            <source 
+                               media="(min-width: 500px)"
+                               srcset="/images/default-3.jpg">
+                            <source 
+                               media="(min-width: 200px)"
+                               srcset="/images/mob-default-3.jpg">
+                            <img src="/images/default-3.jpg" class="bg"/>
+                         </picture>
+                        <div class="text"></div>
+                    </div>
+                </div>
+                <div class="pagination"></div>
+            </section>
+            <section class="offers">
+                <div class="container">
+                    <div class="box">
+                        <div class="title">
+                            <h3>پیشنهاد ویژه</h3>
+                            <basis core="print" datamembername="db.cat">
+                                
+                                <face filter="catid=69404">
+                            <a href="/@link">
+                                مشاهده بیشتر
+                            </a>
+                            </face></basis>
+                        </div>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <basis core="group" name="dd">
+
+                                    <basis core="inlinesource" name="pro21">
+                                        <member name="list" lefttblcol="db.list1.id" righttblcol="db.maxmin1.usedforid" jointype="rightjoin"
+                                            format="join" type="list"></member>
+                                    </basis>
+                                    <basis core="print" datamembername="pro21.list">
+                                
+                                <face filter="db.maxmin1.maxcount <>0">
+                                    <div class="swiper-slide">
+                                        <a href="@db.list1.link" class="single">
+                                            <img src="[##cms.cms.cdn##]/@db.list1.image" alt="@db.list1.title">
+                                            <div class="info">
+                                                <!-- <span class="fake">غیراصل</span> -->
+                                                <!-- <span class="off">11% تخفیف</span> -->
+                                            </div>
+                                            <h4> @db.list1.title</h4>
+                                            <div class="price">
+                                                <div class="old"><img src="/images/cart-icon.svg"/></div>
+                                                <div class="new priceee">
+                                                    @db.maxmin1.min
+                                                    <span>تومان</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </face>
+                                <face filter="db.maxmin1.maxcount = 0">
+                                    <div class="swiper-slide">
+                                        <a href="@db.list1.link" class="single">
+                                            <img src="[##cms.cms.cdn##]/@db.list1.image" alt="@db.list1.title">
+                                            <div class="info">
+                                                <!-- <span class="fake">غیراصل</span> -->
+                                                <!-- <span class="off">11% تخفیف</span> -->
+                                            </div>
+                                            <h4>@db.list1.title</h4>
+                                            <div class="price">
+                                                <div class="old">ناموجود</div>
+                                                <div class="new priceee">
+                                                    @db.maxmin1.min
+                                                    <span>تومان</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </face>
+                               </basis>
+                                </basis>
+                            </div>
+                        </div>
+                        <div class="next-btn"></div>
+                        <div class="prev-btn"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="banners swiper">
+                <div class="swiper-wrapper">
+                    <basis core="print" datamembername="db.cat">
+                        <face filter="catid in (69371,69374,69375)">
+                            <div class="swiper-slide">
+                                <a href="/@link">
+                                <!-- <img src="/images/@catid.jpg" > -->
+                                <picture class="bg">
+                                    <source 
+                                       media="(min-width: 500px)"
+                                       srcset="/images/@catid.jpg">
+                                    <source 
+                                       media="(min-width: 200px)"
+                                       srcset="/images/@catid-mob.jpg">
+                                    <img src="/images/@catid.jpg" alt="@title" />
+                                 </picture>
+                                <div class="text">
+                                    <div class="title">
+                                        <h4>@title</h4>
+                                        <!-- <h5>تخفیف تا 70 درصد</h5> -->
+                                    </div>
+                                    <!-- <a href="/@link" class="link">
+                                        <span>نمایش بیشتر</span>
+                                    </a> -->
+                                </div>
+                                </a>
+                            </div>
+                        </face>
+                    </basis>
+                   
+                   
+                </div>
+            </section>
+            <section class="offers">
+                <div class="container">
+                    <div class="box">
+                        <div class="title">
+                            <h3>پیشنهاد ویژه</h3>
+                            <basis core="print" datamembername="db.cat">
+                                
+                                <face filter="catid=69405">
+                            <a href="/@link">
+                                مشاهده بیشتر
+                            </a>
+                            </face></basis>
+                        </div>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <basis core="group" name="dd">
+
+                                    <basis core="inlinesource" name="pro22">
+                                        <member name="list" lefttblcol="db.list2.id" righttblcol="db.maxmin2.usedforid" jointype="rightjoin"
+                                            format="join" type="list"></member>
+                                    </basis>
+                                    <basis core="print" datamembername="pro22.list">
+                                
+                                <face filter="db.maxmin2.maxcount <>0">
+                                    <div class="swiper-slide">
+                                        <a href="@db.list2.link" class="single">
+                                            <img src="[##cms.cms.cdn##]/@db.list1.image" alt="@db.list2.title">
+                                            <div class="info">
+                                                <!-- <span class="fake">غیراصل</span> -->
+                                                <!-- <span class="off">11% تخفیف</span> -->
+                                            </div>
+                                            <h4> @db.list2.title</h4>
+                                            <div class="price">
+                                                <div class="old"><img src="/images/cart-icon.svg"/></div>
+                                                <div class="new priceee">
+                                                    @db.maxmin2.min
+                                                    <span>تومان</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </face>
+                                <face filter="db.maxmin2.maxcount = 0">
+                                    <div class="swiper-slide">
+                                        <a href="@db.list2.link" class="single">
+                                            <img src="[##cms.cms.cdn##]/@db.list2.image" alt="@db.list2.title">
+                                            <div class="info">
+                                                <!-- <span class="fake">غیراصل</span> -->
+                                                <!-- <span class="off">11% تخفیف</span> -->
+                                            </div>
+                                            <h4>@db.list2.title</h4>
+                                            <div class="price">
+                                                <div class="old">ناموجود</div>
+                                                <div class="new priceee">
+                                                    @db.maxmin2.min
+                                                    <span>تومان</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </face>
+                               </basis>
+                                </basis>
+                            </div>
+                        </div>
+                        <div class="next-btn"></div>
+                        <div class="prev-btn"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="brands">
+                <div class="container">
+                    <div class="box">
+                        <h2>
+                            <img src="/images/star-icon.svg" alt="">
+                            برندهای محبوب
+                        </h2>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <basis core="print" datamembername="db.gallery">
+                                    <face>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="/@largeimg" alt="@description">
+                                    </a>
+                                </div>
+                               </face>
+                               </basis>
+                            </div>
+                        </div>
+                        <div class="next-btn"></div>
+                        <div class="prev-btn"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="banners swiper">
+                <div class="swiper-wrapper">
+                    <basis core="print" datamembername="db.cat">
+                        <face filter="catid in (69370,69376,69377)">
+                            <div class="swiper-slide">
+                                <!-- <img src="/images/@catid.jpg" alt="@title"> -->
+                                <a href="/@link">
+                                <picture class="bg">
+                                    <source 
+                                       media="(min-width: 500px)"
+                                       srcset="/images/@catid.jpg">
+                                    <source 
+                                       media="(min-width: 200px)"
+                                       srcset="/images/@catid-mob.jpg">
+                                    <img src="/images/@catid.jpg" alt="@title" />
+                                 </picture>
+                                <div class="text">
+                                    <div class="title">
+                                        <h4>@title</h4>
+                                        <!-- <h5>تخفیف تا 70 درصد</h5> -->
+                                    </div>
+                                    <!-- <a href="/@link" class="link">
+                                        <span>نمایش بیشتر</span>
+                                    </a> -->
+                                </div>
+                            </a>
+                            </div>
+                        </face>
+                    </basis>
+                   
+                </div>
+            </section>
+            <section class="ft-top">
+                <ul>
+                <li>
+                <img src="[##cms.cms.cdn##]/images/gll-1441539-1.png">
+                <p>
+                    گارانتی قیمت 
+                </p>
+                </li>
+                <li>
+                <img src="[##cms.cms.cdn##]/images/gll-1441539-2.png">
+                <p>
+                    تنوع کالا
+                </p>
+                </li>
+                <li>
+                <img src="[##cms.cms.cdn##]/images/gll-1441539-3.png">
+                <p>
+                    تحویل سریع
+                </p>
+                </li>
+                 
+                </ul>
+                </section>
+        </main>
+        <basis core="call" file="footer.inc"/>
+       <basis core="call" file="shoppingFly/scripts.inc" />
+       <script src="[##cms.cms.cdn##]/js/swiper.js"></script>
+       <script src="[##cms.cms.cdn##]/js/app.js"></script>
+      <script>
+      jQuery(document).ready(function($){
+      $('.live-search-list li').each(function(){
+      $(this).attr('data-search-term', $(this).text().toLowerCase());
+      });
+      $('.live-search-box').on('keyup', function(){
+      var searchTerm = $(this).val().toLowerCase();
+          $('.live-search-list li').each(function(){
+              if ($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
+                  $(this).show();
+              } else {
+                  $(this).hide();
+              }
+          });
+      });
+      });
+      </script>
+        <script>
+               $.fn.digits = function () {
+            return this.each(function () {
+                $(this).text($(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
+            })
+        }
+        $(".priceee").digits();
+            var heroSlider = new Swiper(`.hero`, {
+                slidesPerView: 1,
+                loop: true,
+                speed: 1500,
+                pagination: {
+                    el: ".hero .pagination",
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 4500,
+                    disableOnInteraction: false,
+                },
+                effect: "creative",
+                creativeEffect: {
+                    prev: {
+                        shadow: true,
+                        translate: ["20%", 0, -1],
+                    },
+                    next: {
+                        translate: ["-100%", 0, 0],
+                    },
+                },
+            })
+            var offerSlider = new Swiper(`.offers .swiper`, {
+                slidesPerView: 1,
+                navigation: {
+                    nextEl: ".offers .next-btn",
+                    prevEl: ".offers .prev-btn",
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                    },
+                    1200: {
+                        slidesPerView: 5,
+                    }
+                },
+            })
+            var features = [
+                'گارانتی قیمت',
+                'تنوع کالا',
+                'تحویل سریع', 
+            ]
+            var featuresSlider = new Swiper(`.features`, {
+                slidesPerView: 1,
+                speed: 700,
+                pagination: {
+                    el: ".features .navigations",
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return `<div class="swiper-pagination-bullet">
+                                    <img src="/images/gll-1441539-${index+1}.png">
+                                    <span>${features[index]}</span>
+                            </div>`;
+                    },
+                },
+            })
+            var offSlider = new Swiper(`.off-slider`, {
+                slidesPerView: 1,
+                speed: 1500,
+                pagination: {
+                    el: ".off-slider .pagination",
+                    clickable: true,
+                },
+            })
+            var banners = new Swiper(`.banners`, {
+                slidesPerView: "auto",
+                spaceBetween: 15,
+                freeMode: true,
+            })
+            var brandsSlider = new Swiper(`.brands .swiper`, {
+                slidesPerView: 3,
+                navigation: {
+                    nextEl: ".brands .next-btn",
+                    prevEl: ".brands .prev-btn",
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 4,
+                    },
+                    1024: {
+                        slidesPerView: 6,
+                    },
+                    1200: {
+                        slidesPerView: 10,
+                    }
+                },
+            })
+        </script>
+    </body>
+</html>

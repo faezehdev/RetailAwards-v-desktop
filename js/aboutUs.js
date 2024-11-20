@@ -13,12 +13,12 @@ gsap.to('.aboutUs-C .Text p',{
     y:0,
     stagger:'.2',
   })
-
 let videoC = document.querySelector('.inVideo')
 let overlays = document.querySelectorAll('.overlay')
-videoC.addEventListener('click',()=>{
+videoC.addEventListener('click',(e)=>{
 overlays.forEach(o=>{
     o.classList.add('hide')
+    e.stopPropagation()
     const player = new Plyr('#player');
 })
 })

@@ -25,7 +25,7 @@ taghdirs.forEach(taghdir=>{
       stagger: 0.5,
         scrollTrigger:{
           trigger:taghdir,
-          start:'top 80%',
+          start:'top 90%',
           end:'bottom bottom',
          
         }

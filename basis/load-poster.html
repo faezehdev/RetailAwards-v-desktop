@@ -1,0 +1,77 @@
+<basis core="group" if="[##cms.query.type##]=1">
+    <basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" catid="211050">
+        <member name="posterListasc" type="list" size="131x170" sort="id asc"/> 
+    </basis>
+    <basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" catid="211050">
+       <member name="posterHoverasc" type="list" size="280x400" sort="id asc"/> 
+    </basis>
+    <basis core="inlinesource" name="listPasc"  >
+        <member name="list" lefttblcol="db.posterListasc.id" righttblcol="db.posterHoverasc.id" jointype="leftjoin" 
+        format="join" type="list" ></member>
+    </basis>
+    <basis core="print" datamembername="listPasc.list">
+        <layout>
+            @child
+        </layout>
+        <face>
+            <a href="@db.posterHoverasc.link" alt="@db.posterListasc.title" title="@db.posterListasc.title	" 
+            class="Poster group/poster w-full flex min-h-[400px] overflow-hidden">
+                <div class="BGsec relative flex-col w-full bg-black flex justify-center items-center">
+                    <div class="IMG absolute z-[3]">
+                        <img src="@db.posterListasc.00131X00170prp" alt="@db.posterListasc.title	" title="@db.posterListasc.title">
+                    </div>
+                    <div class="Img-Overlay group-hover/poster:translate-x-[0] ease-in-expo group-hover/poster:opacity-[1] absolute left-0 top-0 z-[2] w-full h-full translate-x-[-30%] opacity-0 duration-300">
+                        <img src="@db.posterHoverasc.00280X00400prp" alt="@db.posterListasc.title	" title="@db.posterListasc.title"
+                         class="w-full h-full">
+                    </div>
+                    <span class="ShowMore z-[3] absolute left-[1em] bottom-[1em] mr-auto w-auto flex gap-[10px] overflow-hidden justify-center">
+                        <p class="font-IRANSansWeb400 font-normal text-xs leading-18.78 text-mainYellow">مشاهده </p>
+                        <div class="circle w-[20px] h-[20px] rounded-full border-[1px] border-mainYellow relative 
+                        ">
+                        <div class="dot w-[5px] h-[5px] rounded-full translate-y-[-50%]
+                         bg-mainYellow absolute top-[70%] translate-x-[-50%]"></div>
+                        </div>
+                    </span>
+                </div>
+            </a>
+        </face>
+    </basis>
+</basis>
+<basis core="group" if="[##cms.query.type##]=2">
+    <basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" catid="211050">
+        <member name="posterList" type="list" size="131x170" sort="id desc"/> 
+    </basis>
+    <basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" catid="211050">
+       <member name="posterHover" type="list" size="280x400" sort="id desc"/> 
+    </basis>
+    <basis core="inlinesource" name="listP"  >
+        <member name="list" lefttblcol="db.posterList.id" righttblcol="db.posterHover.id" jointype="leftjoin" 
+        format="join" type="list" ></member>
+    </basis>
+    <basis core="print" datamembername="listP.list">
+        <layout>
+            @child
+        </layout>
+        <face>
+            <a href="@db.posterHover.link" alt="@db.posterList.title" title="@db.posterList.title	" 
+            class="Poster group/poster w-full flex min-h-[400px] overflow-hidden">
+                <div class="BGsec relative flex-col w-full bg-black flex justify-center items-center">
+                    <div class="IMG absolute z-[3]">
+                        <img src="@db.posterList.00131X00170prp" alt="@db.posterList.title	" title="@db.posterList.title">
+                    </div>
+                    <div class="Img-Overlay group-hover/poster:translate-x-[0] ease-in-expo group-hover/poster:opacity-[1] absolute left-0 top-0 z-[2] w-full h-full translate-x-[-30%] opacity-0 duration-300">
+                        <img src="@db.posterHover.00280X00400prp" alt="@db.posterList.title	" title="@db.posterList.title" class="w-full h-full">
+                    </div>
+                    <span class="ShowMore z-[3] absolute left-[1em] bottom-[1em] mr-auto w-auto flex gap-[10px] overflow-hidden justify-center">
+                        <p class="font-IRANSansWeb400 font-normal text-xs leading-18.78 text-mainYellow">مشاهده </p>
+                        <div class="circle w-[20px] h-[20px] rounded-full border-[1px] border-mainYellow relative 
+                        ">
+                        <div class="dot w-[5px] h-[5px] rounded-full translate-y-[-50%]
+                         bg-mainYellow absolute top-[70%] translate-x-[-50%]"></div>
+                        </div>
+                    </span>
+                </div>
+            </a>
+        </face>
+    </basis>
+</basis>

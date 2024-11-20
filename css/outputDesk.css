@@ -689,6 +689,10 @@ video {
   bottom: 2rem;
 }
 
+.bottom-\[1em\] {
+  bottom: 1em;
+}
+
 .end-1 {
   inset-inline-end: 0.25rem;
 }
@@ -709,12 +713,17 @@ video {
   left: .5em;
 }
 
+<<<<<<< HEAD
 .left-\[2\.5\%\] {
   left: 2.5%;
 }
 
 .left-\[30\%\] {
   left: 30%;
+=======
+.left-\[1em\] {
+  left: 1em;
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 }
 
 .left-\[5\%\] {
@@ -781,6 +790,10 @@ video {
   top: .5em;
 }
 
+.top-\[100\%\] {
+  top: 100%;
+}
+
 .top-\[11em\] {
   top: 11em;
 }
@@ -833,18 +846,24 @@ video {
   z-index: 20;
 }
 
+<<<<<<< HEAD
 .z-3 {
   z-index: 3;
 }
 
 .z-\[15\] {
   z-index: 15;
+=======
+.z-\[2\] {
+  z-index: 2;
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 }
 
 .z-\[3\] {
   z-index: 3;
 }
 
+<<<<<<< HEAD
 .z-\[4\] {
   z-index: 4;
 }
@@ -857,6 +876,8 @@ video {
   z-index: 9999;
 }
 
+=======
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 .float-start {
   float: inline-start;
 }
@@ -919,6 +940,11 @@ video {
 .my-\[1\.5em\] {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+}
+
+.my-\[15px\] {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .my-\[1em\] {
@@ -1117,6 +1143,14 @@ video {
   margin-top: 10em;
 }
 
+.mt-\[17em\] {
+  margin-top: 17em;
+}
+
+.mt-\[1em\] {
+  margin-top: 1em;
+}
+
 .mt-\[2em\] {
   margin-top: 2em;
 }
@@ -1288,8 +1322,13 @@ video {
   height: 50px;
 }
 
+<<<<<<< HEAD
 .h-\[52vh\] {
   height: 52vh;
+=======
+.h-\[54px\] {
+  height: 54px;
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 }
 
 .h-\[5px\] {
@@ -1339,6 +1378,14 @@ video {
 
 .h-svh {
   height: 100svh;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.min-h-\[400px\] {
+  min-height: 400px;
 }
 
 .min-h-screen {
@@ -1402,8 +1449,13 @@ video {
   width: 228px;
 }
 
+<<<<<<< HEAD
 .w-\[233px\] {
   width: 233px;
+=======
+.w-\[279px\] {
+  width: 279px;
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 }
 
 .w-\[30\%\] {
@@ -1645,6 +1697,11 @@ video {
 
 .-translate-y-\[120px\] {
   --tw-translate-y: -120px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[-30\%\] {
+  --tw-translate-x: -30%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2281,8 +2338,13 @@ video {
   gap: 10px;
 }
 
+<<<<<<< HEAD
 .gap-\[1em\] {
   gap: 1em;
+=======
+.gap-\[2em\] {
+  gap: 2em;
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 }
 
 .gap-\[3em\] {
@@ -2821,6 +2883,10 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
+}
+
 .border-e {
   border-inline-end-width: 1px;
 }
@@ -2916,9 +2982,15 @@ video {
   border-bottom-color: rgb(254 190 27 / var(--tw-border-opacity));
 }
 
+<<<<<<< HEAD
 .border-b-white {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
+=======
+.\!bg-white {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 }
 
 .bg-\[\#0000004D\] {
@@ -2976,10 +3048,13 @@ video {
   background-color: rgb(254 190 27 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
 .bg-mainYellow\/\[0\.2\] {
   background-color: rgb(254 190 27 / 0.2);
 }
 
+=======
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -3256,6 +3331,16 @@ video {
   padding-bottom: 1.5em;
 }
 
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.py-\[15px\] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .py-\[1em\] {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -3427,8 +3512,13 @@ video {
   vertical-align: super;
 }
 
+<<<<<<< HEAD
 .font-Anton400 {
   font-family: "Anton400";
+=======
+.font-Estedad400 {
+  font-family: Estedad400;
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 }
 
 .font-IRANSansWeb\(FaNum\)400 {
@@ -3637,8 +3727,13 @@ video {
   line-height: 22.45px;
 }
 
+<<<<<<< HEAD
 .leading-\[22px\] {
   line-height: 22px;
+=======
+.leading-\[22\.58px\] {
+  line-height: 22.58px;
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 }
 
 .leading-\[23\.48px\] {
@@ -4063,16 +4158,23 @@ video {
   transition-delay: 100ms;
 }
 
+<<<<<<< HEAD
 .delay-200 {
   transition-delay: 200ms;
 }
 
+=======
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 .duration-100 {
   transition-duration: 100ms;
 }
 
 .duration-1000 {
   transition-duration: 1000ms;
+}
+
+.duration-150 {
+  transition-duration: 150ms;
 }
 
 .duration-200 {
@@ -4186,13 +4288,13 @@ video {
 @font-face {
   font-family: "IRANSansWeb500";
 
-  src: url("../../_fonts/IRANSansWeb_Medium.eot");
+  src: url("../_fonts/IRANSansWeb_Medium.eot");
 
-  src: url("../../_fonts/IRANSansWeb_Medium.eot?#iefix")
+  src: url("../_fonts/IRANSansWeb_Medium.eot?#iefix")
       format("embedded-opentype"),
-    url("../../_fonts/IRANSansWeb_Medium.woff") format("woff"),
-    url("../../_fonts/IRANSansWeb_Medium.woff2") format("woff2"),
-    url("../../_fonts/IRANSansWeb_Medium.ttf") format("truetype");
+    url("../_fonts/IRANSansWeb_Medium.woff") format("woff"),
+    url("../_fonts/IRANSansWeb_Medium.woff2") format("woff2"),
+    url("../_fonts/IRANSansWeb_Medium.ttf") format("truetype");
 
   font-weight: 500;
 
@@ -4202,15 +4304,29 @@ video {
 }
 
 @font-face {
+  font-family: "Estedad400";
+
+  src: 
+    url("../_fonts/Estedad-Regular.woff2") format("woff2"),
+    url("../_fonts/Estedad-Regular.ttf") format("truetype");
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
   font-family: "IRANSansWeb400";
 
-  src: url("../../_fonts/IRANSansWebRegular.eot");
+  src: url("../_fonts/IRANSansWebRegular.eot");
 
-  src: url("../../_fonts/IRANSansWebRegular.eot?#iefix")
+  src: url("../_fonts/IRANSansWebRegular.eot?#iefix")
       format("embedded-opentype"),
-    url("../../_fonts/IRANSansWebRegular.woff") format("woff"),
-    url("../../_fonts/IRANSansWebRegular.woff2") format("woff2"),
-    url("../../_fonts/IRANSansWebRegular.ttf") format("truetype");
+    url("../_fonts/IRANSansWebRegular.woff") format("woff"),
+    url("../_fonts/IRANSansWebRegular.woff2") format("woff2"),
+    url("../_fonts/IRANSansWebRegular.ttf") format("truetype");
 
   font-weight: 400;
 
@@ -4222,13 +4338,13 @@ video {
 @font-face {
   font-family: "IRANSansWeb300";
 
-  src: url("../../_fonts/IRANSansWeb(FaNum)_Light.eot");
+  src: url("../_fonts/IRANSansWeb(FaNum)_Light.eot");
 
-  src: url("../../_fonts/IRANSansWeb(FaNum)_Light.eot?#iefix")
+  src: url("../_fonts/IRANSansWeb(FaNum)_Light.eot?#iefix")
       format("embedded-opentype"),
-    url("../../_fonts/IRANSansWeb(FaNum)_Light.woff") format("woff"),
-    url("../../_fonts/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
-    url("../../_fonts/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
+    url("../_fonts/IRANSansWeb(FaNum)_Light.woff") format("woff"),
+    url("../_fonts/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
+    url("../_fonts/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
 
   font-weight: 300;
 
@@ -4240,13 +4356,13 @@ video {
 @font-face {
   font-family: "IRANSansWeb700";
 
-  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot");
+  src: url("../_fonts/IRANSansWeb(FaNum)_Bold.eot");
 
-  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
+  src: url("../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
       format("embedded-opentype"),
-    url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
-    url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
-    url("../../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+    url("../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
+    url("../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+    url("../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
 
   font-weight: 700;
 
@@ -4258,13 +4374,21 @@ video {
 @font-face {
   font-family: "IRANSansWeb400";
 
-  src: url("../../_fonts/IRANSansWeb(FaNum)_Medium.eot");
+  src: url("../_fonts/IRANSansWeb(FaNum)_Medium.eot");
 
+<<<<<<< HEAD
   src: url("../../_fonts/IRANSansWeb(FaNum)_Medium.eot?#iefix")
       format("embedded-opentype"),
     url("../../_fonts/IRANSansWeb(FaNum)_Medium.woff") format("woff"),
     url("../../_fonts/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
     url("../../_fonts/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
+=======
+  src: url("../_fonts/IRANSansWeb(FaNum)_Medium.eot?#iefix")
+        format("embedded-opentype"),
+      url("../_fonts/IRANSansWeb(FaNum)_Medium.woff") format("woff"),
+      url("../_fonts/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
+      url("../_fonts/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 
   font-weight: 400;
 
@@ -4276,13 +4400,21 @@ video {
 @font-face {
   font-family: "IRANSansWeb500";
 
-  src: url("../../_fonts/IRANSansWeb(FaNum)_Medium.eot");
+  src: url("../_fonts/IRANSansWeb(FaNum)_Medium.eot");
 
+<<<<<<< HEAD
   src: url("../../_fonts/IRANSansWeb(FaNum)_Medium.eot?#iefix")
       format("embedded-opentype"),
     url("../../_fonts/IRANSansWeb(FaNum)_Medium.woff") format("woff"),
     url("../../_fonts/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
     url("../../_fonts/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
+=======
+  src: url("../_fonts/IRANSansWeb(FaNum)_Medium.eot?#iefix")
+        format("embedded-opentype"),
+      url("../_fonts/IRANSansWeb(FaNum)_Medium.woff") format("woff"),
+      url("../_fonts/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
+      url("../_fonts/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 
   font-weight: 500;
 
@@ -4296,13 +4428,21 @@ video {
 
   font-family: "IRANSansWeb(FaNum)700";
 
-  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot");
+  src: url("../_fonts/IRANSansWeb(FaNum)_Bold.eot");
 
+<<<<<<< HEAD
   src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
       format("embedded-opentype"),
     url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
     url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
     url("../../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+=======
+  src: url("../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
+        format("embedded-opentype"),
+      url("../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
+      url("../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+      url("../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 
   font-weight: 700;
 
@@ -4314,13 +4454,21 @@ video {
 @font-face {
   font-family: "IRANSansWeb(FaNum)700";
 
-  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot");
+  src: url("../_fonts/IRANSansWeb(FaNum)_Bold.eot");
 
+<<<<<<< HEAD
   src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
       format("embedded-opentype"),
     url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
     url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
     url("../../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+=======
+  src: url("../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
+          format("embedded-opentype"),
+        url("../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
+        url("../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+        url("../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 
   font-weight: 700;
 
@@ -4791,6 +4939,7 @@ main.Etelaei-C .section h2,
   }
 }
 
+<<<<<<< HEAD
 .popOpen {
   transform: translateY(0) !important;
 }
@@ -4918,6 +5067,360 @@ main.Etelaei-C .section h2,
   }
 }
 
+=======
+.Etelaei-C .Text p{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25.02px;
+  color: #000000;
+  font-family: "IRANSansWeb300";
+}
+
+.aboutUs-C .Text p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.91px;
+  color: #F5F5F5;
+  font-family: "IRANSansWeb400";
+}
+
+.ContactUs-C fieldset [data-bc-section-title],
+.ContactUs-C [data-bc-title-container] {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+[data-bc-part-container],
+[data-bc-btn-container] {
+  width: 100% !important;
+}
+
+[data-bc-question],
+[data-bc-answer-container],
+[data-bc-schema-info-part="1"] [data-bc-part-related-cell] {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+[data-bc-section] {
+  margin: 0;
+  padding: 0;
+}
+
+[data-bc-answer-container] input[type="text"],
+[data-bc-answer-container] input[type="password"],
+[data-bc-answer-container] input[type="time"],
+[data-bc-answer-container] input[type="file"],
+[data-bc-answer-container] select,
+[data-bc-answer-container] textarea {
+  width: 100% !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 21.91px;
+  color: #828282 !important;
+  font-family: "IRANSansWeb400" !important;
+  height: 40px;
+  border: none !important;
+  border-bottom: 1px solid #828282 !important;
+  padding: 0 0.5em !important;
+  background-color: #171717 !important;
+  resize: none !important;
+  border-radius: 0 !important     ;
+  -webkit-border-radius: 0 !important     ;
+  -moz-border-radius: 0 !important     ;
+  -ms-border-radius: 0 !important     ;
+  -o-border-radius: 0 !important     ;
+}
+
+input[type="text"]:focus,
+[data-bc-answer-container] input[type="file"]:focus,
+[data-bc-answer-container] select:focus,
+[data-bc-answer-container] textarea:focus {
+  border-color: transparent !important;
+  box-shadow: none;
+  outline: 0 none;
+  background-color: transparent;
+}
+
+.ContactUs-C [data-bc-schema-column] {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.ContactUs-C .col,
+.ContactUs-C .captchaBox {
+  width: 100%;
+  display: flex;
+}
+
+.ContactUs-C .captchaBox {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.ContactUs-C .captchaBox input.codeinputm{
+  order: 1;
+}
+
+.ContactUs-C .captchaBox .refresh{
+  order: 2;
+}
+
+.ContactUs-C .captchaBox .capcha{
+  order: 3;
+}
+
+.ContactUs-C .captchaBox input[type="hidden"]{
+  display: none;
+}
+
+.ContactUs-C .captchaBox input {
+  width: 100% !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 21.91px;
+  color: #828282 !important;
+  font-family: "IRANSansWeb400" !important;
+  height: 40px;
+  border: none;
+  padding: 0 0.5em !important;
+  background-color: #171717 !important;
+}
+
+.ContactUs-C .captchaBox input::-moz-placeholder, [data-bc-answer-container] input[type="text"]::-moz-placeholder, [data-bc-answer-container] textarea::-moz-placeholder{
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 21.91px;
+  color: #828282 !important;
+  font-family: "IRANSansWeb400" !important;
+  opacity: .7;
+}
+
+.ContactUs-C .captchaBox input::placeholder,
+[data-bc-answer-container] input[type="text"]::placeholder ,
+[data-bc-answer-container] textarea::placeholder{
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 21.91px;
+  color: #828282 !important;
+  font-family: "IRANSansWeb400" !important;
+  opacity: .7;
+}
+
+.ContactUs-C .captchaBox img {
+  height: 40px;
+}
+
+[data-bc-section] {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.ContactUs-C .Box {
+  margin: auto;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ContactUs-C .Form-container {
+  gap: 2em;
+}
+
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
+  z-index: 1 !important;
+}
+
+.main-container {
+  width: -moz-max-content;
+  width: max-content;
+  gap: 0.3em;
+  padding: 1.5em;
+  height: 100px;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #febe1b;
+  color: #fff;
+  font-size: 14px;
+  font-family: "IRANSansWeb700";
+  position: fixed;
+  left: -100vw;
+  top: 50%;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  z-index: 999;
+}
+
+.main-container span {
+  color: #000000;
+  font-size: 18px;
+  font-family: "IRANSansWeb500";
+  line-height: 28.17px;
+}
+
+.main-container.SEND {
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.ContactUs-C .Section-2 .Col:nth-child(1) .Answer p {
+  color: #002b43;
+  font-size: 14px;
+  font-family: "IRANSansWeb500";
+  line-height: 21.91px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.ContactUs-C .Contacts .Answer p {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 700ms;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.91px;
+  color: #FFFFFF;
+  font-family: "IRANSansWeb400";
+  text-align: center;
+}
+
+.ContactUs-C .Contacts  a,
+.ContactUs-C .Contacts .Answer a{
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 700ms;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23.48px;
+  color: #FFFFFF;
+  font-family: "IRANSansWeb400";
+  text-align: center;
+}
+
+header,
+footer,
+.SearchBox-popup {
+  direction: rtl !important;
+}
+
+.ResultSearch .ItemR[hidden="true"] {
+  display: none;
+}
+
+.ResultSearch .ItemR[open="true"] {
+  display: flex;
+}
+
+.ResultSearch .ItemR {
+  display: none;
+}
+
+.loaded .Nores[hidden=""]{
+  display: none;
+}
+
+.loaded .Nores[hidden='false']{
+  display: flex;
+}
+
+mark {
+  background: #FEBE1B !important;
+}
+
+.SelectBoxes .select_wrap.active .default_option:before {
+  top: 25px;
+  transform: rotate(-225deg);
+}
+
+.SelectBoxes .select_wrap .option {
+  display: flex;
+  align-items: center;
+}
+
+.SelectBoxes .select_wrap .option p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.91px;
+  color: black;
+}
+
+.SelectBoxes .select_wrap .option .icon {
+  background: url("https://i.imgur.com/oEZu0sK.png") no-repeat 0 0;
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+}
+
+/* .SelectBoxes .select_wrap.active .select_ul {
+  display: block;
+} */
+
+/* .SelectBoxes .select_wrap .select_ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: .5em;
+  background:#F5F5F5;
+  border-radius: 5px;
+  display: none;
+  z-index: 2;
+} */
+
+/* .SelectBoxes .select_wrap .select_ul li {
+  padding: 10px 1em;
+  cursor: pointer;
+} */
+
+.SelectBoxes .select_wrap .select_ul li:first-child:hover {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.SelectBoxes .select_wrap .select_ul li:last-child:hover {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* .SelectBoxes .select_wrap .select_ul li:hover {
+  background:#fff;
+} */
+
+/* .SelectBoxes .default_option {
+  background: #fff;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #000000;
+} */
+
+.SelectBoxes .default_option::before {
+  border: 2px solid;
+  border-color: transparent transparent #5d676e #5d676e;
+  transform: rotate(-45deg);
+}
+
+/* .SelectBoxes .default_option > li {
+  padding: 15px;
+  width: 95%;
+  margin: auto;
+} */
+
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 @media (min-width: 480px) {
   .sm\:container {
     width: 100%;
@@ -4982,9 +5485,30 @@ main.Etelaei-C .section h2,
   color: rgb(169 169 169 / var(--tw-text-opacity));
 }
 
+<<<<<<< HEAD
 .before\:block::before {
   content: var(--tw-content);
   display: block;
+=======
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:left-0::before {
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.before\:left-\[14px\]::before {
+  content: var(--tw-content);
+  left: 14px;
+}
+
+.before\:top-\[18px\]::before {
+  content: var(--tw-content);
+  top: 18px;
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 }
 
 .before\:inline-block::before {
@@ -4992,14 +5516,35 @@ main.Etelaei-C .section h2,
   display: inline-block;
 }
 
+.before\:h-\[15em\]::before {
+  content: var(--tw-content);
+  height: 15em;
+}
+
+.before\:h-\[15px\]::before {
+  content: var(--tw-content);
+  height: 15px;
+}
+
 .before\:h-px::before {
   content: var(--tw-content);
   height: 1px;
 }
 
+<<<<<<< HEAD
 .before\:w-\[70px\]::before {
   content: var(--tw-content);
   width: 70px;
+=======
+.before\:w-\[15px\]::before {
+  content: var(--tw-content);
+  width: 15px;
+}
+
+.before\:w-\[1px\]::before {
+  content: var(--tw-content);
+  width: 1px;
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 }
 
 .before\:w-\[71px\]::before {
@@ -5012,6 +5557,7 @@ main.Etelaei-C .section h2,
   transform-origin: left;
 }
 
+<<<<<<< HEAD
 .before\:origin-right::before {
   content: var(--tw-content);
   transform-origin: right;
@@ -5021,6 +5567,11 @@ main.Etelaei-C .section h2,
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+=======
+.before\:bg-\[\#82828275\]::before {
+  content: var(--tw-content);
+  background-color: #82828275;
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 }
 
 .before\:bg-mainYellow::before {
@@ -5038,6 +5589,11 @@ main.Etelaei-C .section h2,
 .before\:duration-300::before {
   content: var(--tw-content);
   transition-duration: 300ms;
+}
+
+.before\:content-\[\'\'\]::before {
+  --tw-content: '';
+  content: var(--tw-content);
 }
 
 .after\:absolute::after {
@@ -5231,9 +5787,15 @@ main.Etelaei-C .section h2,
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 .hover\:bg-mainYellow:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(254 190 27 / var(--tw-bg-opacity));
+=======
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 }
 
 .hover\:font-bold:hover {
@@ -5289,6 +5851,11 @@ main.Etelaei-C .section h2,
   text-align: center;
 }
 
+.group\/poster:hover .group-hover\/poster\:translate-x-\[0\] {
+  --tw-translate-x: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .group\/taghdir:hover .group-hover\/taghdir\:translate-y-\[0\] {
   --tw-translate-y: 0;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -5304,6 +5871,7 @@ main.Etelaei-C .section h2,
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+<<<<<<< HEAD
 .group:hover .group-hover\:translate-y-\[0\] {
   --tw-translate-y: 0;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -5322,6 +5890,10 @@ main.Etelaei-C .section h2,
 
 .group:hover .group-hover\:fill-mainYellow {
   fill: #FEBE1B;
+=======
+.group\/poster:hover .group-hover\/poster\:opacity-\[1\] {
+  opacity: 1;
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 }
 
 .group\/taghdir:hover .group-hover\/taghdir\:opacity-\[1\] {
@@ -5361,6 +5933,7 @@ main.Etelaei-C .section h2,
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+<<<<<<< HEAD
 .group.pauseFlag .group-\[\.pauseFlag\]\:\!block {
   display: block !important;
 }
@@ -5407,6 +5980,15 @@ main.Etelaei-C .section h2,
 .group.swiper-slide-active .group-\[\.swiper-slide-active\]\:brightness-100 {
   --tw-brightness: brightness(1);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+=======
+.group\/select_wrap.active .group-\[\&\.active\]\/select_wrap\:block {
+  display: block;
+}
+
+.group.active .group-\[\&\.active\]\:text-gray-middle {
+  --tw-text-opacity: 1;
+  color: rgb(130 130 130 / var(--tw-text-opacity));
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
 }
 
 @media (min-width: 480px) {
@@ -5426,6 +6008,11 @@ main.Etelaei-C .section h2,
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.\[\&\.active\]\:bg-white.active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .\[\&\.hide\]\:pointer-events-none.hide {
   pointer-events: none;
 }
@@ -5434,6 +6021,7 @@ main.Etelaei-C .section h2,
   opacity: 0;
 }
 
+<<<<<<< HEAD
 .\[\&\.open\]\:pointer-events-auto.open {
   pointer-events: auto;
 }
@@ -5445,3 +6033,8 @@ main.Etelaei-C .section h2,
 .\[\&\.swiper-button-disabled\]\:hidden.swiper-button-disabled {
   display: none;
 }
+=======
+.\[\&\.show\]\:flex.show {
+  display: flex;
+}
+>>>>>>> 91dbcba50f268e471958c1425557618f18708586
