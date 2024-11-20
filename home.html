@@ -107,10 +107,53 @@
                         می‌آید.
                     </p>
                 </div>
+
+                <a href="/درباره-ما" 
+                class="ShowMore hover:no-underline scrollTop justify-start mt-3 self-baseline w-auto flex gap-[10px] overflow-hidden">
+                <p class="font-IRANSansWeb400 font-normal text-xs leading-18.78 text-white">
+                    بیشتر بدانید    
+                </p>
+                <div class="circle w-[20px] h-[20px] rounded-full border-[1px] border-white text-white relative 
+                ">
+                    <div class="dot w-[5px] h-[5px] rounded-full translate-y-[-50%]
+                 bg-white text-white absolute top-[70%] translate-x-[-50%]"></div>
+                </div>
+            </a>
             </div>
             <div class="lSide w-full pl-[5%]">
-                <div class="imgS -mr-[20%] -translate-y-[120px]">
+                <div class="imgS -mr-[20%] relative flex items-center justify-center -translate-y-[120px]">
                     <img class="w-full" src="images/Screenshot 2024-04-22 145538 4.png" alt="" />
+                    <div data-videoUrl="" class="play-popup-container playVideoOpen playbtn w-[126px] h-[126px] absolute cursor-pointer">
+                    <div class="play-popup-btn relative flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="153.417" height="153.417"
+                            viewBox="0 0 153.417 153.417">
+                            <g id="Group_457" data-name="Group 457" transform="translate(-1061.792 -431.792)">
+                                <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1063 433)"
+                                    fill="none" stroke="#fff" stroke-width="1" opacity="0.3">
+                                    <circle cx="75.5" cy="75.5" r="75.5" stroke="none" />
+                                    <circle cx="75.5" cy="75.5" r="75" fill="none" />
+                                </g>
+                                <path id="Path_1" data-name="Path 1" d="M75.708,0A75.708,75.708,0,1,1,0,75.708"
+                                    transform="translate(1062.792 432.792)" fill="none" stroke="#fff"
+                                    stroke-width="2" />
+                            </g>
+                        </svg>
+                        <div class="play-popup-btn__circle absolute">
+                            <div class="play-popup-btn__circle__bullet"></div>
+                            <span class="play-popup-btn__circle__text text-left">
+                                <p
+                                    class="font-IRANSansWeb300  text-lg text-white relative  after:w-[5px] after:h-[5px] after:absolute after:-left-3 after:top-[40%] after:bg-white after:rounded-full">
+                                    Play
+
+                                </p>
+                                <p class="font-IRANSansWeb500 text-lg text-white">
+
+                                    video
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
         </section>
@@ -144,24 +187,18 @@
                     <!-- Slides -->
                     <div class="swiper-slide">
                         <div class="inVideo relative flex items-center justify-center">
-                            <video src="" poster="images/Screenshot 2024-04-22 145538 1.png">
-
-                            </video>
-                            <div
-                                class="play-popup-container openVideoGallery w-[126px] h-[126px] absolute cursor-pointer">
-                                <div class="play-popup-btn relative flex items-center justify-center"
-                                    data-video="https://player.vimeo.com/video/619757568?dnt=1&amp;amp;app_id=122963">
+                            <img class="w-full" src="images/Screenshot 2024-04-22 145538 1.png" alt="">
+                            <div data-videoUrl="" class="play-popup-container playVideoOpen playbtn w-[126px] h-[126px] absolute cursor-pointer">
+                                <div class="play-popup-btn relative flex items-center justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="153.417" height="153.417"
                                         viewBox="0 0 153.417 153.417">
-                                        <g id="Group_457" data-name="Group 457"
-                                            transform="translate(-1061.792 -431.792)">
+                                        <g id="Group_457" data-name="Group 457" transform="translate(-1061.792 -431.792)">
                                             <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1063 433)"
                                                 fill="none" stroke="#fff" stroke-width="1" opacity="0.3">
                                                 <circle cx="75.5" cy="75.5" r="75.5" stroke="none" />
                                                 <circle cx="75.5" cy="75.5" r="75" fill="none" />
                                             </g>
-                                            <path id="Path_1" data-name="Path 1"
-                                                d="M75.708,0A75.708,75.708,0,1,1,0,75.708"
+                                            <path id="Path_1" data-name="Path 1" d="M75.708,0A75.708,75.708,0,1,1,0,75.708"
                                                 transform="translate(1062.792 432.792)" fill="none" stroke="#fff"
                                                 stroke-width="2" />
                                         </g>
@@ -172,10 +209,10 @@
                                             <p
                                                 class="font-IRANSansWeb300  text-lg text-white relative  after:w-[5px] after:h-[5px] after:absolute after:-left-3 after:top-[40%] after:bg-white after:rounded-full">
                                                 Play
-
+            
                                             </p>
                                             <p class="font-IRANSansWeb500 text-lg text-white">
-
+            
                                                 video
                                             </p>
                                         </span>
@@ -919,6 +956,34 @@ AWARDS
     </main>
 
 
+    <div style="z-index: 100;" class="popUpVideo h-svh inset-0 z-1 w-svw bg-black -translate-y-[100%] duration-1000 fixed"
+        data-lenis-prevent="true">
+        <div class="closepopUpVideo group absolute top-16 right-[5%] cursor-pointer z-3">
+            <svg class="group-hover:rotate-[360deg] duration-1000" width="34" height="34" viewBox="0 0 34 34"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_100_8112)">
+                    <path
+                        d="M17 34C7.6 34 0 26.4 0 17C0 7.6 7.6 0 17 0C26.4 0 34 7.6 34 17C34 26.4 26.4 34 17 34ZM17 2C8.7 2 2 8.7 2 17C2 25.3 8.7 32 17 32C25.3 32 32 25.3 32 17C32 8.7 25.3 2 17 2Z"
+                        fill="white" />
+                    <path d="M24.2827 8.302L25.6967 9.717L9.71673 25.697L8.30273 24.283L24.2827 8.302Z" fill="white" />
+                    <path d="M9.71673 8.302L25.6967 24.282L24.2827 25.697L8.30273 9.717L9.71673 8.302Z" fill="white" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_100_8112">
+                        <rect width="34" height="34" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+        <div class="w-svw mt-24 pb-20 h-[80vh]" dir="rtl">
+            <div class="flex h-full items-center justify-center">
+                <div class="imgS h-full" style="width: 70%;">
+                    <iframe class="w-full object-cover" src=""
+                        poster="images/Screenshot 2024-04-22 145538 1.png"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="popUpGalleryContainer h-svh inset-0 z-1 w-svw bg-black -translate-y-[100%] duration-1000 fixed"
         data-lenis-prevent="true">
@@ -1063,7 +1128,6 @@ AWARDS
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="js/gsap.js"></script>
-    <script src="js/popUpgallery.js"></script>
     <script src="js/scrollTrigger.js"></script>
     <script src="js/home.js"></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>

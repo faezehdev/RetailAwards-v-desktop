@@ -183,3 +183,28 @@ const videoSlider = new Swiper('.videoSlider', {
   
 
   });
+
+
+
+  let popUpVideo = document.querySelector(".popUpVideo");
+let closepopUpVideo = document.querySelector(".closepopUpVideo");
+let playVideoOpen = document.querySelectorAll(".playVideoOpen");
+playVideoOpen.forEach((element) => {
+  element.addEventListener("click", function (params) {
+    popUpVideo.classList.add("popOpen");
+    let vodUrl = element.getAttribute("data-videoUrl");
+
+    let videoPop = document.querySelector(".popUpVideo iframe");
+    console.log("vodUrl", vodUrl);
+    console.log("videoPop", videoPop);
+    videoPop.setAttribute("src", vodUrl);
+  });
+});
+
+closepopUpVideo.addEventListener("click", function (params) {
+  popUpVideo.classList.remove("popOpen");
+});
+
+let popUpVideoGalleryContainer = document.querySelector(
+  ".popUpVideoGalleryContainer"
+);
