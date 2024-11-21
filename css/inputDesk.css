@@ -840,26 +840,7 @@ mark {
   height: 32px;
   margin-right: 15px;
 }
-/* .SelectBoxes .select_wrap.active .select_ul {
-  display: block;
-} */
-/* .SelectBoxes .select_wrap .select_ul {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: .5em;
-  background:#F5F5F5;
-  border-radius: 5px;
-  display: none;
-  z-index: 2;
-} */
-/* .SelectBoxes .select_wrap .select_ul li {
-  padding: 10px 1em;
-  cursor: pointer;
-} */
+
 .SelectBoxes .select_wrap .select_ul li:first-child:hover {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -868,28 +849,16 @@ mark {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* .SelectBoxes .select_wrap .select_ul li:hover {
-  background:#fff;
-} */
-/* .SelectBoxes .default_option {
-  background: #fff;
-  position: relative;
-  cursor: pointer;
-  width: 100%;
-  margin: 0 auto;
-  border-bottom: 1px solid #000000;
-} */
+
 .SelectBoxes .default_option::before {
   border: 2px solid;
   border-color: transparent transparent #5d676e #5d676e;
   transform: rotate(-45deg);
 }
-/* .SelectBoxes .default_option > li {
-  padding: 15px;
-  width: 95%;
-  margin: auto;
-} */
 
+.aboutUs-C .inVideo {
+  position: relative;
+}
 
 .popOpen {
   transform: translateY(0) !important;
