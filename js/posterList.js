@@ -52,12 +52,27 @@ defOP.forEach((d)=>{
                 console.log('sortASC');
                 var url = `/load-poster.inc?type=1`;
                 $(".posterLists").load(url);
+                setTimeout(() => {
+                  gsap.to('.Poster',{
+                    opacity:1,
+                    y:0,
+                   stagger:.1
+                   })
+                }, 1000);
+             
          }
          else if(id=='sortDESC')
             {
                  console.log('sortDESC');
                  var url = `/load-poster.inc?type=2`;
                  $(".posterLists").load(url);
+                 setTimeout(() => {
+                  gsap.to('.Poster',{
+                    opacity:1,
+                    y:0,
+                   stagger:.1
+                   })
+                }, 1000);
                  
          }
         e1.currentTarget.parentElement.parentElement.classList.remove("active")
@@ -65,3 +80,8 @@ defOP.forEach((d)=>{
    })
 })
 })
+gsap.to('.Poster',{
+  opacity:1,
+  y:0,
+ stagger:.1
+ })
