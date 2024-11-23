@@ -1,110 +1,110 @@
 <basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2363829">
-     <member name="aboutus" type="view"/> 
+    <member name="aboutus" type="view"/> 
 </basis>
 <basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="2363829">
-    <member name="aboutVideo" type="list" format="3"/> 
+   <member name="aboutVideo" type="list" format="3"/> 
 </basis>
 <basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="2363829">
-    <member name="aboutGallery" type="list" format="4" postsql="select * from [db.aboutGallery] where ord=1000"/> 
+   <member name="aboutGallery" type="list" format="4" postsql="select * from [db.aboutGallery] where ord=1000"/> 
 </basis>
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>درباره‌ما</title>
-    <meta name="description" content="درباره‌ما">
-    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/outputDesk.css">
-    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/plyr.css" />
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>درباره‌ما</title>
+   <meta name="description" content="درباره‌ما">
+   <link rel="stylesheet" href="[##cms.cms.cdn##]/css/outputDesk.css">
+   <link rel="stylesheet" href="[##cms.cms.cdn##]/css/plyr.css" />
 </head>
 <body class="bg-black">
-    <main class="aboutUs-C w-full overflow-hidden" dir="rtl">
-        <basis core="call" file="header1.inc" pageindex="[##cms.cms.pageindex##]" />
-      <div class="About-container w-full flex flex-col mt-[4em]">
-        <div class="Titles w-full overflow-hidden flex justify-center items-center">
-            <div class="Title w-full overflow-hidden flex justify-center items-center gap-4">
-                <span class="contentLine w-[30%] flex relative">
-                    <span class="line duration-700  w-0 line-1 h-[1px] absolute left-0 right-0 mx-auto"></span>
-                </span>
-                <basis core="print" datamembername="db.aboutus">
-                    <layout>
-                        @child
-                    </layout>
-                    <face filter="TypeID=150">
-                        <h1 class=" w-max font-IRANSansWeb500  duration-700 translate-y-[100%] font-medium text-2xl leading-37.57 text-white text-center">
-                         @Answer
-                        </h1>
-                    </face>
-                </basis>
-              
-                <span class="contentLine w-[30%] flex relative">
-                    <span class="line line-2 duration-700  w-0  h-[1px] absolute left-0 right-0 mx-auto"></span>
-                </span>
-            </div>
-        </div>
-        <div class="Text w-[70%] flex flex-col justify-center items-center mx-auto my-[1.5em] text-justify">
-            <basis core="print" datamembername="db.aboutus">
-                <layout>
-                    @child
-                </layout>
-                <face filter="TypeID in (250,129)">
-                    <p class="font-IRANSansWeb400 font-normal text-sm leading-21.91 text-light-gray text-justify">
+   <main class="aboutUs-C w-full overflow-hidden" dir="rtl">
+       <basis core="call" file="header1.inc" pageindex="[##cms.cms.pageindex##]" />
+     <div class="About-container w-full flex flex-col mt-[4em]">
+       <div class="Titles w-full overflow-hidden flex justify-center items-center">
+           <div class="Title w-full overflow-hidden flex justify-center items-center gap-4">
+               <span class="contentLine w-[30%] flex relative">
+                   <span class="line duration-700  w-0 line-1 h-[1px] absolute left-0 right-0 mx-auto"></span>
+               </span>
+               <basis core="print" datamembername="db.aboutus">
+                   <layout>
+                       @child
+                   </layout>
+                   <face filter="TypeID=150">
+                       <h1 class=" w-max font-IRANSansWeb500  duration-700 translate-y-[100%] font-medium text-2xl leading-37.57 text-white text-center">
                         @Answer
-                    </p>
-                </face>
-            </basis>
+                       </h1>
+                   </face>
+               </basis>
+             
+               <span class="contentLine w-[30%] flex relative">
+                   <span class="line line-2 duration-700  w-0  h-[1px] absolute left-0 right-0 mx-auto"></span>
+               </span>
+           </div>
+       </div>
+       <div class="Text w-[70%] flex flex-col justify-center items-center mx-auto my-[1.5em] text-justify">
+           <basis core="print" datamembername="db.aboutus">
+               <layout>
+                   @child
+               </layout>
+               <face filter="TypeID in (250,129)">
+                   <p class="font-IRANSansWeb400 font-normal text-sm leading-21.91 text-light-gray text-justify">
+                       @Answer
+                   </p>
+               </face>
+           </basis>
+         
+       </div>
+       <div class="Video-Container mb-[1em] w-90p mx-auto flex justify-center items-center">
+           <div class="inVideo w-full relative flex items-center justify-center">
+               <basis core="print" datamembername="db.aboutVideo">
+                   <layout>
+                       @child
+                   </layout>
+
+                   <face filter="ord=1000">
+                       <video src="@largeIMG" id="player" playsinline 
+                       poster="[##db.aboutGallery.largeIMG##]" class="w-full object-cover">
+      
+                      </video>
+                   </face>
+               </basis>
           
-        </div>
-        <div class="Video-Container mb-[1em] w-90p mx-auto flex justify-center items-center">
-            <div class="inVideo w-full relative flex items-center justify-center">
-                <basis core="print" datamembername="db.aboutVideo">
-                    <layout>
-                        @child
-                    </layout>
+               <div class="ov overlay [&.hide]:opacity-0 [&.hide]:pointer-events-none duration-1000
+                absolute w-full h-full bg-[#0000004D] pointer-events-none"></div>
+               <div class="play-popup-container [&.hide]:opacity-0 [&.hide]:pointer-events-none duration-1000 overlay w-[126px] h-[126px] absolute z-1 cursor-pointer">
+                   <div class="play-popup-btn relative flex items-center justify-center" data-video="https://player.vimeo.com/video/619757568?dnt=1&amp;app_id=122963">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="153.417" height="153.417" viewBox="0 0 153.417 153.417">
+                           <g id="Group_457" data-name="Group 457" transform="translate(-1061.792 -431.792)">
+                           <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1063 433)" fill="none" stroke="#fff" stroke-width="1" opacity="0.3">
+                           <circle cx="75.5" cy="75.5" r="75.5" stroke="none"/>
+                           <circle cx="75.5" cy="75.5" r="75" fill="none"/>
+                           </g>
+                           <path id="Path_1" data-name="Path 1" d="M75.708,0A75.708,75.708,0,1,1,0,75.708" transform="translate(1062.792 432.792)" fill="none" stroke="#fff" stroke-width="2"/>
+                           </g>
+                           </svg>
+                       <div class="play-popup-btn__circle absolute">
+                           <div class="play-popup-btn__circle__bullet"></div>
+                           <span class="play-popup-btn__circle__text text-left">
+                              <p class="font-IRANSansWeb300  text-lg text-white relative  after:w-[5px] after:h-[5px] after:absolute after:-left-3 after:top-[40%] after:bg-white after:rounded-full">
+                                  Play 
 
-                    <face filter="ord=1000">
-                        <video src="@largeIMG" id="player" playsinline 
-                        poster="[##db.aboutGallery.largeIMG##]" class="w-full object-cover">
-       
-                       </video>
-                    </face>
-                </basis>
-           
-                <div class="ov overlay [&.hide]:opacity-0 [&.hide]:pointer-events-none duration-1000
-                 absolute w-full h-full bg-[#0000004D] pointer-events-none"></div>
-                <div class="play-popup-container [&.hide]:opacity-0 [&.hide]:pointer-events-none duration-1000 overlay w-[126px] h-[126px] absolute z-1 cursor-pointer">
-                    <div class="play-popup-btn relative flex items-center justify-center" data-video="https://player.vimeo.com/video/619757568?dnt=1&amp;amp;app_id=122963">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="153.417" height="153.417" viewBox="0 0 153.417 153.417">
-                            <g id="Group_457" data-name="Group 457" transform="translate(-1061.792 -431.792)">
-                            <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1063 433)" fill="none" stroke="#fff" stroke-width="1" opacity="0.3">
-                            <circle cx="75.5" cy="75.5" r="75.5" stroke="none"/>
-                            <circle cx="75.5" cy="75.5" r="75" fill="none"/>
-                            </g>
-                            <path id="Path_1" data-name="Path 1" d="M75.708,0A75.708,75.708,0,1,1,0,75.708" transform="translate(1062.792 432.792)" fill="none" stroke="#fff" stroke-width="2"/>
-                            </g>
-                            </svg>
-                        <div class="play-popup-btn__circle absolute">
-                            <div class="play-popup-btn__circle__bullet"></div>
-                            <span class="play-popup-btn__circle__text text-left">
-                               <p class="font-IRANSansWeb300  text-lg text-white relative  after:w-[5px] after:h-[5px] after:absolute after:-left-3 after:top-[40%] after:bg-white after:rounded-full">
-                                   Play 
+                              </p>
+                           <p class="font-IRANSansWeb500 text-lg text-white">
 
-                               </p>
-                            <p class="font-IRANSansWeb500 text-lg text-white">
-
-                                video
-                            </p>
-                        </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
-      <basis core="call" file="footer2.inc" pageindex="[##cms.cms.pageindex##]" />
-    </main>
-    <basis core="call" file="script.inc" />
-    <script src="[##cms.cms.cdn##]/js/aboutUs.js"></script>
+                               video
+                           </p>
+                       </span>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+     </div>
+     <basis core="call" file="footer2.inc" pageindex="[##cms.cms.pageindex##]" />
+   </main>
+   <basis core="call" file="script.inc" />
+   <script src="[##cms.cms.cdn##]/js/aboutUs.js"></script>
 
 </body>
 
