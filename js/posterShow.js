@@ -663,7 +663,7 @@ openVideoGallery6.forEach((element, i) => {
   element.addEventListener("click", function (params) {
     console.log(element);
 
-    if (galleryFlag && sGalleryFlag) {
+    if (galleryFlag) {
       fThumb6.classList.add("popOpen");
       popUpVideoGalleryContainer6.classList.add("popOpen");
       sGallery6.classList.add("popOpen");

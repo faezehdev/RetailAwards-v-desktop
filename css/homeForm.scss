@@ -1,0 +1,70 @@
+legend {
+  display: none;
+}
+[data-bc-title-container] {
+  display: none;
+}
+
+input,
+[data-bc-answer-container] input[type="text"] {
+  background-color: white !important;
+  border-bottom: 1px solid #828282 !important;
+  border-radius: 5px !important;
+  margin-bottom: 16px;
+}
+input::placeholder,
+input {
+  font-family: "IRANSansWeb300" !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  text-align: right !important;
+  color: #828282 !important;
+}
+.qclass8 {
+  .responsMsg1 {
+    position: absolute;
+    transform: translateY(-100%);
+    display: none;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+.captchaContainerclass {
+  display: flex !important;
+  flex-direction: row-reverse;
+  background-color: white;
+  border-bottom: 1px solid #828282 !important;
+  border-radius: 5px !important;
+  input,
+  [data-bc-answer-container] input[type="text"] {
+    margin: 0 !important;
+    border: none !important;
+  }
+}
+
+.successForm {
+  .modal-dialog {
+    // height: 100vh !important;
+    // margin: 0 !important;
+    margin-top: 40vh;
+  }
+  .successMsg{
+    display: flex!important;
+  }
+  .modal-content {
+    background-color: transparent !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 88vh;
+    .modal-header{
+        display: none;
+    }
+    form,.Title-main{
+        display: none;
+    }
+  }
+}

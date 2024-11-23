@@ -159,7 +159,7 @@ const videoSlider = new Swiper('.videoSlider', {
     loop: true,
   
   
-  
+    allowTouchMove:false,
     // Navigation arrows
     navigation: {
       nextEl: '.nextPara',
@@ -173,7 +173,8 @@ const videoSlider = new Swiper('.videoSlider', {
     speed:1000,
     loop: true,
   
-  
+    allowTouchMove:false,
+
   
     // Navigation arrows
     navigation: {
@@ -218,6 +219,7 @@ let galleryFlag=true;
 let body = document.querySelector("body")
 let fThumb = document.querySelector(".fThumb")
 let thumbBox = document.querySelectorAll(".thumbBox")
+let openVideoThumb = document.querySelectorAll(".openVideoThumb")
 let sGalleryFlag = true;
 const popSlider = new Swiper('.popSlider', {
   // Optional parameters
@@ -281,7 +283,7 @@ for (let i = 0; i < thumbBox.length; i++) {
   const element = thumbBox[i];
 
       element.addEventListener("click" ,function (params) {
-          if (sGalleryFlag) {
+          // if (sGalleryFlag) {
               
               popSlider.slideTo(i+1,0)
               sGallery.classList.add("popOpen")
@@ -289,7 +291,7 @@ for (let i = 0; i < thumbBox.length; i++) {
               popUpGalleryContainer.scrollTo(0,0)
               popUpGalleryContainer.style.overflow="hidden"
               
-          }
+          // }
       } )
       
   }
@@ -309,4 +311,47 @@ closePop.addEventListener("click",function (params) {
 
 
   }
+})
+
+openVideoThumb.forEach((element, i) => {
+  element.addEventListener("click", function (params) {
+    console.log(element);
+
+    if (galleryFlag) {
+      sGallery.style.transition = "0s"
+      fThumb.classList.add("popOpen");
+      popUpGalleryContainer.classList.add("popOpen");
+    
+      setTimeout(() => {
+          sGallery.style.transition = "1s"
+      }, 1000);
+      sGallery.classList.add("popOpen");
+      galleryFlag = !galleryFlag;
+      body.style.overflow = "hidden";
+      //  lenis.stop()
+
+      popSlider.slideTo(i + 1, 0);
+      sGalleryFlag = !sGalleryFlag;
+      popUpGalleryContainer.scrollTo(0, 0);
+      popUpGalleryContainer.style.overflow = "hidden";
+    }
+  });
+});
+
+
+
+let videoC = document.querySelector('.popUpVideo .inVideo')
+let overlays = document.querySelectorAll('.inVideo .overlay')
+let is=true
+videoC.addEventListener('click',(e)=>{
+overlays.forEach(o=>{
+    o.classList.add('hide')
+    e.stopPropagation()
+    const player = new Plyr('#player');
+    if(is){
+      player.play()
+      is = false
+    }
+ 
+})
 })
