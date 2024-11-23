@@ -2674,6 +2674,11 @@ video {
   padding-bottom: 3em;
 }
 
+.px-\[5\%\] {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
