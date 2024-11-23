@@ -747,3 +747,7 @@ font-family: "IRANSansWebb300";
 text-align: left;
 color: white;
 }
+
+a:hover{
+  text-decoration: none !important;
+}
