@@ -37,7 +37,7 @@ module.exports = {
       'IRANSansWebb400':['IRANSansWebb400'],
       'IRANSansWebb300':['IRANSansWebb300'],
 'Estedad400':['Estedad400'],
-'Estedad600':['Estedad600']
+'Estedad600':['Estedad600'],
 
       "IRANSansWeb(FaNum)700": [
         "IRANSansWeb(FaNum)700",

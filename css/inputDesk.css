@@ -605,7 +605,7 @@ main.Etelaei-C .section h2,
   background-color: #ffffff80;
 }
 
-.homePage .section1 .pagination1 i{
+.homePage .section1 .pagination1 i,
 .homePage .section1 .pagination1 .current {
   font-family: "IRANSansWeb400";
   font-size: 25px;
