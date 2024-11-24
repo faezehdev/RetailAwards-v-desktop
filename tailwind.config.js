@@ -26,6 +26,19 @@ module.exports = {
       gray2: "#A9A9A9",
     },
     fontFamily: {
+      'IRANSansWeb(FaNum)700': ['IRANSansWeb(FaNum)700', 'IRANSansWeb(FaNum)700'],
+      'IRANSansWeb300': ['IRANSansWeb300', 'IRANSansWeb300'],
+      'IRANSansWeb400': ['IRANSansWeb400', 'IRANSansWeb400'],
+      'IRANSansWeb500': ['IRANSansWeb500', 'IRANSansWeb500'],
+      'IRANSansWeb700': ['IRANSansWeb700', 'IRANSansWeb700'],
+      'IRANSansWeb900': ['IRANSansWeb900', 'IRANSansWeb900'],
+      'IRANSansWeb(FaNum)700': ['"IRANSansWeb(FaNum)700"'],
+      'IRANSansWeb(FaNum)400': ['"IRANSansWeb(FaNum)400"'],
+      'IRANSansWebb400':['IRANSansWebb400'],
+      'IRANSansWebb300':['IRANSansWebb300'],
+'Estedad400':['Estedad400'],
+'Estedad600':['Estedad600']
+
       "IRANSansWeb(FaNum)700": [
         "IRANSansWeb(FaNum)700",
         "IRANSansWeb(FaNum)700",
