@@ -1181,6 +1181,10 @@ video {
   height: 100svh;
 }
 
+.max-h-\[50vh\] {
+  max-height: 50vh;
+}
+
 .min-h-\[400px\] {
   min-height: 400px;
 }
