@@ -14,8 +14,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>درباره‌ما</title>
    <meta name="description" content="درباره‌ما">
-   <link rel="stylesheet" href="[##cms.cms.cdn##]/css/outputDesk.css">
-   <link rel="stylesheet" href="[##cms.cms.cdn##]/css/plyr.css" />
+<basis core="call" file="styles.inc" />
 </head>
 <body class="bg-black">
    <main class="aboutUs-C w-full overflow-hidden" dir="rtl">
@@ -65,7 +64,7 @@
                    <face filter="ord=1000">
                        <video src="@largeIMG" id="player" playsinline 
                        poster="[##db.aboutGallery.largeIMG##]" class="w-full object-cover">
-      
+                       <track src="captionstest.vtt" kind="captions" srclang="fa" label="fa_captions">
                       </video>
                    </face>
                </basis>
@@ -73,7 +72,7 @@
                <div class="ov overlay [&.hide]:opacity-0 [&.hide]:pointer-events-none duration-1000
                 absolute w-full h-full bg-[#0000004D] pointer-events-none"></div>
                <div class="play-popup-container [&.hide]:opacity-0 [&.hide]:pointer-events-none duration-1000 overlay w-[126px] h-[126px] absolute z-1 cursor-pointer">
-                   <div class="play-popup-btn relative flex items-center justify-center" data-video="https://player.vimeo.com/video/619757568?dnt=1&amp;app_id=122963">
+                   <div class="play-popup-btn relative flex items-center justify-center" data-video="https://player.vimeo.com/video/619757568?dnt=1&app_id=122963">
                        <svg xmlns="http://www.w3.org/2000/svg" width="153.417" height="153.417" viewBox="0 0 153.417 153.417">
                            <g id="Group_457" data-name="Group 457" transform="translate(-1061.792 -431.792)">
                            <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1063 433)" fill="none" stroke="#fff" stroke-width="1" opacity="0.3">
