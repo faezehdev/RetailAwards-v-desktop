@@ -39,19 +39,7 @@ const host = {
   }
   
   
-  function onSource(args) { 
-    const captcha = document.querySelector("input[name='captcha']").value; 
-    const captchaid = document.querySelector("input[name='captchaid']").value; 
-    console.log(captcha);
-    const stringJson = JSON.stringify(args.source?.rows[0]); 
-    $bc.setSource('edit.object', { 
-        value: stringJson, 
-        captcha: captcha, 
-        captchaid: captchaid ,
-  
-    }) 
-    console.log('sourcd',stringJson);
-  } 
+
   
   
   async function OnProcessesEditObjectFn(args) {
@@ -84,14 +72,63 @@ const host = {
   }
   
   }
+  function renderEditobject(args){
+    console.log('renderEditobject',args);
+    gsap.to('.lds-roller2',{
+        opacity:0,
+        duration:.5,
+        ease:'none'
+    })
+}
+function onSource(args) { 
+    const captcha = document.querySelector("input[name='captcha']").value; 
+    const captchaid = document.querySelector("input[name='captchaid']").value; 
+    console.log(captcha);
+    const stringJson = JSON.stringify(args.source?.rows[0]); 
+    $bc.setSource('edit.object', { 
+        value: stringJson, 
+        captcha: captcha, 
+        captchaid: captchaid ,
   
-  
+    }) 
+    gsap.to('.lds-roller2',{
+        opacity:1,
+        duration:.5,
+        ease:'none'
+    })
+    console.log('sourcd',stringJson);
+  } 
+     
+       function fn(){
+   
+            console.log('onproccesinggg');
+            
+        }
+        
   function rendered(){
+    gsap.to('.lds-roller',{
+        display:'none',
+        duration:.5,
+        ease:'none'
+    })
+    setTimeout(() => {
+        gsap.to('.Form-Container .Titlebox',{
+        opacity:'1',
+        duration:1,
+        ease:'none'
+    })
+    gsap.to('.Form-Container .Box',{
+        opacity:'1',
+        duration:1,
+        ease:'none'
+    })
+    }, 300);
+  
   setTimeout(()=>{
     let name = document.querySelector('[data-bc-schema-column] [data-bc-question]:nth-child(1) input')
     let email = document.querySelector('[data-bc-schema-column] [data-bc-question]:nth-child(2) input')
     let phone = document.querySelector('[data-bc-schema-column] [data-bc-question]:nth-child(3) input')
-    let texta = document.querySelector('[data-bc-schema-column] [data-bc-question]:nth-child(4) textarea')
+    let texta = document.querySelector('[data-bc-schema-column] [data-bc-question]:nth-child(4) _textarea')
   
     $(name).attr('placeholder','  نام و نام‌خانوادگی ');
     $(email).attr('placeholder','ایمیل  ');
@@ -133,5 +170,3 @@ const host = {
   
   
   }
-  
- 
