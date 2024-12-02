@@ -20,7 +20,7 @@ function loadBrand(url) {
 
 let filterBtn = document.querySelectorAll(".filterBtn");
 
-filterBtn[0].classList.add("activeBrandFilter")
+filterBtn[filterBtn.length-1].classList.add("activeBrandFilter")
 filterBtn.forEach(element => {
     element.addEventListener("click",function(params) {
         $(".filterBtn").removeClass("activeBrandFilter")
@@ -68,7 +68,7 @@ setTimeout(() => {
           el: '.swiper-scrollbar',
         },
       });
-      let url = filterBtn[0].getAttribute("data-url")
+      let url = filterBtn[filterBtn.length-1].getAttribute("data-url")
      console.log(url);
      
      loadBrand(url);

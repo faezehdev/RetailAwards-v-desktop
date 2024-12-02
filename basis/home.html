@@ -21,7 +21,6 @@
     <title>ریتیل اواردز</title>
     <meta name="description" content="صفحه اصلی ریتیل اواردز">
     <basis core="call" file="styles.inc" />
-    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="[##cms.cms.cdn##]/css/bootstrap.min.css" />
     <link rel="stylesheet" href="[##cms.cms.cdn##]/css/homeForm.css" />
 </head>
@@ -82,8 +81,8 @@
                 </div>
             </div>
 
-            <a class="w-[205px] z-1 no-underline hover:bg-mainYellow duration-300 hover:no-underline absolute bottom-8 right-[5%] h-[50px] flex items-center justify-center bg-light-gray/[0.5] rounded-md"
-                href="/تماس-با-ما" title="تماس با ما">
+            <a class="w-[205px] z-1 no-underline hover:bg-mainYellow duration-300 hover:no-underline absolute bottom-8 right-[5%] h-[50px] flex items-center justify-center bg-light-gray/[0.5] rounded-md" rel="noopener"
+                href="/تماس-با-ما" title="تماس با ما" rel="noopener" aria-label="تماس با ما"> 
                 <span class="font-IRANSansWeb400 text-sm"> تماس با ما </span>
             </a>
         </section>
@@ -117,7 +116,7 @@
                         <face filter="TypeID=250"> @largetext </face>
                     </basis>
     
-                    <a href="/درباره-ما"
+                    <a href="/درباره-ما" rel="noopener" aria-label="    بیشتر بدانید"
                         class="ShowMore hover:no-underline scrollTop justify-start mt-3 self-baseline w-auto flex gap-[10px] overflow-hidden">
                         <p class="font-IRANSansWeb400 font-normal text-xs leading-18.78 text-white">
                             بیشتر بدانید
@@ -283,7 +282,7 @@
                 </div>
             </div>
 
-            <a href="حامیان-ما"
+            <a href="حامیان-ما" rel="noopener" aria-label="     مشاهده حامیان"
                 class="flex hover:bg-mainYellow hover:no-underline duration-500 items-center justify-center mt-10 mx-auto w-[233px] h-[50px] bg-light-gray rounded-md">
                 <span class="font-IRANSansWeb400 text-sm text-black">
                     مشاهده حامیان
@@ -337,7 +336,7 @@
 
                         <div class="btns mt-10 flex justify-between gap-x-3">
                             <a class="py-3 hover:bg-mainYellow hover:no-underline duration-300 px-16 bg-light-gray rounded-md block font-IRANSansWeb400 text-sm text-black"
-                                href="/دوره-های-برگزار-شده">
+                                href="/دوره-های-برگزار-شده" rel="noopener" aria-label=" مشاهده لیست دوره های گذشته">
                                 مشاهده لیست دوره های گذشته
                             </a>
 
@@ -461,7 +460,7 @@
                                         دوره های Iran Retail Awards
                                     </h4>
                                 </div>
-                                <form name="myForm" class="w-[650px] mx-auto homeForm1" action="" method="post">
+                                <form name="myForm" class=" mx-auto homeForm1" action="" method="post">
 
 
                                         <basis core="schema" run="atclient"
@@ -493,10 +492,10 @@
                                             <span class="captcha-sefaresh">
                                                 <img src="[##cms.cms.cdn##]/@captcha@" width="88" height="44" class="captcha-sefaresh"
                                                     alt="captcha" title="captcha" />
-                                                <input type="hidden" name="captchaid" value="@captcha@" />
+                                                <input type="hidden" name="captchaid" value="@captcha@" aria-label="captchaid"/>
                                             </span>
                                         <img src="[##cms.cms.cdn##]/images/cached.png" class="refressh cursor-pointer refressh1" run="atclient" bc-triggers="click" bc-name="cms.reload1" />
-                                        <input style="border-bottom:none!important;" type="text" class="codeinputm" name="captcha" placeholder="جهت ثبت کد امنیتی را وارد فرمایید  " />
+                                        <input style="border-bottom:none!important;" type="text" class="codeinputm" name="captcha" placeholder="جهت ثبت کد امنیتی را وارد فرمایید  " aria-label="captcha" />
                                         </script>
                                                     </face>
                                                 </basis>
@@ -712,113 +711,9 @@
     <script src="[##cms.cms.cdn##]/_js/bootstrap3.3.7.min.js"></script>
     <script src="[##cms.cms.cdn##]/_js/swiper-bundle11.0.5.min.js"></script>
     <script src="[##cms.cms.cdn##]/js/awardsSlider.js"></script>
+    <script src="[##cms.cms.cdn##]/js/homeForm.js"></script>
 
 
-    <script>
-        const host = {
-            debug: !1,
-            settings: {
-                "connection.web.trust_login": "https://basispanel.ir/apicms",
-                "connection.web.basiscore": "https://basispanel.ir/apicms",
-                "connection.web.media": "https://basispanel.ir/apicms",
-                "default.dbsource.verb": "post",
-                "default.call.verb": "get",
-                "default.viewCommand.groupColumn": "prpid",
-                "default.dmnid": "4864",
-                "default.binding.regex": "\\{##([^#]*)##\\}",
-            },
-        };
-        function onSource1(args) {
-            console.log("onSource");
-            const captcha = document.querySelector(
-                ".homeForm1 #requestBox input[name='captcha']"
-            ).value;
-            const captchaid = document.querySelector(
-                ".homeForm1 #requestBox input[name='captchaid']"
-            ).value;
-            const stringJson = JSON.stringify(args.source?.rows[0]);
-            console.log("stringJson", stringJson);
-            $bc.setSource("edit.object1", {
-                value: stringJson,
-                captcha: captcha,
-                captchaid: captchaid,
-            });
-        }
-        document.querySelector(".signUpBtn").addEventListener("click",function (params) {
-            document.querySelector(".modal").classList.remove("successForm")
-
-        })
-        let responsMsg = document.querySelector(".responsMsg1");
-        let responsMsgIn = document.querySelector(".responsMsg1 span");
-  
-        async function OnProcessedEditObject1(args) {
-            console.log("OnProcessedEditObject1");
-            const response = args.response;
-            const json = await response.json();
-  
-            if (json.errorid == 6) {
-                console.log(json);
-                // responsMsgIn.innerHTML = "فرم با موفقیت ثبت شد.";
-                // responsMsg.style.display = "block";
-                document.querySelector(".modal").classList.add("successForm")
-                setTimeout(() => {
-                    responsMsg.style.display = "none";
-                }, 2000);
-            }
-            if (json.errorid == 4) {
-                console.log(json);
-                responsMsgIn.innerHTML = "لطفا کپچا را به درستی وارد کنید.";
-  
-                responsMsg.style.display = "block";
-  
-                setTimeout(() => {
-                    responsMsg.style.display = "none";
-                }, 2000);
-            }
-        }
-  
-        function renderFn1(params) {
-            let questions = document.querySelectorAll(
-                ".homeForm1 div[data-bc-question]"
-            );
-            questions.forEach((element) => {
-                let title = element.querySelector(
-                    ".homeForm1 [data-bc-question-title]"
-                );
-                let qInput = element.querySelector(".homeForm1 input");
-                let qTxtArea = element.querySelector(".homeForm1 _textarea");
-                if (title) {
-                    title = element.querySelector(
-                        ".homeForm1 [data-bc-question-title]"
-                    ).innerHTML;
-                    if (qInput) {
-                        qInput.setAttribute("placeholder", title);
-                    } else if (qTxtArea) {
-                        qTxtArea.setAttribute("placeholder", title);
-                    }
-                }
-                console.log("q", qInput);
-            });
-  
-    
-        }
-  
-       let submitBtn= document.querySelector(".submitBtn")
-       submitBtn.addEventListener("click",function (params) {
-        const captcha = document.querySelector(
-                ".homeForm1 #requestBox input[name='captcha']"
-            ).value;
-            if (captcha=="") {
-                responsMsgIn.innerHTML = "لطفا کپچا را وارد کنید.";
-  
-  responsMsg.style.display = "block";
-  
-  setTimeout(() => {
-    responsMsg.style.display = "none";
-  }, 2000);   
-            }
-       })
-    </script>
 </body>
 
 </html>
