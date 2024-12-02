@@ -1,84 +1,78 @@
-<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" catid="211184"> 
-    <member name="list-blog" type="list"/> 
-</basis>
-<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" catid="211050">
-     <member name="list-poster" type="list"/> 
-</basis>
-<header class="DesktopHeader group/header  w-full  flex flex-col  " dir="rtl">
+<header class="DesktopHeader fixed [&.goDown]:top-[-100vh]  top-0 left-0 z-[99] group/header duration-100  w-full  flex flex-col " dir="rtl">
     <div class="Inner-header w-full flex flex-col ">
-        <div class="Top-header w-full flex py-[.5em] justify-start items-start gap-4 bg-dark2 duration-75">
-            <div class="Menu-top w-90p mx-auto flex justify-start items-start gap-[3rem]">
-                <a href="http://www.gbm.ir" alt="هلدینگ" title="هلدینگ"  aria-label="هلدینگ" rel="noopener" class="menu-link w-auto flex justify-start items-start leading-18.78 text-mainYellow
-                 font-IRANSansWeb400 font-normal text-xs">
-                    هلدینگ تجارت طلایی
-                </a>
-                <a href="http://www.A112Tl.UnderTest.ir" aria-label="پایگاه خبری" alt="پایگاه خبری" title="پایگاه حبری" rel="noopener" class="menu-link w-auto flex justify-start items-start leading-18.78 text-mainYellow
-                font-IRANSansWeb400 font-normal text-xs">
-                    پایگاه خبری
-                </a>
-                <a href="http://www.I113V121.UnderTest.ir" aria-label=" ایران ریتیل شو" alt="ریتیل شو" title="ریتیل شو"  rel="noopener" class="menu-link w-auto flex justify-start items-start leading-18.78 text-mainYellow
-                font-IRANSansWeb400 font-normal text-xs">
-                    ایران ریتیل شو
-                </a>
+        <div class="Top-header group-[&.goTop]/header:translate-y-[-100%] duration-100
+        py-[.5em] bg-darkBlue w-full flex ">
+            <div class="inner w-90p mx-auto flex justify-start items-start gap-4">
+                <div class="Menu-top w-max flex justify-start items-start gap-[3rem]">
+                    <a href="http://www.gbm.ir" class="menu-link w-auto flex justify-start items-start leading-18.78 text-mainYellow
+                     font-IRANSansWeb400 font-normal text-xs"  rel="noopener"   aria-label="هلدینگ"  title="هلدینگ">
+                        هلدینگ تجارت طلایی
+                    </a>
+                    <a href="http://www.ZpPs.UnderTest.ir" class="menu-link w-auto flex justify-start items-start leading-18.78 text-mainYellow
+                    font-IRANSansWeb400 font-normal text-xs" rel="noopener"   aria-label="ایران ریتل اواردز">
+                         ایران ریتل اواردز
+                    </a>
+                    <a href="http://A112Tl.UnderTest.ir" class="menu-link w-auto flex justify-start items-start leading-18.78 text-mainYellow
+                    font-IRANSansWeb400 font-normal text-xs" rel="noopener"   aria-label="پایگاه خبری">
+                          پایگاه خبری
+                    </a>
+                </div>
             </div>
+           
         </div>
-        <div class="Bottom-header py-[1em] bg-black duration-75 w-full flex justify-between items-end">
-            <div class="inner-b w-90p mx-auto flex justify-between items-end">
-                <nav class="Menu-bottom w-auto flex justify-start gap-[3rem] items-start pb-5 border-b  border-[#febe1b92]">
+        <div class="Bottom-header  group-[&.goTop]/header:!bg-mainBlue group-[&.goTop]/header:translate-y-[-29%]
+        group-[&.light]/header:bg-[transparent] duration-100 py-[1em] bg-mainBlue w-full flex justify-between items-end">
+            <div class="innerBottom  w-90p mx-auto flex justify-between items-end">
+                <nav class="Menu-bottom w-auto flex justify-start gap-[3rem] items-start pb-5 border-b  border-[#ffffff90]">
                     <ul class="w-full flex justify-start items-start gap-[3rem] ">
                       <li class="menu-item w-auto flex justify-start items-start">
-                          <a href="/" alt="صفحه‌نخست" title="صفحه‌نخست" aria-label="صفحه‌نخست"  rel="noopener" class="menu-link w-auto flex duration-75 hover:text-mainYellow
+                          <a href="/" alt="صفحه‌نخست" title="صفحه‌نخست" rel="noopener"   aria-label="صفحه‌نخست" class="menu-link w-auto flex duration-75 hover:text-yallow
                           font-IRANSansWeb400 font-normal text-sm leading-21.91 text-white">
                               صفحه نخست
                           </a>
                       </li>
                       <li class="menu-item w-auto flex justify-start items-start">
-                          <a href="درباره-ما" alt="درباره‌ما" title="درباره‌ما" aria-label="درباره‌ما" rel="noopener" class="menu-link w-auto flex font-IRANSansWeb400  duration-75 hover:text-mainYellow
+                          <a href="درباره-ما" alt="درباره‌ما" title="درباره‌ما" rel="noopener"   aria-label="درباره‌ما" class="menu-link w-auto flex font-IRANSansWeb400  duration-75 hover:text-yallow
                           font-normal text-sm leading-21.91 text-white">
                               درباره ما
                           </a>
                       </li>
                       <li class="menu-item w-auto flex justify-start items-start">
-                          <a href="دوره-های-برگزار-شده" alt="دوره های برگزار شده" aria-label="دوره های برگزار شده" rel="noopener" title="دوره های برگزار شده" class="menu-link w-auto flex duration-75 hover:text-mainYellow
+                          <a href="نمایشگاه-ریتیل-شو" alt=" نمایشگاه ریتیل شو" title=" نمایشگاه ریتیل شو"  rel="noopener"   aria-label="نمایشگاه " class="menu-link w-auto flex duration-75 hover:text-yallow
                            font-IRANSansWeb400 font-normal text-sm leading-21.91 text-white">
-                              دوره های برگزار شده
+                           نمایشگاه ریتیل شو
                           </a>
                       </li>
                       <li class="menu-item w-auto flex justify-start items-start">
-                          <a href="اطلاعیه"  alt="اطلاعیه" title="اطلاعیه" aria-label="اطلاعیه"  rel="noopener" class="menu-link w-auto flex duration-75 hover:text-mainYellow
+                          <a href="اطلاعیه" alt=" اطلاعیه" title=" اطلاعیه"   rel="noopener"   aria-label="اطلاعیه" class="menu-link w-auto flex duration-75 hover:text-yallow
                           font-IRANSansWeb400 font-normal text-sm leading-21.91 text-white">
-                              اطلاعیه
+                          اطلاعیه
                           </a>
                       </li>
                       <li class="menu-item w-auto flex justify-start items-start">
-                          <a href="حامیان-ما" alt="حامیان" title="حامیان"  aria-label="حامیان" rel="noopener" class="menu-link w-auto  duration-75 hover:text-mainYellow
+                          <a href="حامیان" alt=" حامیان" title=" حامیان"  rel="noopener"   aria-label="حامیان" class="menu-link w-auto  duration-75 hover:text-yallow
                           flex font-IRANSansWeb400 font-normal text-sm leading-21.91 text-white">
-                              حامیان ما
+                          حامیان
                           </a>
                       </li>
                       <li class="menu-item w-auto flex justify-start items-start">
-                          <a href="تقدیر" alt="تقدیر" title="تقدیر"  rel="noopener" aria-label="تقدیر" class="menu-link w-auto flex duration-75 hover:text-mainYellow
+                          <a href="تماس-با-ما" alt=" تماس‌باما" title=" تماس‌باما"  rel="noopener"   aria-label="تماس‌باما"  class="menu-link w-auto flex duration-75 hover:text-yallow
                            font-IRANSansWeb400 font-normal text-sm leading-21.91 text-white">
-                              تقدیر
+                           تماس‌باما
                           </a>
                       </li>
-                      <li class="menu-item w-auto flex justify-start items-start">
-                          <a href="تماس-با-ما" alt="تماس‌باما" title="تماس‌باما"  aria-label="تماس‌باما" rel="noopener" class="menu-link w-auto flex duration-75 hover:text-mainYellow
-                          font-IRANSansWeb400 font-normal text-sm leading-21.91 text-white">
-                              تماس‌باما
-                          </a>
-                      </li>
+                    
                     </ul>
-                    <basis core="call" file="userIcon.inc" run="atclient"  />
+                 <basis core="call" file="userIcon.inc" run="atclient"  />
                     <span class="headerSearchIcon w-auto flex justify-start items-start hover:cursor-pointer">
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M19 19L15.5 15.5M15 8C15 8.91925 14.8189 9.82951 14.4672 10.6788C14.1154 11.5281 13.5998 12.2997 12.9497 12.9497C12.2997 13.5998 11.5281 14.1154 10.6788 14.4672C9.82951 14.8189 8.91925 15 8 15C7.08075 15 6.1705 14.8189 5.32122 14.4672C4.47194 14.1154 3.70026 13.5998 3.05025 12.9497C2.40024 12.2997 1.88463 11.5281 1.53284 10.6788C1.18106 9.82951 1 8.91925 1 8C1 6.14348 1.7375 4.36301 3.05025 3.05025C4.36301 1.7375 6.14348 1 8 1C9.85652 1 11.637 1.7375 12.9497 3.05025C14.2625 4.36301 15 6.14348 15 8Z" stroke="#FEBE1B" stroke-width="2" stroke-linecap="round"/>
+                          <path d="M19 19L15.5 15.5M15 8C15 8.91925 14.8189 9.82951 14.4672 10.6788C14.1154 11.5281 13.5998 12.2997 12.9497 12.9497C12.2997 13.5998 11.5281 14.1154 10.6788 14.4672C9.82951 14.8189 8.91925 15 8 15C7.08075 15 6.1705 14.8189 5.32122 14.4672C4.47194 14.1154 3.70026 13.5998 3.05025 12.9497C2.40024 12.2997 1.88463 11.5281 1.53284 10.6788C1.18106 9.82951 1 8.91925 1 8C1 6.14348 1.7375 4.36301 3.05025 3.05025C4.36301 1.7375 6.14348 1 8 1C9.85652 1 11.637 1.7375 12.9497 3.05025C14.2625 4.36301 15 6.14348 15 8Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
                           </svg>
                           
                     </span>
                   </nav>
                   <div class="Logo w-auto flex justify-end items-end">
-                      <a href="/" alt="صفحه‌نخست" title="صفحه‌نخست" aria-label="صفحه‌نخست" rel="noopener" class="w-auto flex justify-end items-end">
+                      <a href="/" alt="صفحه‌نخست" title="صفحه‌نخست"  rel="noopener"   aria-label="صفحه‌نخست"  class="w-auto flex justify-end items-end">
                           <svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                               <rect width="88" height="88" fill="url(#pattern0_991_2085)"/>
                               <defs>
@@ -92,41 +86,49 @@
                       </a>
                   </div>
             </div>
-          
+        
         </div>
     </div>
 </header>
-<div class="SearchBox-popup w-90p  px-[1em] duration-200 top-[11em] !bg-white
+<div class="SearchBox-popup w-90p  fixed px-[1em] duration-200 top-[11em] 
 z-20 left-0 right-0 mx-auto translate-y-[-100vh] [&.OpenSearch]:translate-y-[0]
-flex justify-center flex-col items-center py-[1em] absolute rounded-[15px]">
+flex justify-center flex-col items-center py-[1em]  rounded-[15px]">
     <div class="inputBox w-full flex justify-center items-center relative">
         <span class="CloseSearch hover:cursor-pointer w-auto absolute right-[.5em] top-[.5em]">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.4 14L7 8.6L1.6 14L0 12.4L5.4 7L0 1.6L1.6 0L7 5.4L12.4 0L14 1.6L8.6 7L14 12.4L12.4 14Z" fill="#FEBE1B"/>
+                <path d="M12.4 14L7 8.6L1.6 14L0 12.4L5.4 7L0 1.6L1.6 0L7 5.4L12.4 0L14 1.6L8.6 7L14 12.4L12.4 14Z" fill="#ED2289"/>
                 </svg>
                 
         </span>
         <div class="Input w-[60%] flex justify-center items-center relative z-20">
-            <input type="text" id="search" aria-label="search" placeholder="جستجو کنید..." class="w-full
+            <input type="text" id="search"  aria-label="search"  placeholder="جستجو کنید..." class="w-full 
             px-[1em] font-IRANSansWeb400 font-normal leading-21.91 text-gray2 text-sm bg-white h-[40px] placeholder:font-IRANSansWeb400 placeholder:font-normal
             placeholder:leading-21.91 placeholder:text-gray2" search="input">
-            <span class="searchinnerIcon absolute left-[.5em] top-[.5em]" search="clear">
-                <!-- <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <span class="searchinnerIcon absolute left-[.5em] top-[.5em]" search="clear" >
+              <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.2817 19L15.7269 15.5M15.2191 8C15.2191 8.91925 15.0352 9.82951 14.6779 10.6788C14.3206 11.5281 13.797 12.2997 13.1368 12.9497C12.4766 13.5998 11.6928 14.1154 10.8303 14.4672C9.96769 14.8189 9.0432 15 8.10956 15C7.17592 15 6.25142 14.8189 5.38885 14.4672C4.52628 14.1154 3.74252 13.5998 3.08234 12.9497C2.42216 12.2997 1.89847 11.5281 1.54118 10.6788C1.18389 9.82951 1 8.91925 1 8C1 6.14348 1.74904 4.36301 3.08234 3.05025C4.41564 1.7375 6.22398 1 8.10956 1C9.99513 1 11.8035 1.7375 13.1368 3.05025C14.4701 4.36301 15.2191 6.14348 15.2191 8Z" stroke="#9A9A9A" stroke-width="2" stroke-linecap="round"/>
-                    </svg> -->
-                    
+                    </svg>
+                   
             </span>
         </div>
     </div>
-    <div class="loaded w-full max-h-[50vh] flex flex-col" tabindex="0" id="searchContainer">
-        <div class="Nores w-full flex justify-center items-end py-[2em]" search="noResults">
+    <basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" catid="210854"> 
+        <member name="list-etelaeyie" size="268x268" propertyid="7249" type="list"/> 
+    </basis>
+    <basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" catid="210836">
+        <member name="posterList" type="list" size="279x395" />
+    </basis />
+
+
+    <div class="loaded w-full flex flex-col live-search-list" id="searchContainer" tabindex="0">
+        <div class="Nores w-full  justify-center items-end py-[2em]" search="noResults">
             <p class="w-[13%] text-center mx-auto font-IRANSansWeb400 font-normal text-[13px] leading-[22.45px] text-black">
                 باعرض پوزش مطلبی پیدا نشد.
              واژه دیگری را جست و جو نمایید.
             </p>
         </div>
-        <div class="ResultSearch w-[60%] mx-auto flex flex-col">
-            <basis core="print" datamembername="db.list-blog">
+        <div class="ResultSearch  overflow-hidden w-[60%] mx-auto flex flex-col">
+            <basis core="print" datamembername="db.list-etelaeyie">
                 <layout>
                     @child
                 </layout>
@@ -134,10 +136,10 @@ flex justify-center flex-col items-center py-[1em] absolute rounded-[15px]">
                     <div class="ItemR w-full py-[1em] flex flex-col justify-between gap-6 border-b border-gray2" search="item">
                         <div class="Title w-full flex justify-start items-start">
                             <p class="font-IRANSansWeb400 font-normal text-sm leading-21.91 text-black text-right">
-                                @title
+                            @title
                             </p>
                         </div>
-                        <a href="@link" alt="@title" title="@title" aria-label="@title" rel="noopener" class="ShowMore mr-auto w-auto flex gap-[10px] overflow-hidden justify-center">
+                        <a href="@link" alt="@title" title="@title"  rel="noopener"   aria-label="@title"  class="ShowMore mr-auto w-auto flex gap-[10px] overflow-hidden justify-center">
                             <p class="font-IRANSansWeb400 font-normal text-xs leading-18.78 text-gray-middle">مشاهده </p>
                             <div class="circle w-[20px] h-[20px] rounded-full border-[1px] border-gray-middle relative 
                             ">
@@ -148,7 +150,7 @@ flex justify-center flex-col items-center py-[1em] absolute rounded-[15px]">
                 </div>
                 </face>
             </basis>
-            <basis core="print" datamembername="db.list-poster">
+            <basis core="print" datamembername="db.posterList">
                 <layout>
                     @child
                 </layout>
@@ -156,10 +158,10 @@ flex justify-center flex-col items-center py-[1em] absolute rounded-[15px]">
                     <div class="ItemR w-full py-[1em] flex flex-col justify-between gap-6 border-b border-gray2" search="item">
                         <div class="Title w-full flex justify-start items-start">
                             <p class="font-IRANSansWeb400 font-normal text-sm leading-21.91 text-black text-right">
-                                @title
+                            @title
                             </p>
                         </div>
-                        <a href="@link" alt="@title" title="@title" rel="noopener" class="ShowMore mr-auto w-auto flex gap-[10px] overflow-hidden justify-center">
+                        <a href="@link" alt="@title" title="@title"  rel="noopener"   aria-label="@title"  class="ShowMore mr-auto w-auto flex gap-[10px] overflow-hidden justify-center">
                             <p class="font-IRANSansWeb400 font-normal text-xs leading-18.78 text-gray-middle">مشاهده </p>
                             <div class="circle w-[20px] h-[20px] rounded-full border-[1px] border-gray-middle relative 
                             ">
@@ -181,6 +183,6 @@ flex justify-center flex-col items-center py-[1em] absolute rounded-[15px]">
             
     </span>
     <div class="Container-pop">
-        <basis core="call" run="atclient" if="{##run.call.value|(false)##}" triggers="run.call" file="login.inc" />
+        <basis core="call" run="atclient" if="{##run.call.value|(false)##}" triggers="run.call" file="login.bc" />
     </div>
 </div>

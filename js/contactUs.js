@@ -24,21 +24,6 @@
     stagger:.1
   })
 
-const host = {
-    debug: false,
-    settings:{
-              'connection.web.trust_login': 'https://basispanel.ir/apicms', 
-          'connection.web.basiscore': 'https://basispanel.ir/apicms', 
-          'connection.web.media': 'https://basispanel.ir/apicms', 
-          'default.dbsource.verb': 'post', 
-          'default.call.verb': 'get', 
-          'default.viewCommand.groupColumn': 'prpid', 
-              "default.dmnid":'4879',
-              "default.binding.regex":"\\{##([^#]*)##\\}"
-          }
-  }
-  
-  
 
   
   
