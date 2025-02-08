@@ -869,10 +869,6 @@ video {
   z-index: 9999;
 }
 
-.z-\[99\] {
-  z-index: 99;
-}
-
 .float-start {
   float: inline-start;
 }
@@ -2927,10 +2923,6 @@ video {
   border-color: #febe1bbe;
 }
 
-.border-\[\#ffffff90\] {
-  border-color: #ffffff90;
-}
-
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -3606,6 +3598,10 @@ video {
 
 .font-normal {
   font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -4643,6 +4639,10 @@ a {
   background: linear-gradient(90deg, #000000 0%, #febe1b 100%);
 }
 
+.aboutUs-C .Text{
+  overflow: hidden;
+}
+
 main.Etelaei-C .section p,
 main.Etelaei-C .section h1,
 main.Etelaei-C .section h2,
@@ -5053,6 +5053,7 @@ main.Etelaei-C .section h2,
   line-height: 21.91px;
   color: #F5F5F5;
   font-family: "IRANSansWeb400";
+  text-align: center;
 }
 
 .ContactUs-C fieldset [data-bc-section-title],
@@ -5091,7 +5092,8 @@ main.Etelaei-C .section h2,
   line-height: 21.91px;
   color: #828282 !important;
   font-family: "IRANSansWeb400" !important;
-  height: 40px;
+  height: 40px !important;
+  padding: .7em !important;
   border: none !important;
   border-bottom: 1px solid #828282 !important;
   padding: 0 0.5em !important;
@@ -5133,6 +5135,8 @@ input[type="text"]:focus,
   justify-content: center;
   align-items: center;
   gap: 1em;
+  background-color: #171717;
+  padding: .8em 0;
 }
 
 .ContactUs-C .captchaBox input.codeinputm{
@@ -5262,7 +5266,7 @@ input[type="text"]:focus,
   font-weight: 400;
   line-height: 21.91px;
   color: #FFFFFF;
-  font-family: "IRANSansWeb400";
+  font-family: "IRANSansWeb700";
   text-align: center;
 }
 
@@ -5272,10 +5276,10 @@ input[type="text"]:focus,
   transform: translateY(100%);
   transition: all 700ms;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 23.48px;
   color: #FFFFFF;
-  font-family: "IRANSansWeb400";
+  font-family: "IRANSansWeb700";
   text-align: center;
 }
 
@@ -5763,6 +5767,27 @@ a{
 
 .posterShow .modal-backdrop {
   background-color: white;
+}
+
+.ContactUs-C [data-bc-question]:first-child [data-bc-part-related-cell]{
+  position: relative;
+}
+
+.ContactUs-C [data-bc-question]:first-child [data-bc-part-related-cell]::before{
+  position: absolute;
+  content: '*';
+  left: 7px;
+  top: 4px;
+  color: #828282;
+}
+
+.ContactUs-C [data-bc-answer-container] textarea{
+  padding-top: .5em !important;
+  height: 175px !important;
+}
+
+.FooterDesktop.darkFooter{
+  background-color: black;
 }
 
 @media (min-width: 480px) {
@@ -6284,16 +6309,6 @@ a{
   display: block !important;
 }
 
-.group\/header.goTop .group-\[\&\.goTop\]\/header\:translate-y-\[-100\%\] {
-  --tw-translate-y: -100%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group\/header.goTop .group-\[\&\.goTop\]\/header\:translate-y-\[-29\%\] {
-  --tw-translate-y: -29%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .group.swiper-slide-active .group-\[\.swiper-slide-active\]\:-translate-y-\[49px\] {
   --tw-translate-y: -49px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -6318,10 +6333,6 @@ a{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group\/header.light .group-\[\&\.light\]\/header\:bg-\[transparent\] {
-  background-color: transparent;
 }
 
 .group.active .group-\[\&\.active\]\:text-gray-middle {
@@ -6363,10 +6374,6 @@ a{
 .\[\&\.active\]\:bg-white.active {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.\[\&\.goDown\]\:top-\[-100vh\].goDown {
-  top: -100vh;
 }
 
 .\[\&\.hide\]\:pointer-events-none.hide {

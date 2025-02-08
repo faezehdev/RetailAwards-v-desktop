@@ -280,6 +280,9 @@ a {
 .About-container .line.line-2 {
   background: linear-gradient(90deg, #000000 0%, #febe1b 100%);
 }
+.aboutUs-C .Text{
+  overflow: hidden;
+}
 main.Etelaei-C .section p,
 main.Etelaei-C .section h1,
 main.Etelaei-C .section h2,
@@ -294,6 +297,7 @@ main.Etelaei-C .section h2,
   -moz-transition: all 700ms;
   -ms-transition: all 700ms;
   -o-transition: all 700ms;
+ 
 }
 .EtalaeiItem img {
   filter: grayscale(1);
@@ -607,6 +611,7 @@ font-family: "IRANSansWeb300";
   line-height: 21.91px;
   color: #F5F5F5;
   font-family: "IRANSansWeb400";
+  text-align: center;
   }
 
 
@@ -644,7 +649,8 @@ font-family: "IRANSansWeb300";
   line-height: 21.91px;
   color: #828282 !important;
   font-family: "IRANSansWeb400" !important;
-  height: 40px;
+  height: 40px !important;
+  padding: .7em !important;
   border: none !important;
   border-bottom: 1px solid #828282 !important;
   padding: 0 0.5em !important;
@@ -683,6 +689,8 @@ input[type="text"]:focus,
   justify-content: center;
   align-items: center;
   gap: 1em;
+  background-color: #171717;
+  padding: .8em 0;
 }
 .ContactUs-C .captchaBox input.codeinputm{
   order: 1;
@@ -793,7 +801,7 @@ font-size: 14px;
 font-weight: 400;
 line-height: 21.91px;
 color: #FFFFFF;
-font-family: "IRANSansWeb400";
+font-family: "IRANSansWeb700";
 text-align: center;
 }
 
@@ -803,10 +811,10 @@ opacity: 0;
 transform: translateY(100%);
 transition: all 700ms;
 font-size: 15px;
-font-weight: 400;
+font-weight: 700;
 line-height: 23.48px;
 color: #FFFFFF;
-font-family: "IRANSansWeb400";
+font-family: "IRANSansWeb700";
 text-align: center;
 }
 
@@ -1245,3 +1253,20 @@ background: black !important;
 .posterShow .modal-backdrop {
   background-color: white;
 }
+.ContactUs-C [data-bc-question]:first-child [data-bc-part-related-cell]{
+position: relative;
+}
+.ContactUs-C [data-bc-question]:first-child [data-bc-part-related-cell]::before{
+  position: absolute;
+  content: '*';
+  left: 7px;
+  top: 4px;
+color: #828282;
+  }
+  .ContactUs-C [data-bc-answer-container] textarea{
+  padding-top: .5em !important;
+  height: 175px !important;
+ }
+ .FooterDesktop.darkFooter{
+  background-color: black;
+ }

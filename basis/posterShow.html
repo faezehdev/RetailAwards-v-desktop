@@ -2,23 +2,28 @@
     <member name="seolist" type="list" request="product" id="[##cms.query.id##]"></member>
 </basis>
 
-<basis core="dbsource" source="media" name="db" lid="1" catid="2094" > <member type="list" name="videoGallery" perpage="10" pageno="1"/> </basis> 
+<basis core="dbsource" source="media" name="db" lid="1" catid="2094"> 
+    <member type="list" name="videoGallery" perpage="10" pageno="1"/>
+ </basis> 
 
-<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="[##cms.query.id##]"> <member name="poster" type="view"/> </basis>	
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="[##cms.query.id##]"> 
+    <member name="poster" type="view"/> 
+</basis>	
 <basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="[##cms.query.id##]">
  <member name="posterGallery" type="list" format="4" perpage="100" />
  <member name="posterGallery2" type="list" format="4" perpage="100" postsql="select * from [db.posterGallery2] where ord=2" />
  <member name="posterGallery1001" type="list" format="4" perpage="100" postsql="select * from [db.posterGallery1001] where ord=1001" />
  <member name="posterGallery1002" type="list" format="4" perpage="100" postsql="select * from [db.posterGallery1002] where ord=1002" />
  <member name="posterGallery1" type="list" format="4" perpage="100" postsql="select * from [db.posterGallery1] where ord=1" />
-
  <member name="posterGallery1000" type="list" format="4" perpage="100" postsql="select * from [db.posterGallery1000] where ord=1000" />
-
-
-
  </basis>
-<basis core="dbsource" source="media" name="db" lid="1" mid="15" mainid="2638394" > <member type="view" name="link"/> </basis>	
-<basis core="dbsource" source="basiscore" name="db" lid="1" mid="1" > <member request="cat" type="tree" name="teghdir" parentid="211052" postsql="select * from [db.teghdir] where parentid=211052"/> </basis>
+<basis core="dbsource" source="media" name="db" lid="1" mid="15" mainid="2638394" >
+     <member type="view" name="link"/> 
+</basis>	
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="1" >
+     <member request="cat" type="tree" name="teghdir" parentid="211052" 
+     postsql="select * from [db.teghdir] where parentid=211052"/>
+ </basis>
 <basis core="dbsource" source="basiscore" name="db" lid="1" mid="1" usedforid="[##cms.query.id##]" >
   <member request="json-ld" type="scalar" name="json" />
   </basis>
@@ -279,7 +284,7 @@
                     </div>
                 </div>
                 <a class="py-3 hover:bg-mainYellow duration-300 px-9 rounded-md bg-light-gray flex items-center justify-center mt-4"
-                    href="/تقدیر">
+                    href="/تقدیر" rel="noopener"   aria-label="تقدیر">
                     <span class="font-IRANSansWeb400 text-sm whitespace-nowrap">
                         مشاهده دسته‌بندی
                     </span>
@@ -305,7 +310,7 @@
                                         <h3 class="font-IRANSansWeb500 text-sm text-white mb-3">
                                          @title
                                         </h3>
-                                        <a href="/@link"
+                                        <a href="/@link" rel="noopener"   aria-label="بیشتر بدانید"
                                             class="ShowMore hover:no-underline justify-start mt-3 self-baseline w-auto flex gap-[10px] overflow-hidden">
                                             <p class="font-IRANSansWeb400 font-normal text-xs leading-18.78 text-white">
                                                 بیشتر بدانید
@@ -329,9 +334,6 @@
     </section>
     
 </basis>
-
-
-
 <basis core="group" if="'[##db.posterGallery1001.RowNumber##]' <> ''">
     <section class="section5 mb-24 pt-16 pb-8 bg-black" dir="rtl">
 
@@ -900,21 +902,22 @@
                             class="btns absolute left-0 right-0 w-fit mx-auto z-1 bottom-0 flex items-center justify-between gap-x-[563px]">
         
         
-                            <div class="prevVideoGallery [&.swiper-button-disabled]:hidden cursor-pointer group z-1">
-                                <div
-                                    class="inner relative flex items-center gap-x-2 group-hover:before:scale-x-125 before:duration-300 before:origin-left before:w-[71px] before:inline-block before:h-px before:bg-white">
-                                    <span
-                                        class="group-hover:translate-x-[20px] duration-300 font-IRANSansWeb300 text-sm text-white">
-                                        NEXT
-                                    </span>
-                                </div>
-                            </div>
+                         
                             <div class="nextVideoGallery  [&.swiper-button-disabled]:hidden cursor-pointer group z-1">
                                 <div
                                     class="inner relative flex items-center gap-x-2 group-hover:after:scale-x-[1.2] after:duration-300 after:origin-right after:w-[71px] after:inline-block after:h-px after:bg-white">
                                     <span
                                         class="group-hover:-translate-x-[20px] duration-300 font-IRANSansWeb300 text-sm text-white">
                                         PREVIEW
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="prevVideoGallery [&.swiper-button-disabled]:hidden cursor-pointer group z-1">
+                                <div
+                                    class="inner relative flex items-center gap-x-2 group-hover:before:scale-x-125 before:duration-300 before:origin-left before:w-[71px] before:inline-block before:h-px before:bg-white">
+                                    <span
+                                        class="group-hover:translate-x-[20px] duration-300 font-IRANSansWeb300 text-sm text-white">
+                                        NEXT
                                     </span>
                                 </div>
                             </div>
@@ -990,8 +993,7 @@
         </basis>
 
 
-
-        <basis core="call" file="footer.inc" />
+        <basis core="call" file="footer2.inc" pageindex="[##cms.cms.pageindex##]" />
     </div>
 
 

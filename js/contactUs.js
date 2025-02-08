@@ -113,7 +113,7 @@ function onSource(args) {
     let name = document.querySelector('[data-bc-schema-column] [data-bc-question]:nth-child(1) input')
     let email = document.querySelector('[data-bc-schema-column] [data-bc-question]:nth-child(2) input')
     let phone = document.querySelector('[data-bc-schema-column] [data-bc-question]:nth-child(3) input')
-    let texta = document.querySelector('[data-bc-schema-column] [data-bc-question]:nth-child(4) _textarea')
+    let texta = document.querySelector('[data-bc-schema-column] [data-bc-question]:nth-child(4) textarea')
   
     $(name).attr('placeholder','  نام و نام‌خانوادگی ');
     $(email).attr('placeholder','ایمیل  ');
